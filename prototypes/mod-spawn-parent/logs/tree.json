@@ -1,0 +1,285 @@
+[
+  {
+    "t": 1792736175920,
+    "ev": "session.start"
+  },
+  {
+    "t": 1792736201183,
+    "ev": "agent.spawn",
+    "description": "cbproto d1 tree",
+    "parentAgentId": null,
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a4a23327115288df1"
+    }
+  },
+  {
+    "t": 1792736201212,
+    "ev": "step.seen",
+    "agentId": "a4a23327115288df1",
+    "depth": 1,
+    "mode": "tree",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736201212,
+    "ev": "start.spawned",
+    "caller": "main",
+    "mode": "tree",
+    "spawned": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a4a23327115288df1"
+    },
+    "child": {
+      "id": "a4a23327115288df1",
+      "description": "cbproto d1 tree",
+      "type": "cbproto:worker",
+      "status": "running",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736201220,
+    "ev": "dispatch.seen",
+    "slot": 1,
+    "caller": "a4a23327115288df1",
+    "callerDepth": 1
+  },
+  {
+    "t": 1792736201238,
+    "ev": "agent.spawn",
+    "description": "cbproto d2 tree",
+    "parentAgentId": null,
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "ab00946bac5a98480"
+    }
+  },
+  {
+    "t": 1792736201264,
+    "ev": "step.seen",
+    "agentId": "ab00946bac5a98480",
+    "depth": 2,
+    "mode": "tree",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736201265,
+    "ev": "dispatch.spawned",
+    "slot": 1,
+    "caller": "a4a23327115288df1",
+    "depth": 2,
+    "spawned": {
+      "model": "claude-haiku-5-5",
+      "agentId": "ab00946bac5a98480"
+    },
+    "child": {
+      "id": "ab00946bac5a98480",
+      "description": "cbproto d2 tree",
+      "type": "cbproto:worker",
+      "status": "running",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736201270,
+    "ev": "step.seen",
+    "agentId": "a4a23327115288df1",
+    "depth": 1,
+    "mode": "tree",
+    "index": 1,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736201272,
+    "ev": "dispatch.seen",
+    "slot": 2,
+    "caller": "ab00946bac5a98480",
+    "callerDepth": 2
+  },
+  {
+    "t": 1792736201278,
+    "ev": "turn.complete",
+    "agentId": "a4a23327115288df1",
+    "depth": 1,
+    "mode": "tree",
+    "reason": "answer",
+    "answer": "cbproto d1 done",
+    "usage": null,
+    "self": {
+      "id": "a4a23327115288df1",
+      "description": "cbproto d1 tree",
+      "type": "cbproto:worker",
+      "status": "completed",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736201283,
+    "ev": "agent.spawn",
+    "description": "cbproto d3 tree",
+    "parentAgentId": null,
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a11d68f0da2eee1a5"
+    }
+  },
+  {
+    "t": 1792736201309,
+    "ev": "step.seen",
+    "agentId": "a11d68f0da2eee1a5",
+    "depth": 3,
+    "mode": "tree",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736201309,
+    "ev": "dispatch.spawned",
+    "slot": 2,
+    "caller": "ab00946bac5a98480",
+    "depth": 3,
+    "spawned": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a11d68f0da2eee1a5"
+    },
+    "child": {
+      "id": "a11d68f0da2eee1a5",
+      "description": "cbproto d3 tree",
+      "type": "cbproto:worker",
+      "status": "running",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736201316,
+    "ev": "step.seen",
+    "agentId": "ab00946bac5a98480",
+    "depth": 2,
+    "mode": "tree",
+    "index": 1,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736201319,
+    "ev": "dispatch.seen",
+    "slot": 3,
+    "caller": "a11d68f0da2eee1a5",
+    "callerDepth": 3
+  },
+  {
+    "t": 1792736201324,
+    "ev": "turn.complete",
+    "agentId": "ab00946bac5a98480",
+    "depth": 2,
+    "mode": "tree",
+    "reason": "answer",
+    "answer": "cbproto d2 done",
+    "usage": null,
+    "self": {
+      "id": "ab00946bac5a98480",
+      "description": "cbproto d2 tree",
+      "type": "cbproto:worker",
+      "status": "completed",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736201328,
+    "ev": "agent.spawn",
+    "description": "cbproto d4 tree",
+    "parentAgentId": null,
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "ac272b304ca98f2b0"
+    }
+  },
+  {
+    "t": 1792736201352,
+    "ev": "step.seen",
+    "agentId": "ac272b304ca98f2b0",
+    "depth": 4,
+    "mode": "tree",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736201352,
+    "ev": "dispatch.spawned",
+    "slot": 3,
+    "caller": "a11d68f0da2eee1a5",
+    "depth": 4,
+    "spawned": {
+      "model": "claude-haiku-5-5",
+      "agentId": "ac272b304ca98f2b0"
+    },
+    "child": {
+      "id": "ac272b304ca98f2b0",
+      "description": "cbproto d4 tree",
+      "type": "cbproto:worker",
+      "status": "running",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736201360,
+    "ev": "step.seen",
+    "agentId": "a11d68f0da2eee1a5",
+    "depth": 3,
+    "mode": "tree",
+    "index": 1,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736201364,
+    "ev": "turn.complete",
+    "agentId": "ac272b304ca98f2b0",
+    "depth": 4,
+    "mode": "tree",
+    "reason": "answer",
+    "answer": "cbproto d4 done",
+    "usage": null,
+    "self": {
+      "id": "ac272b304ca98f2b0",
+      "description": "cbproto d4 tree",
+      "type": "cbproto:worker",
+      "status": "completed",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736201368,
+    "ev": "turn.complete",
+    "agentId": "a11d68f0da2eee1a5",
+    "depth": 3,
+    "mode": "tree",
+    "reason": "answer",
+    "answer": "cbproto d3 done",
+    "usage": null,
+    "self": {
+      "id": "a11d68f0da2eee1a5",
+      "description": "cbproto d3 tree",
+      "type": "cbproto:worker",
+      "status": "completed",
+      "spawnedBy": "cbproto"
+    }
+  }
+]

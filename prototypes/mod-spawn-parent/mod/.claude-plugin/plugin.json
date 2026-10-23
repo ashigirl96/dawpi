@@ -1,0 +1,1 @@
+{ "name": "cbproto", "version": "0.1.0", "description": "PROTOTYPE: checks parent ids of agents a mod spawns from a tool.call hook (dawpi #2)" }

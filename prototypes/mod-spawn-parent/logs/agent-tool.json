@@ -1,0 +1,262 @@
+[
+  {
+    "t": 1792736329772,
+    "ev": "session.start"
+  },
+  {
+    "t": 1792736343136,
+    "ev": "agent.spawn",
+    "description": "cbproto d1 agent-tool",
+    "parentAgentId": null,
+    "resume": null,
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a4d3fdc9b49dccdbd"
+    }
+  },
+  {
+    "t": 1792736343166,
+    "ev": "step.seen",
+    "agentId": "a4d3fdc9b49dccdbd",
+    "depth": 1,
+    "mode": "agent-tool",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343174,
+    "ev": "start.spawned",
+    "caller": "main",
+    "mode": "agent-tool",
+    "spawned": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a4d3fdc9b49dccdbd"
+    },
+    "child": {
+      "id": "a4d3fdc9b49dccdbd",
+      "description": "cbproto d1 agent-tool",
+      "type": "cbproto:worker",
+      "status": "waiting",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736343184,
+    "ev": "agent.spawn",
+    "description": "cbproto d2 agent-tool",
+    "parentAgentId": "a4d3fdc9b49dccdbd",
+    "resume": null,
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a6d37132f0e5fb8cd"
+    }
+  },
+  {
+    "t": 1792736343216,
+    "ev": "step.seen",
+    "agentId": "a4d3fdc9b49dccdbd",
+    "depth": 1,
+    "mode": "agent-tool",
+    "index": 1,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343216,
+    "ev": "step.seen",
+    "agentId": "a6d37132f0e5fb8cd",
+    "depth": 2,
+    "mode": "agent-tool",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343222,
+    "ev": "turn.complete",
+    "agentId": "a4d3fdc9b49dccdbd",
+    "depth": 1,
+    "mode": "agent-tool",
+    "reason": "answer",
+    "answer": "cbproto d1 done",
+    "usage": null,
+    "self": {
+      "id": "a4d3fdc9b49dccdbd",
+      "description": "cbproto d1 agent-tool",
+      "type": "cbproto:worker",
+      "status": "waiting",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736343229,
+    "ev": "agent.spawn",
+    "description": "cbproto d3 agent-tool",
+    "parentAgentId": "a6d37132f0e5fb8cd",
+    "resume": null,
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a0dd7432d64ba7bae"
+    }
+  },
+  {
+    "t": 1792736343258,
+    "ev": "step.seen",
+    "agentId": "a0dd7432d64ba7bae",
+    "depth": 3,
+    "mode": "agent-tool",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343259,
+    "ev": "step.seen",
+    "agentId": "a6d37132f0e5fb8cd",
+    "depth": 2,
+    "mode": "agent-tool",
+    "index": 1,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343269,
+    "ev": "step.seen",
+    "agentId": "a0dd7432d64ba7bae",
+    "depth": 3,
+    "mode": "agent-tool",
+    "index": 1,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343269,
+    "ev": "turn.complete",
+    "agentId": "a6d37132f0e5fb8cd",
+    "depth": 2,
+    "mode": "agent-tool",
+    "reason": "answer",
+    "answer": "cbproto d2 done",
+    "usage": null,
+    "self": {
+      "id": "a6d37132f0e5fb8cd",
+      "description": "cbproto d2 agent-tool",
+      "type": "cbproto:worker",
+      "status": "waiting",
+      "parentId": "a4d3fdc9b49dccdbd",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736343276,
+    "ev": "turn.complete",
+    "agentId": "a0dd7432d64ba7bae",
+    "depth": 3,
+    "mode": "agent-tool",
+    "reason": "answer",
+    "answer": "cbproto d3 done",
+    "usage": null,
+    "self": {
+      "id": "a0dd7432d64ba7bae",
+      "description": "cbproto d3 agent-tool",
+      "type": "cbproto:worker",
+      "status": "completed",
+      "parentId": "a6d37132f0e5fb8cd",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736343287,
+    "ev": "agent.spawn",
+    "description": "cbproto d2 agent-tool",
+    "parentAgentId": null,
+    "resume": {
+      "agentId": "a6d37132f0e5fb8cd"
+    },
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a6d37132f0e5fb8cd"
+    }
+  },
+  {
+    "t": 1792736343292,
+    "ev": "step.seen",
+    "agentId": "a6d37132f0e5fb8cd",
+    "depth": 2,
+    "mode": "agent-tool",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343299,
+    "ev": "turn.complete",
+    "agentId": "a6d37132f0e5fb8cd",
+    "depth": 2,
+    "mode": "agent-tool",
+    "reason": "answer",
+    "answer": "cbproto d2 done",
+    "usage": null,
+    "self": {
+      "id": "a6d37132f0e5fb8cd",
+      "description": "cbproto d2 agent-tool",
+      "type": "cbproto:worker",
+      "status": "completed",
+      "parentId": "a4d3fdc9b49dccdbd",
+      "spawnedBy": "cbproto"
+    }
+  },
+  {
+    "t": 1792736343309,
+    "ev": "agent.spawn",
+    "description": "cbproto d1 agent-tool",
+    "parentAgentId": null,
+    "resume": {
+      "agentId": "a4d3fdc9b49dccdbd"
+    },
+    "origin": {
+      "plugin": "cbproto",
+      "tier": "user"
+    },
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a4d3fdc9b49dccdbd"
+    }
+  },
+  {
+    "t": 1792736343315,
+    "ev": "step.seen",
+    "agentId": "a4d3fdc9b49dccdbd",
+    "depth": 1,
+    "mode": "agent-tool",
+    "index": 0,
+    "model": "claude-haiku-5-5"
+  },
+  {
+    "t": 1792736343321,
+    "ev": "turn.complete",
+    "agentId": "a4d3fdc9b49dccdbd",
+    "depth": 1,
+    "mode": "agent-tool",
+    "reason": "answer",
+    "answer": "cbproto d1 done",
+    "usage": null,
+    "self": {
+      "id": "a4d3fdc9b49dccdbd",
+      "description": "cbproto d1 agent-tool",
+      "type": "cbproto:worker",
+      "status": "completed",
+      "spawnedBy": "cbproto"
+    }
+  }
+]
