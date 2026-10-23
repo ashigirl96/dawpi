@@ -844,6 +844,8 @@ Codex が自分の環境で読む指示ファイルと、Bridge が追加した�
 
 Mod は Supervisor を `$.process.spawn` で起動する。起動は最初に必要になった時点で行い、session の開始時には起動しない。同時に起動しかけたときは、module 変数の Promise 一つにまとめる（[K07]）。`$.process.spawn` の子は、loop を抜けたとき、`next.signal` が abort したとき、module が unload されたときに kill される。
 
+spawn は、必要とした hook の `$` では行わない。`tool.call` の中で spawn した Supervisor は、ユーザーの Esc で dispatch が abort されると一緒に kill された（#21 の実機）。そこで Mod は `session.start` の hook から起動役の loop を一つ回し、必要になった hook はその loop に起動を頼む。spawn は `session.start` の `$` で行うので、頼んだ dispatch の abort では止まらない。`$` は module 変数に入れられない（`claude plugin validate` が拒む）ので、loop の引数で持つ。起動の時点は「最初に必要になったとき」のままである。module の reload では host が Supervisor を kill し、reload で `session.start` が走り直して新しい起動役の loop ができる（#21 の実機）。`/reload-plugins` では module は読み直されず、Supervisor も残った。
+
 通信は Unix domain socket 上の小さな HTTP に限る。`$.process.spawn` の stdout は起動完了の合図と診断にだけ使う。stdin は一度しか書けず、stdout は行の途中で切れるため（[K07]）。socket は `/tmp/<短い名前>/`（mode 700）に置く。socket の path は約 100 byte までなので、長い directory には置けない（[K04]）。一つの session から複数の path に `$.http.fetch` できることは確かめた。
 
 通信は次の二系統とする。
@@ -851,9 +853,13 @@ Mod は Supervisor を `$.process.spawn` で起動する。起動は最初に必
 - `command`: 起動、Host Step の問い合わせ、bind、`wait` などの操作。
 - `events(afterCursor)`: Run ごと、または Pane 用の event の long poll。一回 30 秒まで。Mod は毎回 `next.signal` を確かめる。
 
+`$.http.fetch` は signal を取らないので、hook の中の long poll は fetch と `next.signal` の abort を競わせ、abort が先なら結果を待たずに返る。実機では、Esc から 3〜4 ms で hook が返った。abort した fetch の完了は host の debug log に出なかった（30 秒の上限を過ぎても）。Supervisor 側も 30 秒で応答を返して終わる（#21）。Bun の `Bun.serve` は unix socket でも既定で 10 秒の idle timeout で接続を切るので、Supervisor は `idleTimeout: 0` で待つ（#21 で確かめた）。
+
 Mod が streaming body を扱えることに依存しない。一回の応答は 256 KiB 以下とし、出力全文は別のページ取得にする。heartbeat、lease、所有 epoch、token は持たない（ADR 0001）。
 
-Supervisor は親 process（Claude Code）の消失を周期的に確かめ、消えていたら各 app-server の process group を止めてから終了する。Claude Code が異常終了したときの `$.process.spawn` の子の扱いは、型宣言に書かれていないため（ADR 0001）。
+Supervisor は親 process（Claude Code）の消失を周期的に確かめ、消えていたら各 app-server の process group を止めてから終了する。Claude Code が異常終了したときの `$.process.spawn` の子の扱いは、型宣言に書かれていないため（ADR 0001）。周期は 1 秒で、親の pid が消えたか ppid が変わったかを見る。実機では Claude Code を SIGKILL すると、Supervisor は約 0.5 秒で socket を消して終わった。Supervisor は Claude Code と同じ process group にいるので、Claude Code の端末が閉じると SIGHUP も届く。SIGTERM・SIGINT・SIGHUP でも socket を消して終わる（#21）。
+
+reload の直後は、前と後の Supervisor が同じ socket の path を使いうる。Supervisor は起動時に残った socket を消して listen し、終了時には自分が作った inode のときだけ消す。`Bun.serve` の `stop()` は path を無条件に消すので、終了時に呼ばない。
 
 ### 12.2 Supervisor ↔ Codex
 
@@ -906,7 +912,9 @@ type BridgeEvent = {
 };
 ```
 
-`seq` は Mod の long poll の cursor であり、Supervisor の寿命の中でだけ意味を持つ。項目のキーは run / thread / Codex Turn / item の組にする。app-server は Run ごとに別の process なので、別プロセスの数値 request ID が一致しても混線しない。
+Run に属さない Supervisor の event（`supervisor.started`、診断の `ping`）は、`runId` と `providerRef` を持たない `SupervisorEvent`（`origin: "supervisor"`）として同じ `seq` の列に流す。
+
+`seq` は Mod の long poll の cursor であり、Supervisor の寿命の中でだけ意味を持つ。Supervisor は自分の `seq` より先の cursor を `STATE_CONFLICT` で断る（前の Supervisor の cursor を持ち越した場合）。一つの event が応答の上限を超えるときは、その event の代わりに大きさだけを載せた `event.omitted` を返す。項目のキーは run / thread / Codex Turn / item の組にする。app-server は Run ごとに別の process なので、別プロセスの数値 request ID が一致しても混線しない。
 
 ### 13.2 項目の状態更新
 
@@ -930,7 +938,7 @@ Supervisor は SQLite を持たず、Run・操作・結果・UI 用の項目を 
 
 memory の UI 用の項目と出力には、件数と大きさの上限を設ける。上限を超えた出力は、項目に省略を表示し、全文は Codex から読み直す。
 
-state の directory は mode 700 で作る。終わった session の directory は、Supervisor の起動時に一定の期間を過ぎたものから消す。session の間に消すと Guard が fail open になるので、自分の session の directory は消さない。期間の値は実装で決める。
+state の directory は mode 700 で作る。終わった session の directory は、Supervisor の起動時に一定の期間を過ぎたものから消す。session の間に消すと Guard が fail open になるので、自分の session の directory は消さない。期間は 7 日とする。最後に使った時刻は、directory 自身とその直下の項目（`roster/` など）の mtime のうち最も新しいものとし、Supervisor は自分の session の directory を起動時と 6 時間ごとに touch する。session の長い休止の後に、別の session の Supervisor が消さないようにするため（#21）。
 
 後から Conversation の再利用を Supervisor の寿命の外へ広げるなら、Conversation から thread ID への対応表を保存すれば足りる（ADR 0001）。
 
@@ -1164,7 +1172,7 @@ Mod の module が消えた後に、Worker A が子の完了通知で起こさ�
 | G03 | 子の実際の parent ID が委譲元と一致する | 条件付き | 親の Worker が返す `Agent` の tool chunk で起こした子だけ、孫まで親が一致する。hook の `$.agent.spawn` では `parentAgentId: null` | [K02]、[K12] | R04 未達として配布を止める |
 | G04 | Codex dynamic tool を広告し、呼び出しと応答が完結する | 条件付き | 応答を 15 分保留しても Codex Turn は続く。保留中も model が約 30 秒ごとに poll し、取り消しの通知は無い。`--listen unix://` でだけ送り直しがある | [K03]、[K04] | 再帰機能を利用可能と表示しない |
 | G05 | 子→孫でも同じ経路が動き、ホストの上限を守る | 成立 | 孫まで同じ経路で bind し、caller の検問も効く。深さ 3 の agent には `Agent` が渡らない。Bridge は深さ 3 で委譲の tool を出さない | [K12] | ネスト対応と表示しない |
-| G06 | Supervisor の spawn・Unix socket の HTTP・親の消失と異常終了時の停止が動く | 紙の上 | spawn、socket の HTTP、中継の SIGKILL で app-server が終わることは確かめた。Claude Code の異常終了と親の消失の検出は試していない | [K04]、ADR 0001 | 対象 OS を非対応にする |
+| G06 | Supervisor の spawn・Unix socket の HTTP・親の消失と異常終了時の停止が動く | 紙の上 | spawn、socket の HTTP、中継の SIGKILL で app-server が終わることは確かめた。製品の Supervisor で、Claude Code の SIGKILL から親の消失を検出して終わることも確かめた（#21）。app-server を持った状態での停止は試していない | [K04]、ADR 0001 | 対象 OS を非対応にする |
 | G07 | Pane と agent view の状態が混線せず更新される | 紙の上 | 試していない | — | 実証できた表示面だけ対応とする |
 | G08 | host の最終報告と dynamic wait の経路を区別できる | 条件付き | Codex の親には `bridge_wait` の応答だけで結果が届き、子の Report は親の Worker の会話に入るだけ。親の Worker が Yield し、子と Bell の完了通知を受け取ってから Report することが条件 | [K13]、[K14] | 二重配送のない代替契約を再設計するまで止める |
 | G09 | モデル設定が実際の Codex Turn へ渡り、表示と整合する | 条件付き | 毎回の `turn/start` で明示し、開始時の `thread/settings/updated` と `model/rerouted` を `observed` にすれば整合する。provider が実際に使った model と effort の読み替えは見えない | [K17] | その設定の変更機能を無効化 |
@@ -1279,7 +1287,7 @@ Mod の module が消えた後に、Worker A が子の完了通知で起こさ�
 | 子と Bell の完了通知が会話に入ったことの判定 | 本書は「子の Worker の turn と Bell の終わりの後に来た Host Step の境目」とみなす（8.3）。Host Step の入力に通知が見えるかは段階 B で確かめる |
 | reload の後、前の instance の Worker を止められるか | T42。Guard があるので止められなくても何もできない |
 | Yield した Worker が host の同時実行の枠に数えられるか | T44 |
-| `preparedTtl`、state の directory の掃除の期間、memory の上限 | 実装で決める |
+| `preparedTtl`、memory の上限 | 実装で決める。state の directory の掃除の期間は 7 日に決めた（13.3） |
 | 統合の Codex Turn（8.3） | 実機で確かめていない。段階 B で T13 を流す |
 | shell から別の CLI を起動する経路（8.5） | Bridge だけでは止められない。初期版では制限として表示する |
 | UI（6 章）、承認（10.5）、作業領域（11.1）、予算（9.4）、異常終了（15.3、G06） | 紙の上の設計。段階 C〜E で実装と試験を行う |

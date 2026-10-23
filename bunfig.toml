@@ -1,0 +1,3 @@
+# The Mod's tests import claude-code/testing and run under `claude plugin test`, not bun.
+[test]
+pathIgnorePatterns = ["packages/claude-mod/**"]

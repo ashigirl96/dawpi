@@ -1,0 +1,6 @@
+{
+  "name": "codex-bridge",
+  "version": "0.0.0",
+  "description": "Codex Bridge: runs Codex work from Claude Code through a Supervisor process",
+  "types": "./types/index.d.ts"
+}
