@@ -45,12 +45,13 @@ describe("parent process", () => {
 
     parent.kill("SIGKILL");
     expect(await until(() => !alive(pid), 3000)).toBe(true);
+    expect(existsSync(socketPath)).toBe(false);
   });
 
-  test("SIGTERM stops it and removes its socket", async () => {
+  test.each(["SIGTERM", "SIGHUP"] as const)("%s stops it and removes its socket", async (signal) => {
     const s = await start();
-    s.proc.kill("SIGTERM");
-    await s.proc.exited;
+    s.proc.kill(signal);
+    expect(await s.proc.exited).toBe(0);
     expect(existsSync(s.socketPath)).toBe(false);
   });
 });

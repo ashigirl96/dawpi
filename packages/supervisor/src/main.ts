@@ -56,15 +56,18 @@ function main() {
       if (lstatSync(socketPath).ino === socketIno) unlinkSync(socketPath);
     } catch {}
   };
-  const exit = (reason: string, code: number) => {
-    say({ kind: "exit", reason });
+  const exit = (reason: string) => {
     releaseSocket();
-    process.exit(code);
+    // stdout's reader is usually the parent that just went away.
+    try {
+      say({ kind: "exit", reason });
+    } catch {}
+    process.exit(0);
   };
-  watchParent(PARENT_POLL_MS, () => exit("parent-gone", 0));
+  watchParent(PARENT_POLL_MS, () => exit("parent-gone"));
   setInterval(() => touch(sessionDir), SESSION_TOUCH_MS);
-  process.on("SIGTERM", () => exit("SIGTERM", 0));
-  process.on("SIGINT", () => exit("SIGINT", 0));
+  // The Supervisor shares Claude Code's process group, so closing its terminal sends SIGHUP here too.
+  for (const signal of ["SIGTERM", "SIGINT", "SIGHUP"] as const) process.on(signal, () => exit(signal));
 
   say({ kind: "ready", version: info.version, pid: info.pid, socket: socketPath, sessionDir, removedSessions });
 }
