@@ -1,0 +1,9 @@
+2026-10-23T14:22:56.529Z [DEBUG] Ignoring dangerous permission Agent(cbp15:worker) from ../cbp15/flag-settings.json (bypasses classifier)
+2026-10-23T14:22:57.093Z [DEBUG] Ignoring dangerous permission Agent(cbp15:worker) from ../cbp15/flag-settings.json (bypasses classifier)
+2026-10-23T14:23:05.177Z [DEBUG] tool.call mcp__cbp15__delegate toolu_014MjebL5NvEZukdRKLEpW7u: resolved by a hooks module (result)
+2026-10-23T14:23:06.604Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_019KHAtVDu5U8G6MbMYeANAW permissionDecisionMs=303
+2026-10-23T14:23:06.659Z [DEBUG] "Permission suggestions for Bash: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"Read\",\n        \"ruleContent\": \"/~/.cbp15-proto/bells/**\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"session\"\n  }\n]"
+2026-10-23T14:23:06.663Z [WARN] Auto mode classifier unavailable, denying with retry guidance (fail closed)
+2026-10-23T14:23:06.663Z [DEBUG] Bash tool permission denied
+2026-10-23T14:23:06.678Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T14:23:10.942Z [DEBUG] tool.call mcp__cbp15__status toolu_01Pp5ku5jeyL8AaY98xX4pJj: resolved by a hooks module (result)

@@ -1,0 +1,7 @@
+2026-10-23T14:24:53.713Z [DEBUG] tool.call mcp__cbp15__delegate toolu_01Y78yZJ8hbnJenooJNjPyiM: resolved by a hooks module (result)
+2026-10-23T14:24:55.435Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01Uneaq4pkqJ1v1mUnRDs9RD permissionDecisionMs=507
+2026-10-23T14:24:55.491Z [DEBUG] "Permission suggestions for Bash: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"Read\",\n        \"ruleContent\": \"/~/.cbp15-proto/bells/**\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"session\"\n  }\n]"
+2026-10-23T14:24:55.494Z [WARN] Auto mode classifier unavailable, denying with retry guidance (fail closed)
+2026-10-23T14:24:55.495Z [DEBUG] Bash tool permission denied
+2026-10-23T14:24:55.512Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T14:24:59.681Z [DEBUG] tool.call mcp__cbp15__status toolu_016p7mLYz4J43XvRbHuuqg3D: resolved by a hooks module (result)

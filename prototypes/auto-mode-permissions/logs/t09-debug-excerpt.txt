@@ -1,0 +1,6 @@
+2026-10-23T14:23:49.505Z [DEBUG] tool.call mcp__cbp15__delegate toolu_01Wz4mBCht88fs8o4WwopU4e: resolved by a hooks module (result)
+2026-10-23T14:23:51.298Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_016RpEXkAVHt1mmq4DZJGXuK permissionDecisionMs=351
+2026-10-23T14:23:51.368Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp15y9398b2u permissionDecisionMs=8
+2026-10-23T14:23:52.454Z [DEBUG] tool.call mcp__cbp15__status toolu_cbp15ftbjqw5w: resolved by a hooks module (result)
+2026-10-23T14:23:52.473Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T14:23:56.929Z [DEBUG] tool.call mcp__cbp15__status toolu_01WJte3Q9pE4ccp4YnauFuHr: resolved by a hooks module (result)

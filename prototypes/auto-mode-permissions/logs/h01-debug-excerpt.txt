@@ -1,0 +1,12 @@
+2026-10-23T14:29:45.734Z [DEBUG] tool.call mcp__cbp15__delegate toolu_01Y54D3RUowwwSQoGrQidDXk: resolved by a hooks module (result)
+2026-10-23T14:29:47.294Z [DEBUG] cbp15: tool.check bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T14:29:47.294Z [DEBUG] [cbp15] $.ui.log: its tool.check hook was skipped. "cc-plugin-sec-default" runs first and sent the event on past it.
+2026-10-23T14:29:47.295Z [DEBUG] tool.check Agent toolu_01U61VNHvUAFVc9zX6JnJzTm: ask -> allow by plugins cc-plugin-sec-default, cbp15
+2026-10-23T14:29:47.296Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01U61VNHvUAFVc9zX6JnJzTm permissionDecisionMs=4
+2026-10-23T14:29:47.340Z [DEBUG] "Permission suggestions for Bash: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"Read\",\n        \"ruleContent\": \"/~/.cbp15-proto/bells/**\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"session\"\n  }\n]"
+2026-10-23T14:29:47.340Z [DEBUG] tool.check Bash toolu_cbp15yy9luhjz: ask -> allow by plugins cc-plugin-sec-default, cbp15
+2026-10-23T14:29:47.341Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp15yy9luhjz permissionDecisionMs=6
+2026-10-23T14:29:48.118Z [DEBUG] tool.call mcp__cbp15__status toolu_cbp15y8nil6u6: resolved by a hooks module (result)
+2026-10-23T14:29:48.137Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T14:29:53.389Z [DEBUG] tool.call mcp__cbp15__status toolu_01NWxoPgog2oSspeduwGgN6F: resolved by a hooks module (result)
+2026-10-23T14:29:57.295Z [DEBUG] cbp15: tool.check bypassed by cc-plugin-sec-default (tier user) 1 more times in the last 10s

@@ -1,0 +1,15 @@
+2026-10-23T14:35:23.980Z [DEBUG] "Permission suggestions for mcp__cbp15__delegate: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"mcp__cbp15__delegate\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"localSettings\"\n  }\n]"
+2026-10-23T14:35:24.286Z [ERROR] MCP server "cbp15" cbp15 registered the tool delegate but no tool.call hook answered this call: add on("tool.call", { tool: "mcp__cbp15__delegate" }, ($, e) => ({ result: ... })) to the plugin.
+2026-10-23T14:35:24.286Z [DEBUG] MCP server "cbp15": Tool 'delegate' failed after 0s: cbp15 registered the tool delegate but no tool.call hook answered this call: add on("tool.call", { tool: "mcp__cbp15__delegate" }, ($, e) => ({ result: ... })) to the plugin.
+2026-10-23T14:35:24.297Z [DEBUG] tool.call mcp__cbp15__delegate toolu_01AVL3A3sQDj6yA7Br3EeWjf: resolved by a hooks module (result)
+2026-10-23T14:35:25.324Z [DEBUG] cbp15: tool.check bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T14:35:25.325Z [DEBUG] [cbp15] $.ui.log: its tool.check hook was skipped. "cc-plugin-sec-default" runs first and sent the event on past it.
+2026-10-23T14:35:25.326Z [DEBUG] tool.check Agent toolu_01Bk9PygCtLsy3y5YV3prpAD: ask -> allow by plugins cc-plugin-sec-default, cbp15
+2026-10-23T14:35:25.327Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01Bk9PygCtLsy3y5YV3prpAD permissionDecisionMs=3
+2026-10-23T14:35:25.369Z [DEBUG] "Permission suggestions for Bash: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"Read\",\n        \"ruleContent\": \"/~/.cbp15-proto/bells/**\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"session\"\n  }\n]"
+2026-10-23T14:35:25.370Z [DEBUG] tool.check Bash toolu_cbp1535v09xg3: ask -> allow by plugins cc-plugin-sec-default, cbp15
+2026-10-23T14:35:25.370Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp1535v09xg3 permissionDecisionMs=5
+2026-10-23T14:35:26.214Z [DEBUG] tool.call mcp__cbp15__status toolu_cbp15gp4nq0bw: resolved by a hooks module (result)
+2026-10-23T14:35:26.233Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T14:35:31.264Z [DEBUG] tool.call mcp__cbp15__status toolu_01RT2hNGqiNd4ww1cBwnvVaz: resolved by a hooks module (result)
+2026-10-23T14:35:35.325Z [DEBUG] cbp15: tool.check bypassed by cc-plugin-sec-default (tier user) 1 more times in the last 10s
