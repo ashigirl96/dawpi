@@ -1053,9 +1053,10 @@ v1 の `DELIVERY_UNKNOWN` と `retry: "after-reconcile"` は、照合の手順�
 （repo の直下）
   packages/
     contracts/
-      schemas/               # 入力・結果・イベントの定義
-      generated/             # TypeScript と検証器
-      errors.ts
+      src/schema.ts          # schema をデータで書く小さな DSL。検証器・TypeScript の型・JSON Schema をここから導く
+      src/schemas/           # 入力・結果・イベントの定義
+      src/permissions.ts     # 既定より緩い権限を grant と照らす判定
+      src/errors.ts
 
     supervisor/
       admission/             # 設定解決、catalog の検証、制約、予算予約
@@ -1087,7 +1088,7 @@ v1 の `DELIVERY_UNKNOWN` と `retry: "after-reconcile"` は、照合の手順�
     supported-builds.json
 ```
 
-contracts は純粋なデータと検証のみで、Bun や Claude Code を import しない。Supervisor は Claude の会話ラッパーや JSX を知らない。Mod の UI は provider RPC を直接呼ばない。Mod は Run の正本を持たず、Supervisor が決めた Host Step をそのまま返す。
+contracts は純粋なデータと検証のみで、Bun や Claude Code を import しない。実行時の依存も持たない。生成の段を置かず、schema のデータから型と検証器を導くので、両者がずれない。Supervisor は Claude の会話ラッパーや JSX を知らない。Mod の UI は provider RPC を直接呼ばない。Mod は Run の正本を持たず、Supervisor が決めた Host Step をそのまま返す。
 
 v1 の `supervisor/storage/` と `bootstrap.ts` は持たない（ADR 0001）。初期段階で汎用 Repository フレームワークや多 provider 抽象を追加しない。
 
