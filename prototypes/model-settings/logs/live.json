@@ -1,0 +1,3658 @@
+{
+ "scenario": "live",
+ "versions": {
+  "codex": "0.163.0",
+  "bun": "1.4.4"
+ },
+ "results": [
+  {
+   "case": "model/list",
+   "models": [
+    {
+     "id": "gpt-6.1-sol",
+     "model": "gpt-6.1-sol",
+     "hidden": false,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max",
+      "ultra"
+     ],
+     "default": "medium",
+     "upgrade": null
+    },
+    {
+     "id": "gpt-6-astra",
+     "model": "gpt-6-astra",
+     "hidden": false,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max",
+      "ultra"
+     ],
+     "default": "low",
+     "upgrade": null
+    },
+    {
+     "id": "gpt-6-sol",
+     "model": "gpt-6-sol",
+     "hidden": false,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max",
+      "ultra"
+     ],
+     "default": "medium",
+     "upgrade": null
+    },
+    {
+     "id": "gpt-reserve",
+     "model": "gpt-reserve",
+     "hidden": true,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+     ],
+     "default": "medium",
+     "upgrade": null
+    },
+    {
+     "id": "gpt-6-luna",
+     "model": "gpt-6-luna",
+     "hidden": false,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+     ],
+     "default": "medium",
+     "upgrade": null
+    },
+    {
+     "id": "gpt-5.6-sol",
+     "model": "gpt-5.6-sol",
+     "hidden": false,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max",
+      "ultra"
+     ],
+     "default": "medium",
+     "upgrade": null
+    },
+    {
+     "id": "gpt-5.6-terra",
+     "model": "gpt-5.6-terra",
+     "hidden": false,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max",
+      "ultra"
+     ],
+     "default": "medium",
+     "upgrade": null
+    },
+    {
+     "id": "gpt-5.6-luna",
+     "model": "gpt-5.6-luna",
+     "hidden": false,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+     ],
+     "default": "medium",
+     "upgrade": null
+    },
+    {
+     "id": "codex-auto-review",
+     "model": "codex-auto-review",
+     "hidden": true,
+     "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+     ],
+     "default": "medium",
+     "upgrade": null
+    }
+   ]
+  },
+  {
+   "case": "baseline M1 low",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null
+   },
+   "turnParams": {
+    "model": "gpt-5.6-luna",
+    "effort": "low"
+   },
+   "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+   "status": "completed",
+   "error": null,
+   "notifications": [
+    {
+     "method": "thread/settings/updated",
+     "params": {
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "effort": "low"
+     }
+    }
+   ],
+   "reply": "OK",
+   "threadRead": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": "low"
+   },
+   "rollout": [
+    {
+     "turn_id": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   ],
+   "usage": {
+    "totalTokens": 11842,
+    "inputTokens": 11837,
+    "cachedInputTokens": 10112,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 5,
+    "reasoningOutputTokens": 0
+   }
+  },
+  {
+   "case": "thread/start unknown model",
+   "threadStart": {
+    "model": "gpt-nope-1",
+    "reasoningEffort": null
+   },
+   "turnParams": {},
+   "turnId": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+   "status": "failed",
+   "error": {
+    "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+    "codexErrorInfo": "other",
+    "additionalDetails": null,
+    "misalignment": null
+   },
+   "notifications": [
+    {
+     "method": "warning",
+     "params": {
+      "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "message": "Model metadata for `gpt-nope-1` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+     }
+    },
+    {
+     "method": "error",
+     "params": {
+      "error": {
+       "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "willRetry": false,
+      "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "turnId": "01a16957-a769-74d1-8baa-4d89e9f66be2"
+     }
+    }
+   ],
+   "reply": "",
+   "threadRead": {
+    "model": "gpt-nope-1",
+    "reasoningEffort": null
+   },
+   "rollout": [
+    {
+     "turn_id": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+     "model": "gpt-nope-1"
+    }
+   ]
+  },
+  {
+   "case": "turn/start unknown model",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null
+   },
+   "turnParams": {
+    "model": "gpt-nope-1",
+    "effort": "low"
+   },
+   "turnId": "01a16957-ae53-7150-a7fb-3f44d22df713",
+   "status": "failed",
+   "error": {
+    "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+    "codexErrorInfo": "other",
+    "additionalDetails": null,
+    "misalignment": null
+   },
+   "notifications": [
+    {
+     "method": "thread/settings/updated",
+     "params": {
+      "model": "gpt-nope-1",
+      "modelProvider": "openai",
+      "effort": "low"
+     }
+    },
+    {
+     "method": "warning",
+     "params": {
+      "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "message": "Model metadata for `gpt-nope-1` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+     }
+    },
+    {
+     "method": "error",
+     "params": {
+      "error": {
+       "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "willRetry": false,
+      "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "turnId": "01a16957-ae53-7150-a7fb-3f44d22df713"
+     }
+    }
+   ],
+   "reply": "",
+   "threadRead": {
+    "model": "gpt-nope-1",
+    "reasoningEffort": "low"
+   },
+   "rollout": [
+    {
+     "turn_id": "01a16957-ae53-7150-a7fb-3f44d22df713",
+     "model": "gpt-nope-1",
+     "effort": "low"
+    }
+   ]
+  },
+  {
+   "case": "turn/start effort the catalog does not list (minimal)",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null
+   },
+   "turnParams": {
+    "model": "gpt-5.6-luna",
+    "effort": "minimal"
+   },
+   "turnId": "01a16957-b276-7151-ad71-5d636b4f0d30",
+   "status": "failed",
+   "error": {
+    "message": "{\"type\":\"error\",\"error\":{\"message\":\"Unsupported value: 'minimal' is not supported with the 'gpt-5.6-luna' model. Supported values are: 'none', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":\"reasoning.effort\",\"code\":\"unsupported_value\"},\"status\":400}",
+    "codexErrorInfo": "other",
+    "additionalDetails": null,
+    "misalignment": null
+   },
+   "notifications": [
+    {
+     "method": "thread/settings/updated",
+     "params": {
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "effort": "minimal"
+     }
+    },
+    {
+     "method": "error",
+     "params": {
+      "error": {
+       "message": "{\"type\":\"error\",\"error\":{\"message\":\"Unsupported value: 'minimal' is not supported with the 'gpt-5.6-luna' model. Supported values are: 'none', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":\"reasoning.effort\",\"code\":\"unsupported_value\"},\"status\":400}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "willRetry": false,
+      "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+      "turnId": "01a16957-b276-7151-ad71-5d636b4f0d30"
+     }
+    }
+   ],
+   "reply": "",
+   "threadRead": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": "minimal"
+   },
+   "rollout": [
+    {
+     "turn_id": "01a16957-b276-7151-ad71-5d636b4f0d30",
+     "model": "gpt-5.6-luna",
+     "effort": "minimal"
+    }
+   ]
+  },
+  {
+   "case": "turn/start effort that is not a word Codex knows",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null
+   },
+   "turnParams": {
+    "model": "gpt-5.6-luna",
+    "effort": "banana"
+   },
+   "turnId": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+   "status": "failed",
+   "error": {
+    "message": "{\"type\":\"error\",\"error\":{\"message\":\"Invalid response.create payload: Invalid value: 'banana'. Supported values are: 'none', 'minimal', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null},\"status\":400}",
+    "codexErrorInfo": "other",
+    "additionalDetails": null,
+    "misalignment": null
+   },
+   "notifications": [
+    {
+     "method": "thread/settings/updated",
+     "params": {
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "effort": "banana"
+     }
+    },
+    {
+     "method": "error",
+     "params": {
+      "error": {
+       "message": "{\"type\":\"error\",\"error\":{\"message\":\"Invalid response.create payload: Invalid value: 'banana'. Supported values are: 'none', 'minimal', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null},\"status\":400}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "willRetry": false,
+      "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+      "turnId": "01a16957-b781-7d13-b743-d78c95fa9d4b"
+     }
+    }
+   ],
+   "reply": "",
+   "threadRead": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": "banana"
+   },
+   "rollout": [
+    {
+     "turn_id": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+     "model": "gpt-5.6-luna",
+     "effort": "banana"
+    }
+   ]
+  }
+ ],
+ "log": [
+  {
+   "t": 4,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "clientInfo": {
+      "name": "cbp17-live",
+      "title": null,
+      "version": "0"
+     },
+     "capabilities": {
+      "experimentalApi": true,
+      "requestAttestation": false
+     }
+    }
+   }
+  },
+  {
+   "t": 31,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 1,
+    "result": {
+     "userAgent": "cbp17-live/0.163.0 (Mac OS 26.6.2; arm64) WezTerm (cbp17-live; 0)",
+     "codexHome": "~/.codex-bridge/codex-home",
+     "platformFamily": "unix",
+     "platformOs": "macos"
+    }
+   }
+  },
+  {
+   "t": 31,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "method": "initialized"
+   }
+  },
+  {
+   "t": 31,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 2,
+    "method": "model/list",
+    "params": {
+     "includeHidden": true
+    }
+   }
+  },
+  {
+   "t": 31,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "remoteControl/status/changed",
+    "params": {
+     "status": "disabled",
+     "serverName": "<host>",
+     "installationId": "ff9d05b6-4b4e-42bd-aadf-f58844e54431",
+     "environmentId": null
+    },
+    "emittedAtMs": 1792768709680
+   }
+  },
+  {
+   "t": 361,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 2,
+    "result": {
+     "data": [
+      {
+       "id": "gpt-6.1-sol",
+       "model": "gpt-6.1-sol",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": {
+        "message": "Maximize usage with GPT-6.1 Sol. Try it on complex work for near-Astra performance at a lower cost."
+       },
+       "displayName": "GPT-6.1-Sol",
+       "description": "Latest workhorse model for coding and everyday work.",
+       "modelSpecialty": null,
+       "hidden": false,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+         "reasoningEffort": "ultra",
+         "description": "Maximum reasoning with automatic task delegation"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v2",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "2x speed, increased usage"
+        }
+       ],
+       "defaultServiceTier": null,
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": true
+      },
+      {
+       "id": "gpt-6-astra",
+       "model": "gpt-6-astra",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "GPT-6-Astra",
+       "description": "Frontier intelligence for the most demanding work.",
+       "modelSpecialty": null,
+       "hidden": false,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+         "reasoningEffort": "ultra",
+         "description": "Maximum reasoning with automatic task delegation"
+        }
+       ],
+       "defaultReasoningEffort": "low",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v2",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "2x speed, increased usage"
+        }
+       ],
+       "defaultServiceTier": null,
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      },
+      {
+       "id": "gpt-6-sol",
+       "model": "gpt-6-sol",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "GPT-6-Sol",
+       "description": "Previous generation workhorse model.",
+       "modelSpecialty": null,
+       "hidden": false,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+         "reasoningEffort": "ultra",
+         "description": "Maximum reasoning with automatic task delegation"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v2",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "1.5x speed"
+        }
+       ],
+       "defaultServiceTier": null,
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      },
+      {
+       "id": "gpt-reserve",
+       "model": "gpt-reserve",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "GPT-Reserve",
+       "description": "Fast and affordable agentic coding model.",
+       "modelSpecialty": null,
+       "hidden": true,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v1",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "1.5x speed, increased usage"
+        }
+       ],
+       "defaultServiceTier": "priority",
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      },
+      {
+       "id": "gpt-6-luna",
+       "model": "gpt-6-luna",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "GPT-6-Luna",
+       "description": "Fast and affordable model for easier tasks.",
+       "modelSpecialty": null,
+       "hidden": false,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v2",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "1.5x speed"
+        }
+       ],
+       "defaultServiceTier": null,
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      },
+      {
+       "id": "gpt-5.6-sol",
+       "model": "gpt-5.6-sol",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "GPT-5.6-Sol",
+       "description": "Older generation workhorse model.",
+       "modelSpecialty": null,
+       "hidden": false,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+         "reasoningEffort": "ultra",
+         "description": "Maximum reasoning with automatic task delegation"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v2",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "1.5x speed, increased usage"
+        }
+       ],
+       "defaultServiceTier": null,
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      },
+      {
+       "id": "gpt-5.6-terra",
+       "model": "gpt-5.6-terra",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "GPT-5.6-Terra",
+       "description": "Older balanced model for straightforward work.",
+       "modelSpecialty": null,
+       "hidden": false,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        },
+        {
+         "reasoningEffort": "ultra",
+         "description": "Maximum reasoning with automatic task delegation"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v2",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "1.5x speed, increased usage"
+        }
+       ],
+       "defaultServiceTier": null,
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      },
+      {
+       "id": "gpt-5.6-luna",
+       "model": "gpt-5.6-luna",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "GPT-5.6-Luna",
+       "description": "Older fast and efficient model.",
+       "modelSpecialty": null,
+       "hidden": false,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v1",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "1.5x speed, increased usage"
+        }
+       ],
+       "defaultServiceTier": null,
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      },
+      {
+       "id": "codex-auto-review",
+       "model": "codex-auto-review",
+       "upgrade": null,
+       "upgradeInfo": null,
+       "availabilityNux": null,
+       "displayName": "Codex Auto Review",
+       "description": "Automatic approval review model for Codex.",
+       "modelSpecialty": null,
+       "hidden": true,
+       "supportedReasoningEfforts": [
+        {
+         "reasoningEffort": "low",
+         "description": "Fast responses with lighter reasoning"
+        },
+        {
+         "reasoningEffort": "medium",
+         "description": "Balances speed and reasoning depth for everyday tasks"
+        },
+        {
+         "reasoningEffort": "high",
+         "description": "Greater reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "xhigh",
+         "description": "Extra high reasoning depth for complex problems"
+        },
+        {
+         "reasoningEffort": "max",
+         "description": "Maximum reasoning depth for the hardest problems"
+        }
+       ],
+       "defaultReasoningEffort": "medium",
+       "inputModalities": [
+        "text",
+        "image"
+       ],
+       "supportsPersonality": false,
+       "multiAgentVersion": "v1",
+       "additionalSpeedTiers": [
+        "fast"
+       ],
+       "serviceTiers": [
+        {
+         "id": "priority",
+         "name": "Fast",
+         "description": "1.5x speed, increased usage"
+        }
+       ],
+       "defaultServiceTier": "priority",
+       "availableAccessPrograms": {
+        "cyber": [
+         "standard"
+        ]
+       },
+       "isDefault": false
+      }
+     ],
+     "nextCursor": null
+    }
+   }
+  },
+  {
+   "t": 361,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 3,
+    "method": "thread/start",
+    "params": {
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user",
+     "model": "gpt-5.6-luna"
+    }
+   }
+  },
+  {
+   "t": 433,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 3,
+    "result": {
+     "thread": {
+      "id": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768710,
+      "updatedAt": 1792768710,
+      "recencyAt": 1792768710,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-30-01a16957-957c-7841-8ecb-74b5fff8c8da.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 433,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 4,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "input": [
+      {
+       "type": "text",
+       "text": "Reply with exactly OK.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 433,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768710,
+      "updatedAt": 1792768710,
+      "recencyAt": 1792768710,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-30-01a16957-957c-7841-8ecb-74b5fff8c8da.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792768710081
+   }
+  },
+  {
+   "t": 434,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792768710083
+   }
+  },
+  {
+   "t": 435,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 4,
+    "result": {
+     "turn": {
+      "id": "01a16957-95c2-7d50-8808-70c7190a2dec",
+      "rootTurnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 481,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792768710129
+   }
+  },
+  {
+   "t": 481,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turn": {
+      "id": "01a16957-95c2-7d50-8808-70c7190a2dec",
+      "rootTurnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792768710,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792768710129
+   }
+  },
+  {
+   "t": 1431,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "account/updated",
+    "params": {
+     "authMode": "chatgpt",
+     "planType": "team"
+    },
+    "emittedAtMs": 1792768711080
+   }
+  },
+  {
+   "t": 2683,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-9e8b-7931-a9f7-4063da40267a",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "startedAtMs": 1792768712332
+    },
+    "emittedAtMs": 1792768712332
+   }
+  },
+  {
+   "t": 2685,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-9e8b-7931-a9f7-4063da40267a",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "completedAtMs": 1792768712332
+    },
+    "emittedAtMs": 1792768712334
+   }
+  },
+  {
+   "t": 4768,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_0931e7ec2dc1be28016adb7aca69208191aa7df332b394ad68",
+      "text": "",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "startedAtMs": 1792768714417
+    },
+    "emittedAtMs": 1792768714417
+   }
+  },
+  {
+   "t": 4774,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "itemId": "msg_0931e7ec2dc1be28016adb7aca69208191aa7df332b394ad68",
+     "delta": "OK"
+    },
+    "emittedAtMs": 1792768714423
+   }
+  },
+  {
+   "t": 4838,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "metadata": {
+      "prompt": {
+       "omnimod": {
+        "protection_type": "omnimod",
+        "outputs": [
+         {
+          "results": [
+           {
+            "category_flags": {
+             "A1": false,
+             "A2": false,
+             "A3": false,
+             "C1": false,
+             "C11": false,
+             "C2": false,
+             "E1": false,
+             "E2": false,
+             "E3": false,
+             "H1": false,
+             "H2": false,
+             "H3": false,
+             "JB1": false,
+             "K1": false,
+             "K2": false,
+             "K3": false,
+             "K4": false,
+             "P1": false,
+             "P2": false,
+             "P3": false,
+             "P4": false,
+             "PD1": false,
+             "PD4": false,
+             "S1": false,
+             "S3+": false,
+             "S4": false,
+             "SH": false,
+             "TXT-C3": false,
+             "TXT-C4": false,
+             "V1": false,
+             "V2+": false,
+             "V4+": false,
+             "REFUSED": false,
+             "CBRN-B1+": false,
+             "IMG-C1": false,
+             "IMG-C11": false,
+             "IMG-C2": false,
+             "IMG-S1": false,
+             "IMG-SH": false,
+             "IMG-V1": false,
+             "IMG-V2+": false,
+             "IMG-V4+": false
+            }
+           }
+          ],
+          "is_blocked": false
+         }
+        ]
+       }
+      },
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792768714487
+   }
+  },
+  {
+   "t": 4840,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_0931e7ec2dc1be28016adb7aca69208191aa7df332b394ad68",
+      "text": "OK",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "completedAtMs": 1792768714487
+    },
+    "emittedAtMs": 1792768714489
+   }
+  },
+  {
+   "t": 4849,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 11842,
+       "inputTokens": 11837,
+       "cachedInputTokens": 10112,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 5,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 11842,
+       "inputTokens": 11837,
+       "cachedInputTokens": 10112,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 5,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792768714497
+   }
+  },
+  {
+   "t": 4849,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792781733
+      },
+      "secondary": {
+       "usedPercent": 1,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793350476
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792768714497
+   }
+  },
+  {
+   "t": 4855,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec"
+      },
+      "revision": "0a2e9886-f4c4-4d88-82d7-2db556d7a73b"
+     }
+    },
+    "emittedAtMs": 1792768714504
+   }
+  },
+  {
+   "t": 4855,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792768714504
+   }
+  },
+  {
+   "t": 4855,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+     "turn": {
+      "id": "01a16957-95c2-7d50-8808-70c7190a2dec",
+      "rootTurnId": "01a16957-95c2-7d50-8808-70c7190a2dec",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_0931e7ec2dc1be28016adb7aca69208191aa7df332b394ad68",
+        "text": "OK",
+        "phase": "final_answer",
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792768710,
+      "completedAt": 1792768714,
+      "durationMs": 4416
+     }
+    },
+    "emittedAtMs": 1792768714504
+   }
+  },
+  {
+   "t": 4856,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 5,
+    "method": "thread/read",
+    "params": {
+     "threadId": "01a16957-957c-7841-8ecb-74b5fff8c8da"
+    }
+   }
+  },
+  {
+   "t": 4857,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 5,
+    "result": {
+     "thread": {
+      "id": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-957c-7841-8ecb-74b5fff8c8da",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "Reply with exactly OK.",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "low",
+      "createdAt": 1792768710,
+      "updatedAt": 1792768714,
+      "recencyAt": 1792768710,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-30-01a16957-957c-7841-8ecb-74b5fff8c8da.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": {
+       "sha": "52a4d3ae71f0a051d26655f1f7b7fea9a2066f83",
+       "branch": "prototype/model-settings",
+       "originUrl": "git@github.com:ashigirl96/dawpi.git"
+      },
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-95c2-7d50-8808-70c7190a2dec"
+      },
+      "revision": "0a2e9886-f4c4-4d88-82d7-2db556d7a73b"
+     }
+    }
+   }
+  },
+  {
+   "t": 4890,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 6,
+    "method": "thread/start",
+    "params": {
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user",
+     "model": "gpt-nope-1"
+    }
+   }
+  },
+  {
+   "t": 4951,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 6,
+    "result": {
+     "thread": {
+      "id": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-nope-1",
+      "reasoningEffort": null,
+      "createdAt": 1792768714,
+      "updatedAt": 1792768714,
+      "recencyAt": 1792768714,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-34-01a16957-a72c-70f0-ae25-a4f8b0532944.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-nope-1",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 4951,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 7,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "input": [
+      {
+       "type": "text",
+       "text": "Reply with exactly OK.",
+       "text_elements": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 4951,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-nope-1",
+      "reasoningEffort": null,
+      "createdAt": 1792768714,
+      "updatedAt": 1792768714,
+      "recencyAt": 1792768714,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-34-01a16957-a72c-70f0-ae25-a4f8b0532944.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792768714600
+   }
+  },
+  {
+   "t": 4953,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "warning",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "message": "Model metadata for `gpt-nope-1` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    },
+    "emittedAtMs": 1792768714602
+   }
+  },
+  {
+   "t": 4953,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 7,
+    "result": {
+     "turn": {
+      "id": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+      "rootTurnId": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 4992,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792768714641
+   }
+  },
+  {
+   "t": 4992,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "turn": {
+      "id": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+      "rootTurnId": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792768714,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792768714641
+   }
+  },
+  {
+   "t": 5819,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-aacb-7b93-86e9-fffd288780e8",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "turnId": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+     "startedAtMs": 1792768715468
+    },
+    "emittedAtMs": 1792768715468
+   }
+  },
+  {
+   "t": 5820,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-aacb-7b93-86e9-fffd288780e8",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "turnId": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+     "completedAtMs": 1792768715468
+    },
+    "emittedAtMs": 1792768715469
+   }
+  },
+  {
+   "t": 6615,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "status": {
+      "type": "systemError"
+     }
+    },
+    "emittedAtMs": 1792768716264
+   }
+  },
+  {
+   "t": 6616,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "error",
+    "params": {
+     "error": {
+      "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+      "codexErrorInfo": "other",
+      "additionalDetails": null,
+      "misalignment": null
+     },
+     "willRetry": false,
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "turnId": "01a16957-a769-74d1-8baa-4d89e9f66be2"
+    },
+    "emittedAtMs": 1792768716264
+   }
+  },
+  {
+   "t": 6620,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-a769-74d1-8baa-4d89e9f66be2"
+      },
+      "revision": "4a3c6111-3c0e-4818-8081-6fef2748e036"
+     }
+    },
+    "emittedAtMs": 1792768716269
+   }
+  },
+  {
+   "t": 6620,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+     "turn": {
+      "id": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+      "rootTurnId": "01a16957-a769-74d1-8baa-4d89e9f66be2",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "failed",
+      "error": {
+       "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "startedAt": 1792768714,
+      "completedAt": 1792768716,
+      "durationMs": 1663
+     }
+    },
+    "emittedAtMs": 1792768716269
+   }
+  },
+  {
+   "t": 6621,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 8,
+    "method": "thread/read",
+    "params": {
+     "threadId": "01a16957-a72c-70f0-ae25-a4f8b0532944"
+    }
+   }
+  },
+  {
+   "t": 6622,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 8,
+    "result": {
+     "thread": {
+      "id": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-a72c-70f0-ae25-a4f8b0532944",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "Reply with exactly OK.",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-nope-1",
+      "reasoningEffort": null,
+      "createdAt": 1792768714,
+      "updatedAt": 1792768716,
+      "recencyAt": 1792768714,
+      "status": {
+       "type": "systemError"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-34-01a16957-a72c-70f0-ae25-a4f8b0532944.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": {
+       "sha": "52a4d3ae71f0a051d26655f1f7b7fea9a2066f83",
+       "branch": "prototype/model-settings",
+       "originUrl": "git@github.com:ashigirl96/dawpi.git"
+      },
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-a769-74d1-8baa-4d89e9f66be2"
+      },
+      "revision": "4a3c6111-3c0e-4818-8081-6fef2748e036"
+     }
+    }
+   }
+  },
+  {
+   "t": 6657,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 9,
+    "method": "thread/start",
+    "params": {
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user",
+     "model": "gpt-5.6-luna"
+    }
+   }
+  },
+  {
+   "t": 6721,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 9,
+    "result": {
+     "thread": {
+      "id": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768716,
+      "updatedAt": 1792768716,
+      "recencyAt": 1792768716,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-36-01a16957-ae14-7b01-9d63-03218ae1723a.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 6722,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 10,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "input": [
+      {
+       "type": "text",
+       "text": "Reply with exactly OK.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-nope-1",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 6722,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768716,
+      "updatedAt": 1792768716,
+      "recencyAt": 1792768716,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-36-01a16957-ae14-7b01-9d63-03218ae1723a.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792768716370
+   }
+  },
+  {
+   "t": 6723,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-nope-1",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-nope-1",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792768716372
+   }
+  },
+  {
+   "t": 6723,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "warning",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "message": "Model metadata for `gpt-nope-1` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    },
+    "emittedAtMs": 1792768716372
+   }
+  },
+  {
+   "t": 6723,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 10,
+    "result": {
+     "turn": {
+      "id": "01a16957-ae53-7150-a7fb-3f44d22df713",
+      "rootTurnId": "01a16957-ae53-7150-a7fb-3f44d22df713",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 6763,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792768716412
+   }
+  },
+  {
+   "t": 6763,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "turn": {
+      "id": "01a16957-ae53-7150-a7fb-3f44d22df713",
+      "rootTurnId": "01a16957-ae53-7150-a7fb-3f44d22df713",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792768716,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792768716412
+   }
+  },
+  {
+   "t": 7583,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-b1b0-76a2-a023-410e2d36a6ec",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "turnId": "01a16957-ae53-7150-a7fb-3f44d22df713",
+     "startedAtMs": 1792768717232
+    },
+    "emittedAtMs": 1792768717232
+   }
+  },
+  {
+   "t": 7584,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-b1b0-76a2-a023-410e2d36a6ec",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "turnId": "01a16957-ae53-7150-a7fb-3f44d22df713",
+     "completedAtMs": 1792768717232
+    },
+    "emittedAtMs": 1792768717233
+   }
+  },
+  {
+   "t": 7696,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "status": {
+      "type": "systemError"
+     }
+    },
+    "emittedAtMs": 1792768717345
+   }
+  },
+  {
+   "t": 7696,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "error",
+    "params": {
+     "error": {
+      "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+      "codexErrorInfo": "other",
+      "additionalDetails": null,
+      "misalignment": null
+     },
+     "willRetry": false,
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "turnId": "01a16957-ae53-7150-a7fb-3f44d22df713"
+    },
+    "emittedAtMs": 1792768717345
+   }
+  },
+  {
+   "t": 7697,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-ae53-7150-a7fb-3f44d22df713"
+      },
+      "revision": "8bcf0215-041d-4718-a345-690116323021"
+     }
+    },
+    "emittedAtMs": 1792768717346
+   }
+  },
+  {
+   "t": 7698,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+     "turn": {
+      "id": "01a16957-ae53-7150-a7fb-3f44d22df713",
+      "rootTurnId": "01a16957-ae53-7150-a7fb-3f44d22df713",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "failed",
+      "error": {
+       "message": "{\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-nope-1' model is not supported when using Codex with a ChatGPT account.\"}}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "startedAt": 1792768716,
+      "completedAt": 1792768717,
+      "durationMs": 973
+     }
+    },
+    "emittedAtMs": 1792768717346
+   }
+  },
+  {
+   "t": 7698,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 11,
+    "method": "thread/read",
+    "params": {
+     "threadId": "01a16957-ae14-7b01-9d63-03218ae1723a"
+    }
+   }
+  },
+  {
+   "t": 7698,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 11,
+    "result": {
+     "thread": {
+      "id": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-ae14-7b01-9d63-03218ae1723a",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "Reply with exactly OK.",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-nope-1",
+      "reasoningEffort": "low",
+      "createdAt": 1792768716,
+      "updatedAt": 1792768717,
+      "recencyAt": 1792768716,
+      "status": {
+       "type": "systemError"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-36-01a16957-ae14-7b01-9d63-03218ae1723a.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": {
+       "sha": "52a4d3ae71f0a051d26655f1f7b7fea9a2066f83",
+       "branch": "prototype/model-settings",
+       "originUrl": "git@github.com:ashigirl96/dawpi.git"
+      },
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-ae53-7150-a7fb-3f44d22df713"
+      },
+      "revision": "8bcf0215-041d-4718-a345-690116323021"
+     }
+    }
+   }
+  },
+  {
+   "t": 7721,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 12,
+    "method": "thread/start",
+    "params": {
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user",
+     "model": "gpt-5.6-luna"
+    }
+   }
+  },
+  {
+   "t": 7780,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 12,
+    "result": {
+     "thread": {
+      "id": "01a16957-b23b-7672-9418-5b677c7e8f99",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768717,
+      "updatedAt": 1792768717,
+      "recencyAt": 1792768717,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-37-01a16957-b23b-7672-9418-5b677c7e8f99.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 7781,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 13,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "input": [
+      {
+       "type": "text",
+       "text": "Reply with exactly OK.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "minimal"
+    }
+   }
+  },
+  {
+   "t": 7781,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16957-b23b-7672-9418-5b677c7e8f99",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768717,
+      "updatedAt": 1792768717,
+      "recencyAt": 1792768717,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-37-01a16957-b23b-7672-9418-5b677c7e8f99.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792768717429
+   }
+  },
+  {
+   "t": 7782,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "minimal",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "minimal",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792768717431
+   }
+  },
+  {
+   "t": 7782,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 13,
+    "result": {
+     "turn": {
+      "id": "01a16957-b276-7151-ad71-5d636b4f0d30",
+      "rootTurnId": "01a16957-b276-7151-ad71-5d636b4f0d30",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 7823,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792768717472
+   }
+  },
+  {
+   "t": 7823,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "turn": {
+      "id": "01a16957-b276-7151-ad71-5d636b4f0d30",
+      "rootTurnId": "01a16957-b276-7151-ad71-5d636b4f0d30",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792768717,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792768717472
+   }
+  },
+  {
+   "t": 8693,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-b605-7670-b751-3609e93141e2",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "turnId": "01a16957-b276-7151-ad71-5d636b4f0d30",
+     "startedAtMs": 1792768718342
+    },
+    "emittedAtMs": 1792768718342
+   }
+  },
+  {
+   "t": 8695,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-b605-7670-b751-3609e93141e2",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "turnId": "01a16957-b276-7151-ad71-5d636b4f0d30",
+     "completedAtMs": 1792768718342
+    },
+    "emittedAtMs": 1792768718344
+   }
+  },
+  {
+   "t": 8966,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792781733
+      },
+      "secondary": {
+       "usedPercent": 1,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793350476
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792768718615
+   }
+  },
+  {
+   "t": 8966,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "status": {
+      "type": "systemError"
+     }
+    },
+    "emittedAtMs": 1792768718615
+   }
+  },
+  {
+   "t": 8966,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "error",
+    "params": {
+     "error": {
+      "message": "{\"type\":\"error\",\"error\":{\"message\":\"Unsupported value: 'minimal' is not supported with the 'gpt-5.6-luna' model. Supported values are: 'none', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":\"reasoning.effort\",\"code\":\"unsupported_value\"},\"status\":400}",
+      "codexErrorInfo": "other",
+      "additionalDetails": null,
+      "misalignment": null
+     },
+     "willRetry": false,
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "turnId": "01a16957-b276-7151-ad71-5d636b4f0d30"
+    },
+    "emittedAtMs": 1792768718615
+   }
+  },
+  {
+   "t": 8972,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-b276-7151-ad71-5d636b4f0d30"
+      },
+      "revision": "b7aae801-f1ff-4e80-a7b1-0a798e578060"
+     }
+    },
+    "emittedAtMs": 1792768718620
+   }
+  },
+  {
+   "t": 8972,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+     "turn": {
+      "id": "01a16957-b276-7151-ad71-5d636b4f0d30",
+      "rootTurnId": "01a16957-b276-7151-ad71-5d636b4f0d30",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "failed",
+      "error": {
+       "message": "{\"type\":\"error\",\"error\":{\"message\":\"Unsupported value: 'minimal' is not supported with the 'gpt-5.6-luna' model. Supported values are: 'none', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":\"reasoning.effort\",\"code\":\"unsupported_value\"},\"status\":400}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "startedAt": 1792768717,
+      "completedAt": 1792768718,
+      "durationMs": 1185
+     }
+    },
+    "emittedAtMs": 1792768718620
+   }
+  },
+  {
+   "t": 8972,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 14,
+    "method": "thread/read",
+    "params": {
+     "threadId": "01a16957-b23b-7672-9418-5b677c7e8f99"
+    }
+   }
+  },
+  {
+   "t": 8974,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 14,
+    "result": {
+     "thread": {
+      "id": "01a16957-b23b-7672-9418-5b677c7e8f99",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-b23b-7672-9418-5b677c7e8f99",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "Reply with exactly OK.",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "minimal",
+      "createdAt": 1792768717,
+      "updatedAt": 1792768718,
+      "recencyAt": 1792768717,
+      "status": {
+       "type": "systemError"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-37-01a16957-b23b-7672-9418-5b677c7e8f99.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": {
+       "sha": "52a4d3ae71f0a051d26655f1f7b7fea9a2066f83",
+       "branch": "prototype/model-settings",
+       "originUrl": "git@github.com:ashigirl96/dawpi.git"
+      },
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-b276-7151-ad71-5d636b4f0d30"
+      },
+      "revision": "b7aae801-f1ff-4e80-a7b1-0a798e578060"
+     }
+    }
+   }
+  },
+  {
+   "t": 9007,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 15,
+    "method": "thread/start",
+    "params": {
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user",
+     "model": "gpt-5.6-luna"
+    }
+   }
+  },
+  {
+   "t": 9071,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 15,
+    "result": {
+     "thread": {
+      "id": "01a16957-b742-76a1-a97e-052665a3a7dc",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768718,
+      "updatedAt": 1792768718,
+      "recencyAt": 1792768718,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-38-01a16957-b742-76a1-a97e-052665a3a7dc.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 9071,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 16,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "input": [
+      {
+       "type": "text",
+       "text": "Reply with exactly OK.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "banana"
+    }
+   }
+  },
+  {
+   "t": 9071,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16957-b742-76a1-a97e-052665a3a7dc",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792768718,
+      "updatedAt": 1792768718,
+      "recencyAt": 1792768718,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-38-01a16957-b742-76a1-a97e-052665a3a7dc.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792768718720
+   }
+  },
+  {
+   "t": 9073,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "banana",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "banana",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792768718722
+   }
+  },
+  {
+   "t": 9073,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 16,
+    "result": {
+     "turn": {
+      "id": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+      "rootTurnId": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 9112,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792768718761
+   }
+  },
+  {
+   "t": 9112,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "turn": {
+      "id": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+      "rootTurnId": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792768718,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792768718761
+   }
+  },
+  {
+   "t": 10097,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-bb81-73d2-8c81-7ad4e0b4a2fc",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "turnId": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+     "startedAtMs": 1792768719746
+    },
+    "emittedAtMs": 1792768719746
+   }
+  },
+  {
+   "t": 10099,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16957-bb81-73d2-8c81-7ad4e0b4a2fc",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Reply with exactly OK.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "turnId": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+     "completedAtMs": 1792768719746
+    },
+    "emittedAtMs": 1792768719748
+   }
+  },
+  {
+   "t": 10338,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792781733
+      },
+      "secondary": {
+       "usedPercent": 1,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793350476
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792768719987
+   }
+  },
+  {
+   "t": 10338,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "status": {
+      "type": "systemError"
+     }
+    },
+    "emittedAtMs": 1792768719987
+   }
+  },
+  {
+   "t": 10339,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "error",
+    "params": {
+     "error": {
+      "message": "{\"type\":\"error\",\"error\":{\"message\":\"Invalid response.create payload: Invalid value: 'banana'. Supported values are: 'none', 'minimal', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null},\"status\":400}",
+      "codexErrorInfo": "other",
+      "additionalDetails": null,
+      "misalignment": null
+     },
+     "willRetry": false,
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "turnId": "01a16957-b781-7d13-b743-d78c95fa9d4b"
+    },
+    "emittedAtMs": 1792768719987
+   }
+  },
+  {
+   "t": 10342,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-b781-7d13-b743-d78c95fa9d4b"
+      },
+      "revision": "322d43d8-f5a2-401b-aeaf-373ecefbfc95"
+     }
+    },
+    "emittedAtMs": 1792768719991
+   }
+  },
+  {
+   "t": 10342,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+     "turn": {
+      "id": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+      "rootTurnId": "01a16957-b781-7d13-b743-d78c95fa9d4b",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "failed",
+      "error": {
+       "message": "{\"type\":\"error\",\"error\":{\"message\":\"Invalid response.create payload: Invalid value: 'banana'. Supported values are: 'none', 'minimal', 'low', 'medium', 'high', 'xhigh', and 'max'.\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":null},\"status\":400}",
+       "codexErrorInfo": "other",
+       "additionalDetails": null,
+       "misalignment": null
+      },
+      "startedAt": 1792768718,
+      "completedAt": 1792768719,
+      "durationMs": 1266
+     }
+    },
+    "emittedAtMs": 1792768719991
+   }
+  },
+  {
+   "t": 10343,
+   "conn": "live",
+   "dir": "out",
+   "msg": {
+    "id": 17,
+    "method": "thread/read",
+    "params": {
+     "threadId": "01a16957-b742-76a1-a97e-052665a3a7dc"
+    }
+   }
+  },
+  {
+   "t": 10344,
+   "conn": "live",
+   "dir": "in",
+   "msg": {
+    "id": 17,
+    "result": {
+     "thread": {
+      "id": "01a16957-b742-76a1-a97e-052665a3a7dc",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16957-b742-76a1-a97e-052665a3a7dc",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "Reply with exactly OK.",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "banana",
+      "createdAt": 1792768718,
+      "updatedAt": 1792768719,
+      "recencyAt": 1792768718,
+      "status": {
+       "type": "systemError"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/24/rollout-2026-10-24T00-18-38-01a16957-b742-76a1-a97e-052665a3a7dc.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/model-settings",
+      "cliVersion": "0.163.0",
+      "originator": "cbp17-live",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": {
+       "sha": "52a4d3ae71f0a051d26655f1f7b7fea9a2066f83",
+       "branch": "prototype/model-settings",
+       "originUrl": "git@github.com:ashigirl96/dawpi.git"
+      },
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16957-b781-7d13-b743-d78c95fa9d4b"
+      },
+      "revision": "322d43d8-f5a2-401b-aeaf-373ecefbfc95"
+     }
+    }
+   }
+  }
+ ]
+}
