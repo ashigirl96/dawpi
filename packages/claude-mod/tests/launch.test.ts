@@ -9,6 +9,7 @@ function fakeHost(on: any) {
   on('session.start', (_: unknown, e: { cwd: string }) => ({ cwd: e.cwd }))
   on('session.id', () => ({ value: 'sess-test' }))
   on('tool.register', () => ({ value: { tool: DIAGNOSE } }))
+  on('agent.register', () => ({ value: { agent: 'codex-bridge:worker' } }))
   on('state.set', () => ({ value: { isSet: true, version: 1 } }))
   on('ui.log', () => ({ value: undefined }))
   on('process.spawn', async function* () {

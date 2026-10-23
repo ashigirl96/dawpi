@@ -1,5 +1,5 @@
 {
   "extends": "./.claude-plugin/types/tsconfig.json",
   "compilerOptions": { "allowImportingTsExtensions": true },
-  "include": ["hooks", "control-client", "types", "tests"]
+  "include": ["hooks", "control-client", "schemas", "types", "tests"]
 }

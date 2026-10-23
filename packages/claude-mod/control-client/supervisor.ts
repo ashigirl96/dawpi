@@ -6,6 +6,8 @@ const SOCKET_DIR = '/tmp/codex-bridge'
 const EVENTS_WAIT_MS = 25_000
 const MAX_POLL_MS = 30_000
 const POLL_RETRIES = 5
+// T33 picks this: the Guard's answer to a Permit-backed SubagentHandback that delivers the auto mode Report.
+const HANDBACK_DECISION = 'none'
 
 const SUPERVISOR_STATE = { plugin: 'codex-bridge', key: 'supervisor' } as const
 
@@ -27,6 +29,9 @@ async function publish($: EngineInterface, patch: Partial<SupervisorSnapshot>) {
 }
 
 export const currentSnapshot = () => snapshot
+
+// For hooks that only consult Runs a delegate already made: with no Supervisor there is no Run to find.
+export const currentSupervisor = (): Promise<SupervisorHandle> | undefined => current
 
 type Request = { resolve: (h: SupervisorHandle) => void; reject: (err: Error) => void }
 let wakeLauncher: ((request: Request) => void) | undefined
@@ -66,7 +71,9 @@ async function launch($: EngineInterface, onExit: () => void): Promise<Superviso
   let alive = true
   let settle!: { resolve: (h: SupervisorHandle) => void; reject: (err: Error) => void }
   const ready = new Promise<SupervisorHandle>((resolve, reject) => (settle = { resolve, reject }))
-  const child = $.process.spawn({ argv: ['bun', main, '--session', sessionId, '--socket', socketPath] })
+  const child = $.process.spawn({
+    argv: ['bun', main, '--session', sessionId, '--socket', socketPath, '--handback-decision', HANDBACK_DECISION],
+  })
 
   void (async () => {
     let buffered = ''
