@@ -779,6 +779,13 @@ Guard は plugin の `hooks/hooks.json` の `PreToolUse`（matcher `*`）に置�
 
 Guard は session の全ての tool 呼び出しで起動される短い command なので、起動の速い sh で書く。
 
+**実装の形（#22）。**
+
+- Supervisor の command は `roster.add { agentId }` と `permit.issue { agentId, tool }` である。`permit.issue` は Worker Roster に無い agent には `STATE_CONFLICT` を返し、`tool_use_id`（`toolu_cb` と 24 桁の hex）を決めて返す。`agentId` は `[A-Za-z0-9_-]{1,128}` に限る。Guard がこの id から file の path を作るため。
+- Permit の file は `{ agentId, tool, decision }` の 1 行の JSON である。`decision` は `allow` か `none`（判定を返さない）で、`SubagentHandback` の Permit だけが Supervisor の `--handback-decision allow|none`（既定 `none`）に従い、他は `allow` になる。Guard は `rename` で Permit を取ってから読むので、同じ Permit を二つの呼び出しが使うことはない。Permit の `agentId` が呼び出しの `agent_id` と違えば拒否する。
+- Guard は Worker Roster を、入力の `session_id` ではなく `sessions/*/roster/<agent_id>` で探す。session の id の食い違いで fail open にならないようにするため。実機では、Claude の subagent の hook の入力にも main と同じ `session_id` が入っていた。
+- Guard の script が無いとき、`hooks.json` の command は Worker Roster の名前を入力の `"agent_id":"<名前>"` と照らし、当たれば status 2 で拒否する。jq が入力を読めないときの guard.sh も同じ照合で拒否する。実機（2.1.309）で、script を消した plugin が Worker Roster に載せた subagent の Bash を拒否し、main の Bash を通した（T34）。
+
 **既知の制限。** `/plugin disable` や uninstall で plugin を外すと、Guard も消える（[K16]）。外すのはユーザーが意図して行う操作で、Supervisor も止まるので Bell は鳴らない。ただし Worker は子の完了通知では起き、`general-purpose` として動く。manual mode では Bash や Edit に承認が出るが、`Agent` と Read はそのまま通る。auto mode では classifier が審査する。この穴は受け入れる。
 
 ### 10.5 承認の状態
