@@ -2,7 +2,11 @@ import type { ControlEvent } from "@dawpi/contracts";
 
 export type EventPage = { cursor: number; events: ControlEvent[]; more: boolean };
 
-type Draft = Omit<ControlEvent, "seq" | "observedAt" | "schemaVersion">;
+type Draft = ControlEvent extends infer E
+  ? E extends ControlEvent
+    ? Omit<E, "seq" | "observedAt" | "schemaVersion">
+    : never
+  : never;
 
 export class EventLog {
   private readonly entries: { event: ControlEvent; json: string }[] = [];

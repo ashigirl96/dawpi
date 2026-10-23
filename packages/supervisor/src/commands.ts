@@ -1,6 +1,7 @@
 import { bridgeError, type Outcome } from "@dawpi/contracts";
 import type { EventLog } from "./control/event-log.ts";
 import { isAgentId, type GuardFiles } from "./host/guard-files.ts";
+import type { RunBook } from "./runs/run-book.ts";
 
 export const MAX_PING_TOKEN_BYTES = 64 * 1024;
 
@@ -18,8 +19,8 @@ const invalidAgentId = (): Outcome<never> => ({
   error: bridgeError("INVALID_INPUT", "agentId must match [A-Za-z0-9_-]{1,128}", { details: { path: "agentId" } }),
 });
 
-export function createCommands(info: SupervisorInfo, log: EventLog, guard: GuardFiles) {
-  return (body: Record<string, unknown>): Outcome<unknown> => {
+export function createCommands(info: SupervisorInfo, log: EventLog, guard: GuardFiles, runs: RunBook) {
+  return (body: Record<string, unknown>): Outcome<unknown> | Promise<Outcome<unknown>> => {
     switch (body.op) {
       case "status":
         return { ok: true, value: { ...info, uptimeMs: Date.now() - Date.parse(info.startedAt), cursor: log.cursor } };
@@ -51,6 +52,23 @@ export function createCommands(info: SupervisorInfo, log: EventLog, guard: Guard
         }
         return { ok: true, value: { toolUseId: guard.issuePermit({ agentId: body.agentId, tool: body.tool }) } };
       }
+      case "run.prepare":
+        return runs.prepare(body);
+      case "run.admit":
+        return runs.admit(body);
+      case "run.claim":
+        return runs.claim(body);
+      case "run.bind":
+        return runs.bind(body);
+      case "run.abandon":
+        return runs.abandon(body);
+      case "run.sweep":
+        runs.expireOverdue();
+        return { ok: true, value: {} };
+      case "run.get":
+        return runs.get(body);
+      case "worker.step":
+        return runs.step(body);
       default:
         return {
           ok: false,
