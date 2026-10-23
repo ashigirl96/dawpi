@@ -70,6 +70,7 @@ Mod の reload、Claude Code の session の終了・再起動で、実行中の
 
 次は初期範囲外とする。
 
+- 他の人への配布（marketplace での公開など）。Bridge は作者の手元の Claude Code だけで使う。Supervisor は手元の Bun で動かし、Claude Code・codex-cli・Bun の版が変わったら、19.1 のゲートを流し直してから使う。
 - headless（`claude -p`）からの利用。
 - Linux。G06 にあたる process の停止の試験を通してから加える。
 - Windows、クラウド常駐、複数ユーザー、任意の LLM provider への汎用化。
