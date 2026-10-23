@@ -11,3 +11,4 @@ Run の状態機械は Bun の Supervisor process に置き、Mod は hook を S
 
 - Supervisor は Claude Code の異常終了で残らないよう、親 process の消失を自分で確かめて終了する。異常終了時の `$.process.spawn` の子の扱いは型宣言に書かれていない。
 - reload の後に、前の Supervisor の Run を持つ worker の Host Step が届くと、新しい Supervisor はその Run を知らないので「reload で停止した」という失敗を返す。
+- 例外として、Guard が見る Worker Roster と Permit は Bridge の state の directory に file で置き、session の間は残す。Mod や Supervisor が止まった後も Guard が Worker を見分けられることが、Guard が fail closed で働く条件になるため（設計書 v2 の 3.3・10.4）。
