@@ -5,6 +5,7 @@ import { parseArgs } from "node:util";
 import pkg from "../package.json" with { type: "json" };
 import { createCommands } from "./commands.ts";
 import { EventLog } from "./control/event-log.ts";
+import { createGuardFiles, HANDBACK_DECISIONS, type HandbackDecision } from "./host/guard-files.ts";
 import { serveControl } from "./control/server.ts";
 import {
   assertSessionId,
@@ -26,14 +27,20 @@ function main() {
       session: { type: "string" },
       socket: { type: "string" },
       home: { type: "string", default: join(homedir(), ".codex-bridge") },
+      "handback-decision": { type: "string", default: "none" },
     },
   });
-  if (!values.session || !values.socket) throw new Error("usage: main.ts --session <id> --socket <path> [--home <dir>]");
+  if (!values.session || !values.socket) {
+    throw new Error("usage: main.ts --session <id> --socket <path> [--home <dir>] [--handback-decision allow|none]");
+  }
+  const handbackDecision = values["handback-decision"] as HandbackDecision;
+  if (!HANDBACK_DECISIONS.includes(handbackDecision)) throw new Error("--handback-decision must be allow or none");
   const sessionId = values.session;
   const socketPath = values.socket;
   assertSessionId(sessionId);
 
   const sessionDir = prepareSessionDir(values.home, sessionId);
+  const guard = createGuardFiles(sessionDir, { handbackDecision });
   const removedSessions = removeStaleSessionDirs(values.home, sessionId);
   prepareSocket(socketPath);
 
@@ -46,7 +53,7 @@ function main() {
     socketPath,
     startedAt: new Date().toISOString(),
   };
-  serveControl({ socketPath, log, command: createCommands(info, log) });
+  serveControl({ socketPath, log, command: createCommands(info, log, guard) });
   const socketIno = lstatSync(socketPath).ino;
   log.append({ origin: "supervisor", kind: "supervisor.started", payload: { version: info.version, pid: info.pid } });
 
