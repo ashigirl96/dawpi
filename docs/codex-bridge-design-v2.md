@@ -1049,7 +1049,7 @@ v1 の `DELIVERY_UNKNOWN` と `retry: "after-reconcile"` は、照合の手順�
 ### 17.1 初期版の構成
 
 ```text
-codex-bridge/
+（repo の直下）
   packages/
     contracts/
       schemas/               # 入力・結果・イベントの定義
