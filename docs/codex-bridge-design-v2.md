@@ -85,7 +85,7 @@ Mod の reload、Claude Code の session の終了・再起動で、実行中の
 | 論点 | 事実 | 本設計への意味 |
 |---|---|---|
 | Mods の実行環境 | 資料: Node / Bun が無い。`$.process.spawn` の stdin は一度渡すと閉じる [S01] | app-server と話すために Bun の Supervisor を置く [K04] |
-| ツール登録 | 実機: engine は `inputSchema` を検証しない [K11] | 未知のプロパティの拒否などは Mod の検証器が行う |
+| ツール登録 | 実機: engine は `inputSchema` を検証しない [K11] | 未知のプロパティの拒否などは Supervisor の contracts の検証器が行う |
 | hook からの Agent 起動 | 実機: `tool.call` hook の `$.agent.spawn` は親が付かず（main の子扱い）、深さ上限も効かない。auto mode では classifier に拒否される [K02][K04][K11] | Worker の起動に使わない |
 | `Agent` tool による起動 | 実機: Worker の `turn.step` が tool chunk で組み込みの `Agent` を呼ぶと、孫まで親が付き、深さ上限も効く [K02][K12] | 子の Worker はこの経路で起こす |
 | ホストの上限 | 資料と実機: 深さは main の下 3 層、同時実行は 20。深さ 3 の agent には `Agent` tool が渡らない [S04][K02][K05] | 深さ 3 の Run には子に関わる tool を出さない |
@@ -310,7 +310,7 @@ Claude からは Mod の登録ツール、Codex からは dynamic tool、人間�
 
 書き込みを依頼する場合は、権限の範囲内で `workspace-write` と隔離した作業領域を選択する。`workspace.isolation` は本製品の作業領域管理であり、Codex の sandbox の別名ではない。
 
-モデル公開 schema では未知のプロパティを拒否する。engine は登録 tool の `inputSchema` を検証しない（`additionalProperties: false` に反する値が、型も違うまま `tool.call` に届いた）ので、検証は Mod の検証器が行う（[K11]）。任意の環境変数、任意の CLI フラグ、認証ファイルの場所、任意の `config` オブジェクト、`approvalsReviewer` はモデルから受け付けない。
+モデル公開 schema では未知のプロパティを拒否する。engine は登録 tool の `inputSchema` を検証しない（`additionalProperties: false` に反する値が、型も違うまま `tool.call` に届いた）ので、検証は Bridge の検証器が行う（[K11]）。Claude からの入力も Supervisor が検証する。hooks module は plugin の folder の中の file と `claude-code` しか import できず、`packages/contracts` を読めないため（#23 で `claude plugin validate` が拒否した）。Mod は登録に使う JSON Schema の写しだけを持ち、root の試験が contracts と一致することを確かめる。任意の環境変数、任意の CLI フラグ、認証ファイルの場所、任意の `config` オブジェクト、`approvalsReviewer` はモデルから受け付けない。
 
 モデルは、ユーザーが指定していない緩い権限を自分で入力に足すことがある（main の Claude が `approvalPolicy: "never"` を足した観測がある。[K11]）。既定より緩い値は、ユーザーの grant が無ければ拒否する（10.2）。
 
@@ -468,11 +468,11 @@ Worker の定義は次のとおりにする。
 ### 7.2 起動は prepare → bind → activate
 
 1. 呼び出し元が委譲を求める。Claude の `delegate` は `next(e)` で host の権限の判定を通す。Codex の `bridge_delegate` は `item/tool/call` として Supervisor に届く。
-2. contracts の検証器が入力の schema を検証する。Claude からの入力は Mod が、Codex からの入力は Supervisor が、同じ検証器で検証する。Supervisor が権限・深さ・予算・重複を確認する。
+2. Supervisor が contracts の検証器で入力の schema を検証する。Claude からの入力は Mod がそのまま渡し、Codex からの入力は Supervisor が受ける（5.2）。続けて Supervisor が権限・深さ・予算・重複を確認する。深さは、Claude の caller なら Mod が `$.agent.list()` の `parentId` を辿って数え、Supervisor に渡す。
 3. Supervisor が `runId` を発行し、caller の agentId、深さ、期限と一緒に Run を `prepared` で作る。
 4. 呼び出し元の loop が `Agent`（`subagent_type: <plugin>:worker`、prompt は runId）を呼ぶ。main と Claude の subagent では model が呼び、Codex の親では親の Worker の Host Step が tool chunk で返す（7.3）。
 5. auto mode の main・Claude の subagent の `Agent` は、Mod の `tool.check` が許可する。条件は、`subagent_type` が Worker、prompt が `prepared` な runId、その runId を用意した caller と同じ agent からの呼び出し、の三つ（[K15]）。親の Worker の `Agent` は Guard が Permit で通す（10.4）。
-6. Mod の `agent.spawn` hook が、同じ三つの条件と `parentAgentId` を照合する。外れたら deny する。deny は呼び出し元に tool error として届く（[K11]）。合えば `next(e)` を呼び、返った `agentId` と runId の対応を `await` より前に module 変数へ記録する（7.1）。続けて Supervisor に bind の command を送り、Supervisor が Run を CAS で `prepared` → `starting` にして、Worker Roster に `agentId` を書く。Mod の hook はその応答を待ってから返る。
+6. Mod の `agent.spawn` hook が、同じ三つの条件と `parentAgentId` を Supervisor に照合させる（`run.claim`）。外れたら deny する。deny は呼び出し元に tool error として届く（[K11]）。合えば Supervisor が Run を CAS で `prepared` → `starting` にしてから、Mod が `next(e)` を呼ぶ。返った `agentId` と runId の対応を `await` より前に module 変数へ記録し（7.1）、続けて bind の command（`run.bind`）を送る。Supervisor は Run に `workerAgentId` を書き、Worker Roster に `agentId` を書く。Mod の hook はその応答を待ってから返る。CAS を `next(e)` の前に置くので、bind の応答を確かめられなくても Run は `starting` のまま残り、同じ runId の二つ目の Worker は起動しない（T11）。host が Worker を起動しなかったとき（`next` が deny、または `agentId` が無い）は、Run を `failed` にする（`run.abandon`）。
 7. Worker の Host Step 0 で activate する。Supervisor が app-server を起動し、`thread/start` と最初の `turn/start` を送る。
 8. Codex の親には、bind の直後に保留中の `bridge_delegate` へ `accepted` を返す。Claude の呼び出し元には、`delegate` の時点で runId を返してある。
 
@@ -480,7 +480,7 @@ Worker の定義は次のとおりにする。
 
 **bind の前の終わり。** 子の Worker が bind より先に終わる順序がある。tool が空の Worker は起動を拒まれ、その `turn.complete`（`reason: "error"`）が `next` の解決より先に届いた（[K12]）。bind の前の終了も Run の終端（`failed`）として扱い、`accepted` を返さない。
 
-**prepared のまま残る Run。** `Agent` まで進まなかった Run は、期限を過ぎたら `expired` にする。main の model が `Agent` を呼ばずに終えた場合や、`Agent` が拒否された場合がこれにあたる。2 段目の `Agent` を classifier に任せていた prototype では、拒否が 3 回起きた（[K12]、[K13]）。v2 では 2 段目を Mod の `tool.check` が許可するので、classifier による拒否は起きない想定である（[K15]）。期限の値は実装で決める。
+**prepared のまま残る Run。** `Agent` まで進まなかった Run は、期限を過ぎたら `expired` にする。main の model が `Agent` を呼ばずに終えた場合や、`Agent` が拒否された場合がこれにあたる。2 段目の `Agent` を classifier に任せていた prototype では、拒否が 3 回起きた（[K12]、[K13]）。v2 では 2 段目を Mod の `tool.check` が許可するので、classifier による拒否は起きない想定である（[K15]）。期限（`preparedTtl`）は 5 分とする。manual mode の main がユーザーに確かめてから `Agent` を呼ぶ場合も収まる長さにした。Supervisor は 1 秒ごとと、Run を引くたびに期限を確かめ、`run.expired` の event を出す。#23 の実機で、Agent まで進まなかった Run が期限の 1 秒後に `expired` になった。
 
 runId は相関 ID であって認証ではない。守りは、`prepared` であることの CAS と、caller の一致で行う。
 
@@ -616,7 +616,11 @@ type RunResult = {
 | Codex の親 | `bridge_wait` の dynamic tool 応答 |
 | 人間の UI | Supervisor の Run の状態を直接参照 |
 
-**Report の手段。** manual mode では、最後の Host Step の text で Report する。auto mode では、最後の Host Step の `SubagentHandback({ message })` の tool chunk で Report する。auto mode で text を返して終えると、engine は Host Step を 3 回まで起こし直し、Report を届けない（[K04]、[K10]）。Bridge は Report を出す時点の permission mode で二つを切り替える。
+**Report の手段。** manual mode では、最後の Host Step の text で Report する。auto mode では、最後の Host Step の `SubagentHandback({ message })` の tool chunk で Report する。auto mode で text を返して終えると、engine は Host Step を 3 回まで起こし直し、Report を届けない（[K04]、[K10]）。Bridge は Worker の起動時の permission mode（`agent.spawn` の `permissionMode`）で二つを切り替える。Report を出す時点の mode ではない（T43、#23 の実機）。
+
+- host は、Worker を auto mode で起こしたかどうかで「`SubagentHandback` で返さなければならない」かを決め、後から mode を変えても変えない。manual mode で起こした Worker を途中で auto mode に切り替えても、text の Report が届いた。
+- 逆に、auto mode で起こした Worker の Report の前に session を manual mode に切り替えると、Report は届かない。`SubagentHandback` は manual mode の判定で拒否され（`SubagentHandback tool permission denied`。Guard が `allow` を返しても `deny rule overrides` で拒否）、text で終えても「`SubagentHandback` で報告しないまま終わった」と呼び出し元に通知される。Guard の hook の入力の `permission_mode` は、その時点の mode（`default`）になっていた。Mod から今の mode を読む API は無い。
+- この場合、呼び出し元が `SendMessage` で Worker を起こすと、Worker は text で答え、その text が呼び出し元に届いた。Bridge は Report を一度しか出さないので、届くのは「報告済み」の text だけである。この穴は初期版では受け入れ、制限として扱う。
 
 auto mode の Report は server 側の classifier に審査されず、「審査できなかった」注記付きで届く。classifier は model の API 応答の上で審査するが、hook が出した Host Step には API 応答が無いため。Mod の側から審査を起こす手段は無い（hook の allow は「Only the auto-mode classifier can allow SubagentHandback」で拒否される）。manual mode の text にも審査は無く、どちらの Report にも harness が untrusted の枠を付けるので、扱いがそろう。これを受け入れる（[K10]）。Report の配送で model の request は増えない。
 
@@ -682,7 +686,7 @@ shell から別の CLI（`codex exec` など）を直接起動する経路まで
 | `maxLiveRuntimeProcesses` | 8（app-server の数。ホストの同時 20 より小さく保つ） |
 | `treeDeadline` | 30 分。明示的に延長できる |
 | `maxFinalizeTurns` | 1 |
-| `preparedTtl` | 実装で決める（7.2） |
+| `preparedTtl` | 5 分（7.2） |
 | `bridge_wait` の poll の間隔の指示 | `yield_time_ms: 600000` |
 
 深さはホストの実際の階層で数える。既に Claude の subagent から起動した場合、その agent の深さに 1 を足す（8.1）。ホストの上限に当たった spawn はすぐ失敗し、queue には入らない（[K05]）。
@@ -748,7 +752,7 @@ Bridge が Claude Code の中で出す tool 呼び出しは、どれが host の
 | 呼び出し | 誰が出すか | 判定 |
 |---|---|---|
 | `delegate` | main・Claude の subagent の model | Mod の `tool.call` が `next(e)` で host の判定に回す。auto mode は classifier が task を審査し、manual mode はユーザーの承認か allow rule |
-| 2 段目の `Agent`（Worker の起動） | main・Claude の subagent の model | auto mode は Mod の `tool.check` が 7.2 の三条件で許可する。manual mode は host の通常の判定で通る（[K11]） |
+| 2 段目の `Agent`（Worker の起動） | main・Claude の subagent の model | auto mode は Mod の `tool.check` が 7.2 の三条件で許可する。manual mode は host の通常の判定で通る（[K11]）。三条件から外れた呼び出しは、どちらの mode でも Mod の `tool.check` の deny が効いた（#23 の実機、T35） |
 | 子の `Agent`、Bell の Bash、登録 tool | Worker の Host Step（Mod が返す tool chunk） | Guard が Permit を確かめて `allow` する |
 | `SubagentHandback`（auto mode の Report） | Worker の Host Step | Guard は Permit を確かめた上で判定を返さず、host の通常の扱いに回す |
 | Worker の model が出した呼び出し | Mod が Host Step に答えていない Worker | Guard が拒否する |
@@ -759,7 +763,7 @@ Bridge が Claude Code の中で出す tool 呼び出しは、どれが host の
 - **auto mode では、`Agent(...)` の allow rule は使えない。** auto mode に入るとき、host は全ての出どころ（user・project・local・flag・managed・CLI 引数・session）の allow rule から、tool 名が `Agent` のものを内容に関わらず外す（[K15]）。Mod の `tool.check` の許可は、auto mode では classifier を経ずに採られる。その副作用として、main の会話に「Mod の `tool.check` hook が skip された」という通知が毎回入る。動作には影響しないので受け入れる。
 - **Worker の Host Step が出す呼び出しは、Mod の `tool.check` や `classic.PreToolUse` では守らない。** manual mode では組み込みの `cc-plugin-sec-default` が先に判定し、Mod の hook は飛ばされる。auto mode でも `classic.PreToolUse` は飛ばされる。どちらも Mod が居ない場面では効かない（[K14]、[K16]）。plugin の `hooks.json` の `allow` は、manual mode の確認も auto mode の classifier も飛ばして採られる（[K16]）。
 - **Mod が作った Host Step の呼び出しには、server 側の classifier の判定が付かない。** rule も Mod の許可も無ければ、auto mode では fail closed で拒否される（[K15]）。Guard の `allow` がこれを通す。
-- **`SubagentHandback` は Guard でも `allow` しない。** host は「SubagentHandback を allow できるのは auto mode の classifier だけ」として、hook の allow を tool error にする（[K10]）。Guard は Permit のある `SubagentHandback` に判定を返さず、host の通常の扱い（判定なしの注記付きで配送）に回す。これは [K16] の「Permit のある呼び出しは全て `allow`」から外れる、v2 で決めた扱いである。[K10] で拒否されたのは Mod の hook の allow で、plugin の `hooks.json` の allow は試していない。そこで T33 で `allow` と判定なしの両方を試し、届く方を採る。
+- **`SubagentHandback` は Guard でも `allow` しない。** host は「SubagentHandback を allow できるのは auto mode の classifier だけ」として、hook の allow を tool error にする（[K10]）。Guard は Permit のある `SubagentHandback` に判定を返さず、host の通常の扱い（判定なしの注記付きで配送）に回す。これは [K16] の「Permit のある呼び出しは全て `allow`」から外れる。T33（#23 の実機）で、plugin の `hooks.json` の Guard が `allow` を返す場合も確かめた。host は `Hook returned 'allow' for SubagentHandback, but … requires the full permission pipeline` として allow を捨て、判定なしと同じく注記付きで一回配送した。どちらでも届くので、host の扱いどおりの判定なし（`none`）を採る。
 
 ### 10.4 Guard
 
@@ -778,6 +782,13 @@ Guard は plugin の `hooks/hooks.json` の `PreToolUse`（matcher `*`）に置�
 **fail closed の形。** Guard の command は、script の file が無くても、Worker Roster に載った agent なら deny を返す形にする。例えば command 自体が Worker Roster を見て、script が無ければ deny を返す。script が無いときの status 127 は、host にとってブロックしないエラーで、fail open になった（[K16]）。Worker Roster に載っていない agent は素通しにし、plugin の path が消えても session 全体は止めない。
 
 Guard は session の全ての tool 呼び出しで起動される短い command なので、起動の速い sh で書く。
+
+**実装の形（#22）。**
+
+- Supervisor の command は `roster.add { agentId }` と `permit.issue { agentId, tool }` である。`permit.issue` は Worker Roster に無い agent には `STATE_CONFLICT` を返し、`tool_use_id`（`toolu_cb` と 24 桁の hex）を決めて返す。`agentId` は `[A-Za-z0-9_-]{1,128}` に限る。Guard がこの id から file の path を作るため。
+- Permit の file は `{ agentId, tool, decision }` の 1 行の JSON である。`decision` は `allow` か `none`（判定を返さない）で、`SubagentHandback` の Permit だけが Supervisor の `--handback-decision allow|none`（既定 `none`）に従い、他は `allow` になる。Mod は T33 の結果の `none` を明示して Supervisor を起こす（#23）。Guard は `rename` で Permit を取ってから読むので、同じ Permit を二つの呼び出しが使うことはない。Permit の `agentId` が呼び出しの `agent_id` と違えば拒否する。
+- Guard は Worker Roster を、入力の `session_id` ではなく `sessions/*/roster/<agent_id>` で探す。session の id の食い違いで fail open にならないようにするため。実機では、Claude の subagent の hook の入力にも main と同じ `session_id` が入っていた。
+- Guard の script が無いとき、`hooks.json` の command は Worker Roster の名前を入力の `"agent_id":"<名前>"` と照らし、当たれば status 2 で拒否する。jq が入力を読めないときの guard.sh も同じ照合で拒否する。実機（2.1.309）で、script を消した plugin が Worker Roster に載せた subagent の Bash を拒否し、main の Bash を通した（T34）。
 
 **既知の制限。** `/plugin disable` や uninstall で plugin を外すと、Guard も消える（[K16]）。外すのはユーザーが意図して行う操作で、Supervisor も止まるので Bell は鳴らない。ただし Worker は子の完了通知では起き、`general-purpose` として動く。manual mode では Bash や Edit に承認が出るが、`Agent` と Read はそのまま通る。auto mode では classifier が審査する。この穴は受け入れる。
 
@@ -844,6 +855,8 @@ Codex が自分の環境で読む指示ファイルと、Bridge が追加した�
 
 Mod は Supervisor を `$.process.spawn` で起動する。起動は最初に必要になった時点で行い、session の開始時には起動しない。同時に起動しかけたときは、module 変数の Promise 一つにまとめる（[K07]）。`$.process.spawn` の子は、loop を抜けたとき、`next.signal` が abort したとき、module が unload されたときに kill される。
 
+spawn は、必要とした hook の `$` では行わない。`tool.call` の中で spawn した Supervisor は、ユーザーの Esc で dispatch が abort されると一緒に kill された（#21 の実機）。そこで Mod は `session.start` の hook から起動役の loop を一つ回し、必要になった hook はその loop に起動を頼む。spawn は `session.start` の `$` で行うので、頼んだ dispatch の abort では止まらない。`$` は module 変数に入れられない（`claude plugin validate` が拒む）ので、loop の引数で持つ。起動の時点は「最初に必要になったとき」のままである。module の reload では host が Supervisor を kill し、reload で `session.start` が走り直して新しい起動役の loop ができる（#21 の実機）。`/reload-plugins` では module は読み直されず、Supervisor も残った。
+
 通信は Unix domain socket 上の小さな HTTP に限る。`$.process.spawn` の stdout は起動完了の合図と診断にだけ使う。stdin は一度しか書けず、stdout は行の途中で切れるため（[K07]）。socket は `/tmp/<短い名前>/`（mode 700）に置く。socket の path は約 100 byte までなので、長い directory には置けない（[K04]）。一つの session から複数の path に `$.http.fetch` できることは確かめた。
 
 通信は次の二系統とする。
@@ -851,9 +864,13 @@ Mod は Supervisor を `$.process.spawn` で起動する。起動は最初に必
 - `command`: 起動、Host Step の問い合わせ、bind、`wait` などの操作。
 - `events(afterCursor)`: Run ごと、または Pane 用の event の long poll。一回 30 秒まで。Mod は毎回 `next.signal` を確かめる。
 
+`$.http.fetch` は signal を取らないので、hook の中の long poll は fetch と `next.signal` の abort を競わせ、abort が先なら結果を待たずに返る。実機では、Esc から 3〜4 ms で hook が返った。abort した fetch の完了は host の debug log に出なかった（30 秒の上限を過ぎても）。Supervisor 側も 30 秒で応答を返して終わる（#21）。Bun の `Bun.serve` は unix socket でも既定で 10 秒の idle timeout で接続を切るので、Supervisor は `idleTimeout: 0` で待つ（#21 で確かめた）。
+
 Mod が streaming body を扱えることに依存しない。一回の応答は 256 KiB 以下とし、出力全文は別のページ取得にする。heartbeat、lease、所有 epoch、token は持たない（ADR 0001）。
 
-Supervisor は親 process（Claude Code）の消失を周期的に確かめ、消えていたら各 app-server の process group を止めてから終了する。Claude Code が異常終了したときの `$.process.spawn` の子の扱いは、型宣言に書かれていないため（ADR 0001）。
+Supervisor は親 process（Claude Code）の消失を周期的に確かめ、消えていたら各 app-server の process group を止めてから終了する。Claude Code が異常終了したときの `$.process.spawn` の子の扱いは、型宣言に書かれていないため（ADR 0001）。周期は 1 秒で、親の pid が消えたか ppid が変わったかを見る。実機では Claude Code を SIGKILL すると、Supervisor は約 0.5 秒で socket を消して終わった。Supervisor は Claude Code と同じ process group にいるので、Claude Code の端末が閉じると SIGHUP も届く。SIGTERM・SIGINT・SIGHUP でも socket を消して終わる（#21）。
+
+reload の直後は、前と後の Supervisor が同じ socket の path を使いうる。Supervisor は起動時に残った socket を消して listen し、終了時には自分が作った inode のときだけ消す。`Bun.serve` の `stop()` は path を無条件に消すので、終了時に呼ばない。
 
 ### 12.2 Supervisor ↔ Codex
 
@@ -906,7 +923,9 @@ type BridgeEvent = {
 };
 ```
 
-`seq` は Mod の long poll の cursor であり、Supervisor の寿命の中でだけ意味を持つ。項目のキーは run / thread / Codex Turn / item の組にする。app-server は Run ごとに別の process なので、別プロセスの数値 request ID が一致しても混線しない。
+Run に属さない Supervisor の event（`supervisor.started`、診断の `ping`）は、`runId` と `providerRef` を持たない `SupervisorEvent`（`origin: "supervisor"`）として同じ `seq` の列に流す。
+
+`seq` は Mod の long poll の cursor であり、Supervisor の寿命の中でだけ意味を持つ。Supervisor は自分の `seq` より先の cursor を `STATE_CONFLICT` で断る（前の Supervisor の cursor を持ち越した場合）。一つの event が応答の上限を超えるときは、その event の代わりに大きさだけを載せた `event.omitted` を返す。項目のキーは run / thread / Codex Turn / item の組にする。app-server は Run ごとに別の process なので、別プロセスの数値 request ID が一致しても混線しない。
 
 ### 13.2 項目の状態更新
 
@@ -930,7 +949,7 @@ Supervisor は SQLite を持たず、Run・操作・結果・UI 用の項目を 
 
 memory の UI 用の項目と出力には、件数と大きさの上限を設ける。上限を超えた出力は、項目に省略を表示し、全文は Codex から読み直す。
 
-state の directory は mode 700 で作る。終わった session の directory は、Supervisor の起動時に一定の期間を過ぎたものから消す。session の間に消すと Guard が fail open になるので、自分の session の directory は消さない。期間の値は実装で決める。
+state の directory は mode 700 で作る。終わった session の directory は、Supervisor の起動時に一定の期間を過ぎたものから消す。session の間に消すと Guard が fail open になるので、自分の session の directory は消さない。期間は 7 日とする。最後に使った時刻は、directory 自身とその直下の項目（`roster/` など）の mtime のうち最も新しいものとし、Supervisor は自分の session の directory を起動時と 6 時間ごとに touch する。session の長い休止の後に、別の session の Supervisor が消さないようにするため（#21）。
 
 後から Conversation の再利用を Supervisor の寿命の外へ広げるなら、Conversation から thread ID への対応表を保存すれば足りる（ADR 0001）。
 
@@ -1043,6 +1062,8 @@ v1 の `DELIVERY_UNKNOWN` と `retry: "after-reconcile"` は、照合の手順�
 
 診断画面には Claude Code・codex-cli・Bun の版、schema hash、permission mode、plugin と Guard の有無、Worker Roster の件数、Run の bind、最後の provider event、保留操作数、8.5 の起動直後の確認の結果を表示する。認証 token とファイルの秘密内容を診断 bundle に含めない。
 
+登録 tool の失敗は、BridgeError を JSON の text にして返す。host は hook の答えを tool の出力の形に照らし、`result` に object を返すと `does not match its output shape` の tool error に変える（#23 の実機）。
+
 未知のエラーを「Codex が未インストール」と一括表示しない。起動失敗、認証失敗、schema 不一致、権限拒否、実行中のエラーを分ける。
 
 ## 17. コードと配布の構成
@@ -1053,9 +1074,10 @@ v1 の `DELIVERY_UNKNOWN` と `retry: "after-reconcile"` は、照合の手順�
 （repo の直下）
   packages/
     contracts/
-      schemas/               # 入力・結果・イベントの定義
-      generated/             # TypeScript と検証器
-      errors.ts
+      src/schema.ts          # schema をデータで書く小さな DSL。検証器・TypeScript の型・JSON Schema をここから導く
+      src/schemas/           # 入力・結果・イベントの定義
+      src/permissions.ts     # 既定より緩い権限を grant と照らす判定
+      src/errors.ts
 
     supervisor/
       admission/             # 設定解決、catalog の検証、制約、予算予約
@@ -1087,7 +1109,7 @@ v1 の `DELIVERY_UNKNOWN` と `retry: "after-reconcile"` は、照合の手順�
     supported-builds.json
 ```
 
-contracts は純粋なデータと検証のみで、Bun や Claude Code を import しない。Supervisor は Claude の会話ラッパーや JSX を知らない。Mod の UI は provider RPC を直接呼ばない。Mod は Run の正本を持たず、Supervisor が決めた Host Step をそのまま返す。
+contracts は純粋なデータと検証のみで、Bun や Claude Code を import しない。実行時の依存も持たない。生成の段を置かず、schema のデータから型と検証器を導くので、両者がずれない。Supervisor は Claude の会話ラッパーや JSX を知らない。Mod の UI は provider RPC を直接呼ばない。Mod は Run の正本を持たず、Supervisor が決めた Host Step をそのまま返す。
 
 v1 の `supervisor/storage/` と `bootstrap.ts` は持たない（ADR 0001）。初期段階で汎用 Repository フレームワークや多 provider 抽象を追加しない。
 
@@ -1158,12 +1180,12 @@ Mod の module が消えた後に、Worker A が子の完了通知で起こさ�
 
 | Gate | 実証すること | 判定 | 判定の内容 | 根拠 | 不成立の場合 |
 |---|---|---|---|---|---|
-| G01 | Mod が構造化ツールを登録し、schema が守られる | 条件付き | 登録 tool は schema 付きで渡り、`delegate` → `Agent` の 2 段で起動できる。engine は `inputSchema` を検証しないので、Mod の検証器が守ることが条件 | [K04]、[K11] | 起動 API を提供しない |
-| G02 | Worker の Host Step を Mod が処理し、通常経路で余計なモデル要求がない | 成立 | manual・auto とも Worker の Host Step はすべて `usage: null`。auto mode の Report（`SubagentHandback`）でも request は増えない。全ての handler がエラー文を返す実装が前提（`.catch` が無いと model に落ちる） | [K02]、[K04]、[K10]、[K12]、[K13] | Native 統合を無効化 |
+| G01 | Mod が構造化ツールを登録し、schema が守られる | 条件付き | 登録 tool は schema 付きで渡り、`delegate` → `Agent` の 2 段で起動できる。engine は `inputSchema` を検証しないので、Bridge の検証器が守ることが条件。製品のコードでも、緩い `approvalPolicy` を勝手に足した `delegate` を `POLICY_DENIED` で止めた（#23） | [K04]、[K11] | 起動 API を提供しない |
+| G02 | Worker の Host Step を Mod が処理し、通常経路で余計なモデル要求がない | 成立 | manual・auto とも Worker の Host Step はすべて `usage: null`。auto mode の Report（`SubagentHandback`）でも request は増えない。全ての handler がエラー文を返す実装が前提（`.catch` が無いと model に落ちる）。製品のコード（#23、stub の Codex）でも、manual・auto とも Worker の Host Step はすべて `usage: null` だった | [K02]、[K04]、[K10]、[K12]、[K13] | Native 統合を無効化 |
 | G03 | 子の実際の parent ID が委譲元と一致する | 条件付き | 親の Worker が返す `Agent` の tool chunk で起こした子だけ、孫まで親が一致する。hook の `$.agent.spawn` では `parentAgentId: null` | [K02]、[K12] | R04 未達として配布を止める |
 | G04 | Codex dynamic tool を広告し、呼び出しと応答が完結する | 条件付き | 応答を 15 分保留しても Codex Turn は続く。保留中も model が約 30 秒ごとに poll し、取り消しの通知は無い。`--listen unix://` でだけ送り直しがある | [K03]、[K04] | 再帰機能を利用可能と表示しない |
 | G05 | 子→孫でも同じ経路が動き、ホストの上限を守る | 成立 | 孫まで同じ経路で bind し、caller の検問も効く。深さ 3 の agent には `Agent` が渡らない。Bridge は深さ 3 で委譲の tool を出さない | [K12] | ネスト対応と表示しない |
-| G06 | Supervisor の spawn・Unix socket の HTTP・親の消失と異常終了時の停止が動く | 紙の上 | spawn、socket の HTTP、中継の SIGKILL で app-server が終わることは確かめた。Claude Code の異常終了と親の消失の検出は試していない | [K04]、ADR 0001 | 対象 OS を非対応にする |
+| G06 | Supervisor の spawn・Unix socket の HTTP・親の消失と異常終了時の停止が動く | 紙の上 | spawn、socket の HTTP、中継の SIGKILL で app-server が終わることは確かめた。製品の Supervisor で、Claude Code の SIGKILL から親の消失を検出して終わることも確かめた（#21）。app-server を持った状態での停止は試していない | [K04]、ADR 0001 | 対象 OS を非対応にする |
 | G07 | Pane と agent view の状態が混線せず更新される | 紙の上 | 試していない | — | 実証できた表示面だけ対応とする |
 | G08 | host の最終報告と dynamic wait の経路を区別できる | 条件付き | Codex の親には `bridge_wait` の応答だけで結果が届き、子の Report は親の Worker の会話に入るだけ。親の Worker が Yield し、子と Bell の完了通知を受け取ってから Report することが条件 | [K13]、[K14] | 二重配送のない代替契約を再設計するまで止める |
 | G09 | モデル設定が実際の Codex Turn へ渡り、表示と整合する | 条件付き | 毎回の `turn/start` で明示し、開始時の `thread/settings/updated` と `model/rerouted` を `observed` にすれば整合する。provider が実際に使った model と effort の読み替えは見えない | [K17] | その設定の変更機能を無効化 |
@@ -1217,7 +1239,7 @@ Mod の module が消えた後に、Worker A が子の完了通知で起こさ�
 | T40 | 未知の model、catalog に無い effort、`ultra` | 実行前に拒否し、thread に保存されない |
 | T41 | `delegate` が host の判定で拒否される（manual・auto） | Run を作らない |
 | T42 | reload の後、前の instance の Worker を `TaskStop` する | 止められるかを記録する。止められなくても Guard で何もできない |
-| T43 | Report を出す時点の permission mode | manual は text、auto は `SubagentHandback` を選ぶ。途中で mode が変わった場合を記録する |
+| T43 | Report を出す時点の permission mode | Worker の起動時の mode で、manual は text、auto は `SubagentHandback` を選ぶ。途中で mode が変わった場合を記録する（8.4） |
 | T44 | Yield した Worker と host の同時実行の上限 | Yield した Worker が枠に数えられるかを記録し、9.2 の値を見直す |
 
 ### 19.3 要件への追跡
@@ -1254,10 +1276,11 @@ Mod の module が消えた後に、Worker A が子の完了通知で起こさ�
 |---|---|---|
 | 状態の所有 | Mod の寿命に従う Supervisor（memory） | 切り離した Supervisor と SQLite は、reload をまたぐ利点を初期版で使わない（ADR 0001） |
 | Codex 接続 | Run ごとの app-server を stdio | app-server の socket は WebSocket しか話さない。一つの app-server では Run の子 process を確実に止められない |
-| 設定の入口 | schema 付きツールと UI。検証は Mod と Supervisor | engine も app-server も検証しない |
+| 設定の入口 | schema 付きツールと UI。検証は Supervisor の contracts の検証器 | engine も app-server も検証しない。hooks module は plugin の外の contracts を import できない |
 | ネイティブ統合 | 呼び出し元の loop の `Agent` と、`agent.spawn` での bind | hook の `$.agent.spawn` は親が付かず、auto mode では拒否される |
 | 起床 | Yield と Bell | `$.session.send` は Mod の hook を外す。断ると Codex が作業を諦める |
-| 報告 | 条件を満たした後に一度だけ。manual mode は text、auto mode は `SubagentHandback` | 子の完了通知の前の stop と、Bell だけが生きている stop は、正しく届かない |
+| 報告 | 条件を満たした後に一度だけ。Worker の起動時の mode が manual なら text、auto なら `SubagentHandback` | 子の完了通知の前の stop と、Bell だけが生きている stop は、正しく届かない。Report の時点の mode は host が見ない（T43） |
+| `SubagentHandback` の Guard | Permit を確かめて判定を返さない（`none`） | `allow` は host に捨てられ、結果は同じ（T33） |
 | 守り | plugin の `hooks.json` の Guard と Permit | `AgentSpec.hooks` と Mod の hook は、Mod が居ない場面で効かない |
 | 権限の審査 | `delegate` を host の判定に回し、段取りは Mod と Guard が許可する | ユーザーの `Agent(...)` の allow rule は auto mode で捨てられる |
 | Codex 自身の委譲 | 専用 `CODEX_HOME`、起動引数、reviewer の固定、起動直後の確認、tripwire | 起動引数だけでは reviewer が止まらない |
@@ -1272,13 +1295,12 @@ Mod の module が消えた後に、Worker A が子の完了通知で起こさ�
 
 | 事項 | 扱い |
 |---|---|
-| Permit 付きの `SubagentHandback` に、Guard が `allow` と判定なしのどちらを返せば auto mode の Report が届くか | 段階 A・B の T33。どちらも届かなければ Guard の扱いを決め直す |
 | 選べる各 model が長い `wait` の指示に従うか | T31。従わない model を選べるままにするかは、その結果で決める |
-| Report を出す時点の permission mode の取り方 | T43。`agent.spawn` の入力に親の `permissionMode` があることは確かめた。session の途中で mode が変わる場合は確かめていない |
+| auto mode で起こした Worker の Report の前に manual mode へ切り替えた場合 | Report が届かない（8.4、T43）。初期版では制限として扱う |
 | 子と Bell の完了通知が会話に入ったことの判定 | 本書は「子の Worker の turn と Bell の終わりの後に来た Host Step の境目」とみなす（8.3）。Host Step の入力に通知が見えるかは段階 B で確かめる |
 | reload の後、前の instance の Worker を止められるか | T42。Guard があるので止められなくても何もできない |
 | Yield した Worker が host の同時実行の枠に数えられるか | T44 |
-| `preparedTtl`、state の directory の掃除の期間、memory の上限 | 実装で決める |
+| memory の上限 | 実装で決める。`preparedTtl` は 5 分（7.2）、state の directory の掃除の期間は 7 日に決めた（13.3） |
 | 統合の Codex Turn（8.3） | 実機で確かめていない。段階 B で T13 を流す |
 | shell から別の CLI を起動する経路（8.5） | Bridge だけでは止められない。初期版では制限として表示する |
 | UI（6 章）、承認（10.5）、作業領域（11.1）、予算（9.4）、異常終了（15.3、G06） | 紙の上の設計。段階 C〜E で実装と試験を行う |

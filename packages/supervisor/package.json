@@ -1,0 +1,9 @@
+{
+  "name": "@dawpi/supervisor",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@dawpi/contracts": "workspace:*"
+  }
+}

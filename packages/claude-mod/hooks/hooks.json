@@ -1,0 +1,16 @@
+{
+  "modules": ["./register.ts"],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "g=\"${CLAUDE_PLUGIN_ROOT}/guard/guard.sh\"; if [ -f \"$g\" ]; then exec sh \"$g\"; fi; i=$(cat); for r in \"${CODEX_BRIDGE_HOME:-$HOME/.codex-bridge}\"/sessions/*/roster/*; do [ -f \"$r\" ] || continue; a=${r##*/}; if printf %s \"$i\" | grep -Eq \"\\\"agent_id\\\" *: *\\\"$a\\\"\"; then echo 'codex-bridge: the Guard script is missing, so this Worker may not run tools' >&2; exit 2; fi; done; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}
