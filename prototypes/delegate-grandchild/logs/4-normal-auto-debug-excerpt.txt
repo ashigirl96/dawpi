@@ -1,0 +1,189 @@
+2026-10-23T09:19:11.070Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.json
+2026-10-23T09:19:11.070Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.local.json
+2026-10-23T09:19:11.211Z [DEBUG] Read hooks.json for plugin cbp12 (enabled=true): ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/delegate-grandchild/mod/hooks/hooks.json
+2026-10-23T09:19:11.242Z [DEBUG] Loaded inline plugin from path: cbp12
+2026-10-23T09:19:11.247Z [DEBUG] Checking plugin cbp12: skillsPath=none, skillsPaths=0 paths
+2026-10-23T09:19:11.351Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.json
+2026-10-23T09:19:11.351Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.local.json
+2026-10-23T09:19:11.393Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=7f0092da-1ec2-471e-98e9-ecabfe93d7ea source=quota_check
+2026-10-23T09:19:11.438Z [DEBUG] hooks module cbp12@inline loaded (worker, environment 2, tier user); events: session.start,tool.call,tool.check,agent.spawn,turn.step,turn.complete
+2026-10-23T09:19:11.455Z [DEBUG] engine.create: no plugin-provided interfaces; $ built for cc-plugin-sec-default,cbp12,mermaid-render,cc-plugin-agents-md,cc-plugin-telemetry,cc-plugin-plugin-authoring,cc-plugin-diff,cc-plugin-you-should-know
+2026-10-23T09:19:11.457Z [DEBUG] plugin.register: cbp12 (user, cbp12@inline), judged by cc-plugin-sec-default: admitted
+2026-10-23T09:19:11.471Z [DEBUG] plugin-dir watch: watching cbp12, mermaid-render; folders of plugins none
+2026-10-23T09:19:11.514Z [DEBUG] Watching /private/tmp/cbp12-work for /private/tmp/cbp12-work/.claude to appear
+2026-10-23T09:19:11.591Z [DEBUG] type root of cbp12 at ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/delegate-grandchild/mod/.claude-plugin/types: entries claude-code, claude-code-tools, claude-code-mcp; wrote nothing
+2026-10-23T09:19:11.602Z [DEBUG] $.process.run (cbp12): mkdir with 4 args in /private/tmp/cbp12-work (pid 14499)
+2026-10-23T09:19:11.608Z [DEBUG] $.process.run (cbp12): mkdir exited 0 in 6ms, 0 + 0 chars
+2026-10-23T09:19:11.610Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): tool.register nested in cbp12#0
+2026-10-23T09:19:11.610Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): settings.read nested in cbp12#0 > cc-plugin-sec-default#18
+2026-10-23T09:19:11.611Z [DEBUG] $.tool.register (cbp12): 1 tool(s) served at 127.0.0.1:55882/<secret>/cbp12 v1
+2026-10-23T09:19:11.611Z [DEBUG] $.tool.register (cbp12): mcp__cbp12__delegate (1 tool(s) on server "cbp12"); connecting
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": Initializing HTTP transport to http://127.0.0.1:55882/REDACTED/cbp12?v=REDACTED
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": Node version: v26.3.0, Platform: darwin
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": HTTP transport options: {"url":"http://127.0.0.1:55882/REDACTED/cbp12?v=REDACTED","headers":{"User-Agent":"claude-code/2.1.309 (cli)","Accept-Encoding":"identity"},"hasAuthProvider":true,"timeoutMs":60000}
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": HTTP transport created successfully
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": Starting connection with timeout of 30000ms
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": Testing basic HTTP connectivity to http://127.0.0.1:55882/REDACTED/cbp12?v=REDACTED
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": Parsed URL: host=127.0.0.1, port=55882, protocol=http:
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": Using loopback address: 127.0.0.1
+2026-10-23T09:19:11.634Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.643Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.649Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.651Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.651Z [DEBUG] MCP server "cbp12": Successfully connected (transport: http) in 17ms
+2026-10-23T09:19:11.651Z [DEBUG] MCP server "cbp12": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"cbp12","version":"plugin-tools-1"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-10-23T09:19:11.651Z [DEBUG] [MCP] Server "cbp12" connected with subscribe=false
+2026-10-23T09:19:11.652Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.657Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.json
+2026-10-23T09:19:11.657Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.local.json
+2026-10-23T09:19:11.671Z [DEBUG] MCP server "cbp12": Channel notifications skipped: server did not declare claude/channel capability
+2026-10-23T09:19:11.678Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.json
+2026-10-23T09:19:11.678Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.local.json
+2026-10-23T09:19:11.679Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.json
+2026-10-23T09:19:11.679Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.local.json
+2026-10-23T09:19:11.695Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.json
+2026-10-23T09:19:11.695Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp12-work/.claude/settings.local.json
+2026-10-23T09:19:11.721Z [DEBUG] $.tool.register (cbp12): mcp__cbp12__delegate visible after 110ms
+2026-10-23T09:19:11.723Z [DEBUG] $.agent.register (cbp12): cbp12:worker listed
+2026-10-23T09:19:11.727Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): tool.register nested in cbp12#0
+2026-10-23T09:19:11.728Z [DEBUG] $.tool.register (cbp12): 2 tool(s) served at 127.0.0.1:55882/<secret>/cbp12 v2
+2026-10-23T09:19:11.728Z [DEBUG] $.tool.register (cbp12): mcp__cbp12__status (2 tool(s) on server "cbp12"); connecting
+2026-10-23T09:19:11.734Z [DEBUG] MCP server "cbp12": excludeStalePluginClients: marking stale (config hash changed)
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": Initializing HTTP transport to http://127.0.0.1:55882/REDACTED/cbp12?v=REDACTED
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": Node version: v26.3.0, Platform: darwin
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": HTTP transport options: {"url":"http://127.0.0.1:55882/REDACTED/cbp12?v=REDACTED","headers":{"User-Agent":"claude-code/2.1.309 (cli)","Accept-Encoding":"identity"},"hasAuthProvider":true,"timeoutMs":60000}
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": HTTP transport created successfully
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": Starting connection with timeout of 30000ms
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": Testing basic HTTP connectivity to http://127.0.0.1:55882/REDACTED/cbp12?v=REDACTED
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": Parsed URL: host=127.0.0.1, port=55882, protocol=http:
+2026-10-23T09:19:11.735Z [DEBUG] MCP server "cbp12": Using loopback address: 127.0.0.1
+2026-10-23T09:19:11.736Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.739Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.740Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.741Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.741Z [DEBUG] MCP server "cbp12": Successfully connected (transport: http) in 6ms
+2026-10-23T09:19:11.741Z [DEBUG] MCP server "cbp12": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"cbp12","version":"plugin-tools-2"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-10-23T09:19:11.741Z [DEBUG] [MCP] Server "cbp12" connected with subscribe=false
+2026-10-23T09:19:11.742Z [DEBUG] MCP server "cbp12": No token data found
+2026-10-23T09:19:11.743Z [DEBUG] MCP server "cbp12": Channel notifications skipped: server did not declare claude/channel capability
+2026-10-23T09:19:11.829Z [DEBUG] $.tool.register (cbp12): mcp__cbp12__status visible after 100ms
+2026-10-23T09:19:11.843Z [DEBUG] $.process.run (cc-plugin-telemetry): sh with 2 args in /private/tmp/cbp12-work (pid 14511)
+2026-10-23T09:19:11.843Z [DEBUG] hooks module cbp12@inline, mermaid-render@inline session.start settled in 250.6ms (worker hop, next() included)
+2026-10-23T09:19:13.065Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2507f1dd-c3c4-4c07-87fd-3d7503f76079 source=generate_session_title
+2026-10-23T09:19:13.083Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=3e174afd-3f97-41c0-ba9f-7da7ab6c2f90 source=generate_session_title
+2026-10-23T09:19:13.115Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=422f9339-6005-4bce-abeb-57ac51218e08 source=repl_main_thread
+2026-10-23T09:19:15.100Z [DEBUG] cbp12 (user) answered tool.call without next() in 0.6ms; nothing beneath it ran for this dispatch
+2026-10-23T09:19:15.100Z [DEBUG] hooks module cbp12@inline tool.call settled in 2.6ms (worker hop, next() included)
+2026-10-23T09:19:15.100Z [DEBUG] tool.call mcp__cbp12__delegate toolu_018PXWhw6Sjm5S5JpNBpKGvS: resolved by a hooks module (result)
+2026-10-23T09:19:15.526Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 2424.9ms (worker hop, next() included)
+2026-10-23T09:19:15.543Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=bae3e9f3-3e9a-4dc9-939c-72bedf27a9fc source=repl_main_thread
+2026-10-23T09:19:16.087Z [DEBUG] [bridge:repl] derived title from message 1: mcp__cbp12__delegateのchainタスク
+2026-10-23T09:19:16.657Z [DEBUG] hooks module cbp12@inline tool.check settled in 0.9ms (worker hop, next() included)
+2026-10-23T09:19:27.591Z [WARN] Auto mode classifier blocked action: [Create Unsafe Agents]
+2026-10-23T09:19:27.592Z [INFO] Slow permission decision: 10936ms for Agent (mode=auto, behavior=deny)
+2026-10-23T09:19:27.594Z [DEBUG] hooks module cbp12@inline tool.call settled in 10951.8ms (worker hop, next() included)
+2026-10-23T09:19:27.605Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 12070.7ms (worker hop, next() included)
+2026-10-23T09:19:27.616Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=8d4a0f74-d98c-4cf0-bf8a-d20499748ef7 source=repl_main_thread
+2026-10-23T09:19:30.802Z [DEBUG] cbp12 (user) answered tool.call without next() in 0.3ms; nothing beneath it ran for this dispatch
+2026-10-23T09:19:30.802Z [DEBUG] hooks module cbp12@inline tool.call settled in 2.6ms (worker hop, next() included)
+2026-10-23T09:19:30.802Z [DEBUG] tool.call mcp__cbp12__status toolu_01MdBSqo5cHfXtBu3EuHYDUd: resolved by a hooks module (result)
+2026-10-23T09:19:31.187Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 3576.2ms (worker hop, next() included)
+2026-10-23T09:19:31.197Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=e5641b3e-4859-4770-b315-7fd83a23c454 source=repl_main_thread
+2026-10-23T09:19:33.614Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 2422.8ms (worker hop, next() included)
+2026-10-23T09:19:33.626Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=d2fa24e7-137e-4613-a3df-5ee1212846c2 source=prompt_suggestion
+2026-10-23T09:19:33.626Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=538263e8-ff0a-4436-98ae-d8b5c2a05974 source=side_query
+2026-10-23T09:19:33.626Z [DEBUG] hooks module cbp12@inline turn.complete settled in 6.3ms (worker hop, next() included)
+2026-10-23T09:23:55.505Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=972445e6-f333-42ba-b97d-b5154d5fe967 source=repl_main_thread
+2026-10-23T09:23:58.285Z [DEBUG] hooks module cbp12@inline tool.check settled in 0.9ms (worker hop, next() included)
+2026-10-23T09:23:58.760Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_014arZMqQZDN1AfSvDMS5TN4 permissionDecisionMs=476
+2026-10-23T09:23:58.784Z [DEBUG] hooks module cbp12@inline tool.call settled in 505.6ms (worker hop, next() included)
+2026-10-23T09:23:58.791Z [DEBUG] hooks module cbp12@inline agent.spawn settled in 28.6ms (worker hop, next() included)
+2026-10-23T09:23:58.792Z [DEBUG] $.process.run (cbp12): mkdir with 4 args in /private/tmp/cbp12-work (pid 26187)
+2026-10-23T09:23:58.792Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 3359.4ms (worker hop, next() included)
+2026-10-23T09:23:58.806Z [DEBUG] $.process.run (cbp12): mkdir exited 0 in 15ms, 0 + 0 chars
+2026-10-23T09:23:58.807Z [DEBUG] $.process.run (cbp12): mkdir with 2 args in /private/tmp/cbp12-work (pid 26189)
+2026-10-23T09:23:58.810Z [DEBUG] $.process.run (cbp12): mkdir exited 0 in 4ms, 0 + 0 chars
+2026-10-23T09:23:58.815Z [DEBUG] $.process.run (cbp12): rm with 2 args in /private/tmp/cbp12-work (pid 26191)
+2026-10-23T09:23:58.817Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=1e9be437-0851-4c23-9416-bdd9becc3100 source=repl_main_thread
+2026-10-23T09:23:58.818Z [DEBUG] $.process.run (cbp12): rm exited 0 in 3ms, 0 + 0 chars
+2026-10-23T09:23:58.820Z [DEBUG] $.process.spawn (cbp12): bun with 2 args in /private/tmp/cbp12-work (pid 26192)
+2026-10-23T09:23:58.821Z [DEBUG] $.process.run (cbp12): sleep with 1 args in /private/tmp/cbp12-work (pid 26193)
+2026-10-23T09:23:59.024Z [DEBUG] $.process.run (cbp12): sleep exited 0 in 202ms, 0 + 0 chars
+2026-10-23T09:23:59.918Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 1108.6ms (worker hop, next() included)
+2026-10-23T09:23:59.930Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=7683b9ee-60d9-4b9d-8a22-89e320c3a78e source=prompt_suggestion
+2026-10-23T09:23:59.930Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=dc59fe89-aa7e-428b-9a0f-7b003a52f1ee source=side_query
+2026-10-23T09:23:59.931Z [DEBUG] hooks module cbp12@inline turn.complete settled in 6.6ms (worker hop, next() included)
+2026-10-23T09:24:00.872Z [DEBUG] hooks module cbp12@inline tool.call settled in 2.0ms (worker hop, next() included)
+2026-10-23T09:24:01.247Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=d08a8432-4477-417f-b49f-56782633d286 source=prompt_suggestion
+2026-10-23T09:24:04.204Z [DEBUG] cbp12 (user) answered turn.step without next() in 5411.9ms; nothing beneath it ran for this dispatch
+2026-10-23T09:24:04.204Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 5414.8ms (worker hop, next() included)
+2026-10-23T09:24:04.207Z [DEBUG] cbp12 (user) answered tool.check without next() in 0.1ms; nothing beneath it ran for this dispatch
+2026-10-23T09:24:04.207Z [DEBUG] hooks module cbp12@inline tool.check settled in 1.0ms (worker hop, next() included)
+2026-10-23T09:24:04.208Z [DEBUG] cbp12: tool.check bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T09:24:04.208Z [DEBUG] [cbp12] $.ui.log: its tool.check hook was skipped. "cc-plugin-sec-default" runs first and sent the event on past it.
+2026-10-23T09:24:04.209Z [DEBUG] tool.check Agent toolu_cbp12hfc3v021a2: ask -> allow by plugins cc-plugin-sec-default, cbp12
+2026-10-23T09:24:04.210Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp12hfc3v021a2 permissionDecisionMs=4
+2026-10-23T09:24:04.216Z [INFO] [Stall] tool_dispatch_end tool=Agent toolUseId=toolu_cbp12hfc3v021a2 outcome=ok durationMs=6
+2026-10-23T09:24:04.222Z [DEBUG] hooks module cbp12@inline tool.call settled in 16.2ms (worker hop, next() included)
+2026-10-23T09:24:04.231Z [DEBUG] hooks module cbp12@inline agent.spawn settled in 20.7ms (worker hop, next() included)
+2026-10-23T09:24:05.424Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 1197.4ms (worker hop, next() included)
+2026-10-23T09:24:05.445Z [DEBUG] hooks module cbp12@inline turn.complete settled in 19.4ms (worker hop, next() included)
+2026-10-23T09:24:08.192Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 3962.8ms (worker hop, next() included)
+2026-10-23T09:24:08.196Z [DEBUG] hooks module cbp12@inline tool.check settled in 0.9ms (worker hop, next() included)
+2026-10-23T09:24:08.196Z [DEBUG] tool.check Agent toolu_cbp126hu8pebnpt: ask -> allow by plugins cc-plugin-sec-default, cbp12
+2026-10-23T09:24:08.197Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp126hu8pebnpt permissionDecisionMs=2
+2026-10-23T09:24:08.200Z [INFO] [Stall] tool_dispatch_end tool=Agent toolUseId=toolu_cbp126hu8pebnpt outcome=ok durationMs=3
+2026-10-23T09:24:08.205Z [DEBUG] hooks module cbp12@inline tool.call settled in 10.8ms (worker hop, next() included)
+2026-10-23T09:24:08.215Z [DEBUG] hooks module cbp12@inline agent.spawn settled in 17.1ms (worker hop, next() included)
+2026-10-23T09:24:09.825Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 1614.6ms (worker hop, next() included)
+2026-10-23T09:24:09.830Z [DEBUG] hooks module cbp12@inline turn.complete settled in 3.1ms (worker hop, next() included)
+2026-10-23T09:24:11.384Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 3170.5ms (worker hop, next() included)
+2026-10-23T09:24:11.386Z [DEBUG] Unknown tool Agent: toolu_cbp128j39qtefih
+2026-10-23T09:24:13.249Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 1858.5ms (worker hop, next() included)
+2026-10-23T09:24:13.253Z [DEBUG] hooks module cbp12@inline tool.check settled in 1.2ms (worker hop, next() included)
+2026-10-23T09:24:13.253Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T09:24:13.254Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp12kg8ireg54b permissionDecisionMs=3
+2026-10-23T09:24:13.256Z [INFO] [Stall] tool_dispatch_end tool=SubagentHandback toolUseId=toolu_cbp12kg8ireg54b outcome=ok durationMs=2
+2026-10-23T09:24:13.257Z [DEBUG] hooks module cbp12@inline tool.call settled in 6.2ms (worker hop, next() included)
+2026-10-23T09:24:13.258Z [INFO] [Stall] agent_completion agentId=a94875015ce421be6 agentType=cbp12:worker exitPath=completed durationMs=5058 turns=2 finalStopReason=tool_use lastChunkAgeMs=1 lastToolUseId=toolu_cbp12kg8ireg54b lastToolResultSeen=toolu_cbp12kg8ireg54b
+2026-10-23T09:24:13.260Z [DEBUG] hooks module cbp12@inline turn.complete settled in 2.1ms (worker hop, next() included)
+2026-10-23T09:24:13.270Z [DEBUG] hooks module cbp12@inline agent.spawn settled in 5.0ms (worker hop, next() included)
+2026-10-23T09:24:13.275Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 2.8ms (worker hop, next() included)
+2026-10-23T09:24:13.278Z [DEBUG] hooks module cbp12@inline tool.check settled in 1.0ms (worker hop, next() included)
+2026-10-23T09:24:13.278Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T09:24:13.279Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp127b3v67to5p permissionDecisionMs=2
+2026-10-23T09:24:13.280Z [INFO] [Stall] tool_dispatch_end tool=SubagentHandback toolUseId=toolu_cbp127b3v67to5p outcome=ok durationMs=1
+2026-10-23T09:24:13.281Z [DEBUG] hooks module cbp12@inline tool.call settled in 4.9ms (worker hop, next() included)
+2026-10-23T09:24:13.283Z [DEBUG] hooks module cbp12@inline turn.complete settled in 1.2ms (worker hop, next() included)
+2026-10-23T09:24:13.292Z [DEBUG] hooks module cbp12@inline agent.spawn settled in 4.7ms (worker hop, next() included)
+2026-10-23T09:24:13.298Z [DEBUG] hooks module cbp12@inline agent.spawn settled in 4.1ms (worker hop, next() included)
+2026-10-23T09:24:13.300Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 6.2ms (worker hop, next() included)
+2026-10-23T09:24:13.302Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 2.1ms (worker hop, next() included)
+2026-10-23T09:24:13.303Z [INFO] [Stall] agent_completion agentId=ae9cd7e752003976c agentType=cbp12:worker exitPath=completed durationMs=7 turns=1 finalStopReason=end_turn lastChunkAgeMs=1 lastToolUseId=none lastToolResultSeen=none
+2026-10-23T09:24:13.304Z [DEBUG] hooks module cbp12@inline tool.check settled in 2.7ms (worker hop, next() included)
+2026-10-23T09:24:13.305Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T09:24:13.305Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp12lsu649sq0p permissionDecisionMs=3
+2026-10-23T09:24:13.305Z [INFO] [Stall] tool_dispatch_end tool=SubagentHandback toolUseId=toolu_cbp12lsu649sq0p outcome=ok durationMs=0
+2026-10-23T09:24:13.306Z [DEBUG] hooks module cbp12@inline tool.call settled in 5.4ms (worker hop, next() included)
+2026-10-23T09:24:13.308Z [DEBUG] hooks module cbp12@inline turn.complete settled in 5.1ms (worker hop, next() included)
+2026-10-23T09:24:13.322Z [DEBUG] hooks module cbp12@inline turn.complete settled in 14.5ms (worker hop, next() included)
+2026-10-23T09:24:13.326Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=bbdb0aa7-8991-4be0-920a-a6e16f4f65d7 source=repl_main_thread
+2026-10-23T09:24:13.339Z [DEBUG] hooks module cbp12@inline agent.spawn settled in 4.6ms (worker hop, next() included)
+2026-10-23T09:24:13.344Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 3.0ms (worker hop, next() included)
+2026-10-23T09:24:13.345Z [INFO] [Stall] agent_completion agentId=a7eb3a9a9c7145bc4 agentType=cbp12:worker exitPath=completed durationMs=8 turns=1 finalStopReason=end_turn lastChunkAgeMs=1 lastToolUseId=none lastToolResultSeen=none
+2026-10-23T09:24:13.349Z [DEBUG] hooks module cbp12@inline turn.complete settled in 4.1ms (worker hop, next() included)
+2026-10-23T09:24:14.205Z [DEBUG] cbp12 (user) answered turn.step without next() 9 more times in the last 10s (the last in 0.3ms)
+2026-10-23T09:24:14.207Z [DEBUG] cbp12 (user) answered tool.check without next() 1 more times in the last 10s (the last in 0.1ms)
+2026-10-23T09:24:14.209Z [DEBUG] cbp12: tool.check bypassed by cc-plugin-sec-default (tier user) 1 more times in the last 10s
+2026-10-23T09:24:16.528Z [DEBUG] cbp12 (user) answered tool.call without next() in 0.2ms; nothing beneath it ran for this dispatch
+2026-10-23T09:24:16.528Z [DEBUG] hooks module cbp12@inline tool.call settled in 2.8ms (worker hop, next() included)
+2026-10-23T09:24:16.528Z [DEBUG] tool.call mcp__cbp12__status toolu_01Mm6wEZu5CuVL9tR9a5cQbZ: resolved by a hooks module (result)
+2026-10-23T09:24:17.016Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 3695.0ms (worker hop, next() included)
+2026-10-23T09:24:17.032Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=b09ee4ba-a4d6-45e1-adc8-4a0f3d88946e source=repl_main_thread
+2026-10-23T09:24:21.313Z [DEBUG] hooks module cbp12@inline turn.step stream settled in 4289.8ms (worker hop, next() included)
+2026-10-23T09:24:21.321Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=520b1ecb-e705-4d26-a0f1-f50bab300feb source=prompt_suggestion
+2026-10-23T09:24:21.321Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=796dbee4-2a6a-4a99-8fac-6ea3b31ab50a source=side_query
+2026-10-23T09:24:21.321Z [DEBUG] hooks module cbp12@inline turn.complete settled in 4.5ms (worker hop, next() included)
+2026-10-23T09:25:40.717Z [DEBUG] $.process.spawn (cbp12): bun ended (SIGTERM) in 101898ms, 1 chunks
