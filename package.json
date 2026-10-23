@@ -6,7 +6,7 @@
   "scripts": {
     "test": "bun test",
     "test:mod": "claude plugin test packages/claude-mod",
-    "typecheck": "tsc --noEmit -p . && tsc --noEmit -p packages/claude-mod"
+    "typecheck": "sh scripts/typecheck.sh"
   },
   "devDependencies": {
     "@types/bun": "1.3.1",
