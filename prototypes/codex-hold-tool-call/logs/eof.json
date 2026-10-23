@@ -1,0 +1,1620 @@
+{
+ "scenario": "eof",
+ "versions": {
+  "codex": "0.163.0",
+  "bun": "1.4.4"
+ },
+ "model": "gpt-5.6-luna",
+ "results": [
+  {
+   "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+   "heldRequestId": 0,
+   "stdinEofToExitMs": 11,
+   "resume": {
+    "status": {
+     "type": "idle"
+    },
+    "turns": [
+     {
+      "id": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+      "status": "interrupted",
+      "items": [
+       "userMessage:",
+       "reasoning:",
+       "dynamicToolCall:failed"
+      ]
+     }
+    ]
+   },
+   "oldTurnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+   "reissuedAfterResume": null,
+   "turn2": {
+    "status": "completed",
+    "reply": "NONE\npong2-sw4ltf",
+    "toolCalled": true,
+    "matched": true
+   }
+  }
+ ],
+ "log": [
+  {
+   "t": 2,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "clientInfo": {
+      "name": "cbp3-A",
+      "title": null,
+      "version": "0"
+     },
+     "capabilities": {
+      "experimentalApi": true,
+      "requestAttestation": false
+     }
+    }
+   }
+  },
+  {
+   "t": 29,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 1,
+    "result": {
+     "userAgent": "cbp3-A/0.163.0 (Mac OS 26.6.2; arm64) WezTerm (cbp3-A; 0)",
+     "codexHome": "~/.codex-bridge/codex-home",
+     "platformFamily": "unix",
+     "platformOs": "macos"
+    }
+   }
+  },
+  {
+   "t": 29,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "method": "initialized"
+   }
+  },
+  {
+   "t": 29,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 2,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "dynamicTools": [
+      {
+       "type": "function",
+       "name": "bridge_delegate",
+       "description": "Delegate a task to another agent. Returns a receipt text.",
+       "inputSchema": {
+        "type": "object",
+        "properties": {
+         "task": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "task"
+        ],
+        "additionalProperties": false
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 29,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "remoteControl/status/changed",
+    "params": {
+     "status": "disabled",
+     "serverName": "<host>",
+     "installationId": "ff9d05b6-4b4e-42bd-aadf-f58844e54431",
+     "environmentId": null
+    },
+    "emittedAtMs": 1792738875144
+   }
+  },
+  {
+   "t": 105,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 2,
+    "result": {
+     "thread": {
+      "id": "01a16790-570b-7880-8706-b7600e2a71da",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570b-7880-8706-b7600e2a71da",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T16-01-15-01a16790-570b-7880-8706-b7600e2a71da.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 105,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 3,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "input": [
+      {
+       "type": "text",
+       "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 105,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16790-570b-7880-8706-b7600e2a71da",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570b-7880-8706-b7600e2a71da",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T16-01-15-01a16790-570b-7880-8706-b7600e2a71da.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792738875221
+   }
+  },
+  {
+   "t": 107,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792738875223
+   }
+  },
+  {
+   "t": 108,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 3,
+    "result": {
+     "turn": {
+      "id": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+      "rootTurnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 156,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792738875272
+   }
+  },
+  {
+   "t": 156,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turn": {
+      "id": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+      "rootTurnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792738875,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792738875272
+   }
+  },
+  {
+   "t": 1127,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/updated",
+    "params": {
+     "authMode": "chatgpt",
+     "planType": "team"
+    },
+    "emittedAtMs": 1792738876243
+   }
+  },
+  {
+   "t": 3074,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-62ed-7803-9086-f0eee11b8d2a",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "startedAtMs": 1792738878190
+    },
+    "emittedAtMs": 1792738878190
+   }
+  },
+  {
+   "t": 3076,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-62ed-7803-9086-f0eee11b8d2a",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "completedAtMs": 1792738878190
+    },
+    "emittedAtMs": 1792738878192
+   }
+  },
+  {
+   "t": 4140,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_013e0fb7592736d4016adb0643317481918dd06a755e0cd8a1",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "startedAtMs": 1792738879255
+    },
+    "emittedAtMs": 1792738879255
+   }
+  },
+  {
+   "t": 4142,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_013e0fb7592736d4016adb0643317481918dd06a755e0cd8a1",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "completedAtMs": 1792738879256
+    },
+    "emittedAtMs": 1792738879258
+   }
+  },
+  {
+   "t": 4477,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-05099992-668b-4306-bcd0-a4af85680316",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "ping"
+      },
+      "status": "inProgress",
+      "contentItems": null,
+      "success": null,
+      "durationMs": null
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "startedAtMs": 1792738879593
+    },
+    "emittedAtMs": 1792738879593
+   }
+  },
+  {
+   "t": 4477,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/tool/call",
+    "id": 0,
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "callId": "exec-05099992-668b-4306-bcd0-a4af85680316",
+     "namespace": null,
+     "tool": "bridge_delegate",
+     "arguments": {
+      "task": "ping"
+     }
+    }
+   }
+  },
+  {
+   "t": 4488,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "metadata": {
+      "prompt": {
+       "omnimod": {
+        "protection_type": "omnimod",
+        "outputs": [
+         {
+          "results": [
+           {
+            "category_flags": {
+             "A1": false,
+             "A2": false,
+             "A3": false,
+             "C1": false,
+             "C11": false,
+             "C2": false,
+             "E1": false,
+             "E2": false,
+             "E3": false,
+             "H1": false,
+             "H2": false,
+             "H3": false,
+             "JB1": false,
+             "K1": false,
+             "K2": false,
+             "K3": false,
+             "K4": false,
+             "P1": false,
+             "P2": false,
+             "P3": false,
+             "P4": false,
+             "PD1": false,
+             "PD4": false,
+             "S1": false,
+             "S3+": false,
+             "S4": false,
+             "SH": false,
+             "TXT-C3": false,
+             "TXT-C4": false,
+             "V1": false,
+             "V2+": false,
+             "V4+": false,
+             "REFUSED": false,
+             "CBRN-B1+": false,
+             "IMG-C1": false,
+             "IMG-C11": false,
+             "IMG-C2": false,
+             "IMG-S1": false,
+             "IMG-SH": false,
+             "IMG-V1": false,
+             "IMG-V2+": false,
+             "IMG-V4+": false
+            }
+           }
+          ],
+          "is_blocked": false
+         }
+        ]
+       }
+      },
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738879604
+   }
+  },
+  {
+   "t": 9481,
+   "conn": "A",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T07:01:24.597669Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_core::tools::router\u001b[0m\u001b[2m:\u001b[0m \u001b[3merror\u001b[0m\u001b[2m=\u001b[0mdynamic tool call was cancelled before receiving a response"
+  },
+  {
+   "t": 9490,
+   "conn": "A",
+   "dir": "closed",
+   "msg": {
+    "exit": 0
+   }
+  },
+  {
+   "t": 9490,
+   "conn": "B",
+   "dir": "out",
+   "msg": {
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "clientInfo": {
+      "name": "cbp3-B",
+      "title": null,
+      "version": "0"
+     },
+     "capabilities": {
+      "experimentalApi": true,
+      "requestAttestation": false
+     }
+    }
+   }
+  },
+  {
+   "t": 9511,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "id": 1,
+    "result": {
+     "userAgent": "cbp3-B/0.163.0 (Mac OS 26.6.2; arm64) WezTerm (cbp3-B; 0)",
+     "codexHome": "~/.codex-bridge/codex-home",
+     "platformFamily": "unix",
+     "platformOs": "macos"
+    }
+   }
+  },
+  {
+   "t": 9511,
+   "conn": "B",
+   "dir": "out",
+   "msg": {
+    "method": "initialized"
+   }
+  },
+  {
+   "t": 9511,
+   "conn": "B",
+   "dir": "out",
+   "msg": {
+    "id": 2,
+    "method": "thread/resume",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da"
+    }
+   }
+  },
+  {
+   "t": 9511,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "remoteControl/status/changed",
+    "params": {
+     "status": "disabled",
+     "serverName": "<host>",
+     "installationId": "ff9d05b6-4b4e-42bd-aadf-f58844e54431",
+     "environmentId": null
+    },
+    "emittedAtMs": 1792738884627
+   }
+  },
+  {
+   "t": 9515,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "deprecationNotice",
+    "params": {
+     "summary": "Full-history hydration is deprecated for paginated threads; use `excludeTurns: true`, then page with `thread/turns/list` and `thread/items/list`.",
+     "details": null
+    },
+    "emittedAtMs": 1792738884631
+   }
+  },
+  {
+   "t": 9535,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792738884651
+   }
+  },
+  {
+   "t": 9536,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "id": 2,
+    "result": {
+     "thread": {
+      "id": "01a16790-570b-7880-8706-b7600e2a71da",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570b-7880-8706-b7600e2a71da",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "low",
+      "createdAt": 1792738875,
+      "updatedAt": 1792738884,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T16-01-15-01a16790-570b-7880-8706-b7600e2a71da.jsonl",
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": {
+       "sha": "72370b398645794003a3eacf9bc2fdd34507a8e6",
+       "branch": "prototype/codex-hold-tool-call",
+       "originUrl": "git@github.com:ashigirl96/dawpi.git"
+      },
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": [
+       {
+        "id": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+        "rootTurnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+        "items": [
+         {
+          "type": "userMessage",
+          "id": "01a16790-62ed-7803-9086-f0eee11b8d2a",
+          "clientId": null,
+          "content": [
+           {
+            "type": "text",
+            "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+            "text_elements": []
+           }
+          ]
+         },
+         {
+          "type": "reasoning",
+          "id": "rs_013e0fb7592736d4016adb0643317481918dd06a755e0cd8a1",
+          "summary": [],
+          "content": []
+         },
+         {
+          "type": "dynamicToolCall",
+          "id": "exec-05099992-668b-4306-bcd0-a4af85680316",
+          "namespace": null,
+          "tool": "bridge_delegate",
+          "arguments": {
+           "task": "ping"
+          },
+          "status": "failed",
+          "contentItems": [],
+          "success": false,
+          "durationMs": 5002
+         }
+        ],
+        "itemsView": "full",
+        "status": "interrupted",
+        "error": null,
+        "startedAt": 1792738875,
+        "completedAt": 1792738884,
+        "durationMs": 9376
+       }
+      ]
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": "low",
+     "collaborationMode": {
+      "mode": "default",
+      "settings": {
+       "model": "gpt-5.6-luna",
+       "reasoning_effort": "low",
+       "developer_instructions": null
+      }
+     },
+     "multiAgentMode": "explicitRequestOnly",
+     "initialTurnsPage": null,
+     "turnsBackwardsCursor": "{\"requestedThreadId\":\"01a16790-570b-7880-8706-b7600e2a71da\",\"rolloutOrdinal\":1,\"includeAnchor\":true,\"scope\":{\"kind\":\"turns\"}}",
+     "itemsBackwardsCursor": "{\"requestedThreadId\":\"01a16790-570b-7880-8706-b7600e2a71da\",\"rolloutOrdinal\":14,\"includeAnchor\":true,\"scope\":{\"kind\":\"itemsByCreatedAtOrdinal\"}}"
+    }
+   }
+  },
+  {
+   "t": 9536,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-5756-7881-8fa2-1ec3c1c2d3c8",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 11953,
+       "inputTokens": 11915,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 38,
+       "reasoningOutputTokens": 10
+      },
+      "last": {
+       "totalTokens": 11953,
+       "inputTokens": 11915,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 38,
+       "reasoningOutputTokens": 10
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738884652
+   }
+  },
+  {
+   "t": 9536,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/goal/cleared",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da"
+    },
+    "emittedAtMs": 1792738884652
+   }
+  },
+  {
+   "t": 10046,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "account/updated",
+    "params": {
+     "authMode": "chatgpt",
+     "planType": "team"
+    },
+    "emittedAtMs": 1792738885161
+   }
+  },
+  {
+   "t": 29539,
+   "conn": "B",
+   "dir": "out",
+   "msg": {
+    "id": 3,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "input": [
+      {
+       "type": "text",
+       "text": "What did bridge_delegate return in your previous turn? Answer in one line (\"NONE\" if nothing). Then call bridge_delegate once with task \"again\" and reply with its result too.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 29551,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "id": 3,
+    "result": {
+     "turn": {
+      "id": "01a16790-ca51-7a82-8421-dc617af6172a",
+      "rootTurnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 29560,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792738904675
+   }
+  },
+  {
+   "t": 29560,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turn": {
+      "id": "01a16790-ca51-7a82-8421-dc617af6172a",
+      "rootTurnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792738904,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792738904675
+   }
+  },
+  {
+   "t": 30016,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-cc2b-73d2-b0b7-3c05498421b3",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "What did bridge_delegate return in your previous turn? Answer in one line (\"NONE\" if nothing). Then call bridge_delegate once with task \"again\" and reply with its result too.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "startedAtMs": 1792738905131
+    },
+    "emittedAtMs": 1792738905132
+   }
+  },
+  {
+   "t": 30016,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-cc2b-73d2-b0b7-3c05498421b3",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "What did bridge_delegate return in your previous turn? Answer in one line (\"NONE\" if nothing). Then call bridge_delegate once with task \"again\" and reply with its result too.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "completedAtMs": 1792738905131
+    },
+    "emittedAtMs": 1792738905132
+   }
+  },
+  {
+   "t": 31601,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_072ae4c4c47f80f5016adb065e930481919477ec2f0d610fe1",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "startedAtMs": 1792738906717
+    },
+    "emittedAtMs": 1792738906717
+   }
+  },
+  {
+   "t": 31602,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_072ae4c4c47f80f5016adb065e930481919477ec2f0d610fe1",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "completedAtMs": 1792738906717
+    },
+    "emittedAtMs": 1792738906718
+   }
+  },
+  {
+   "t": 31874,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-f4d3e0cf-dc00-4616-878e-ff7a020bee25",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "again"
+      },
+      "status": "inProgress",
+      "contentItems": null,
+      "success": null,
+      "durationMs": null
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "startedAtMs": 1792738906990
+    },
+    "emittedAtMs": 1792738906990
+   }
+  },
+  {
+   "t": 31874,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/tool/call",
+    "id": 0,
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "callId": "exec-f4d3e0cf-dc00-4616-878e-ff7a020bee25",
+     "namespace": null,
+     "tool": "bridge_delegate",
+     "arguments": {
+      "task": "again"
+     }
+    }
+   }
+  },
+  {
+   "t": 31874,
+   "conn": "B",
+   "dir": "out",
+   "msg": {
+    "id": 0,
+    "result": {
+     "success": true,
+     "contentItems": [
+      {
+       "type": "inputText",
+       "text": "pong2-sw4ltf"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 31874,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "metadata": {
+      "prompt": {
+       "omnimod": {
+        "protection_type": "omnimod",
+        "outputs": [
+         {
+          "results": [
+           {
+            "category_flags": {
+             "A1": false,
+             "A2": false,
+             "A3": false,
+             "C1": false,
+             "C11": false,
+             "C2": false,
+             "E1": false,
+             "E2": false,
+             "E3": false,
+             "H1": false,
+             "H2": false,
+             "H3": false,
+             "JB1": false,
+             "K1": false,
+             "K2": false,
+             "K3": false,
+             "K4": false,
+             "P1": false,
+             "P2": false,
+             "P3": false,
+             "P4": false,
+             "PD1": false,
+             "PD4": false,
+             "S1": false,
+             "S3+": false,
+             "S4": false,
+             "SH": false,
+             "TXT-C3": false,
+             "TXT-C4": false,
+             "V1": false,
+             "V2+": false,
+             "V4+": false,
+             "REFUSED": false,
+             "CBRN-B1+": false,
+             "IMG-C1": false,
+             "IMG-C11": false,
+             "IMG-C2": false,
+             "IMG-S1": false,
+             "IMG-SH": false,
+             "IMG-V1": false,
+             "IMG-V2+": false,
+             "IMG-V4+": false
+            }
+           }
+          ],
+          "is_blocked": false
+         }
+        ]
+       }
+      },
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738906990
+   }
+  },
+  {
+   "t": 31875,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-f4d3e0cf-dc00-4616-878e-ff7a020bee25",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "again"
+      },
+      "status": "completed",
+      "contentItems": [
+       {
+        "type": "inputText",
+        "text": "pong2-sw4ltf"
+       }
+      ],
+      "success": true,
+      "durationMs": 0
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "completedAtMs": 1792738906990
+    },
+    "emittedAtMs": 1792738906991
+   }
+  },
+  {
+   "t": 32025,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 24100,
+       "inputTokens": 23979,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 121,
+       "reasoningOutputTokens": 65
+      },
+      "last": {
+       "totalTokens": 12147,
+       "inputTokens": 12064,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 83,
+       "reasoningOutputTokens": 55
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738907140
+   }
+  },
+  {
+   "t": 32025,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738907140
+   }
+  },
+  {
+   "t": 32956,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+      "text": "",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "startedAtMs": 1792738908072
+    },
+    "emittedAtMs": 1792738908072
+   }
+  },
+  {
+   "t": 32956,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "itemId": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+     "delta": "NONE"
+    },
+    "emittedAtMs": 1792738908072
+   }
+  },
+  {
+   "t": 32956,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "itemId": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+     "delta": "\n"
+    },
+    "emittedAtMs": 1792738908072
+   }
+  },
+  {
+   "t": 33069,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "itemId": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+     "delta": "pong"
+    },
+    "emittedAtMs": 1792738908184
+   }
+  },
+  {
+   "t": 33069,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "itemId": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+     "delta": "2"
+    },
+    "emittedAtMs": 1792738908184
+   }
+  },
+  {
+   "t": 33069,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "itemId": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+     "delta": "-sw"
+    },
+    "emittedAtMs": 1792738908184
+   }
+  },
+  {
+   "t": 33069,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "itemId": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+     "delta": "4"
+    },
+    "emittedAtMs": 1792738908184
+   }
+  },
+  {
+   "t": 33069,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "itemId": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+     "delta": "ltf"
+    },
+    "emittedAtMs": 1792738908184
+   }
+  },
+  {
+   "t": 33079,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738908195
+   }
+  },
+  {
+   "t": 33081,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+      "text": "NONE\npong2-sw4ltf",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "completedAtMs": 1792738908195
+    },
+    "emittedAtMs": 1792738908197
+   }
+  },
+  {
+   "t": 33088,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 36286,
+       "inputTokens": 36154,
+       "cachedInputTokens": 23680,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 132,
+       "reasoningOutputTokens": 65
+      },
+      "last": {
+       "totalTokens": 12186,
+       "inputTokens": 12175,
+       "cachedInputTokens": 11904,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 11,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738908204
+   }
+  },
+  {
+   "t": 33088,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738908204
+   }
+  },
+  {
+   "t": 33094,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a16790-ca51-7a82-8421-dc617af6172a"
+      },
+      "revision": "34698f13-ceca-4fe6-b48e-fc5c12dc9f7a"
+     }
+    },
+    "emittedAtMs": 1792738908210
+   }
+  },
+  {
+   "t": 33094,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792738908210
+   }
+  },
+  {
+   "t": 33094,
+   "conn": "B",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16790-570b-7880-8706-b7600e2a71da",
+     "turn": {
+      "id": "01a16790-ca51-7a82-8421-dc617af6172a",
+      "rootTurnId": "01a16790-ca51-7a82-8421-dc617af6172a",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_072ae4c4c47f80f5016adb065ff1348191bfa988a05c2b6827",
+        "text": "NONE\npong2-sw4ltf",
+        "phase": "final_answer",
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792738904,
+      "completedAt": 1792738908,
+      "durationMs": 3539
+     }
+    },
+    "emittedAtMs": 1792738908210
+   }
+  }
+ ]
+}

@@ -1,0 +1,7291 @@
+{
+ "scenario": "hold",
+ "versions": {
+  "codex": "0.163.0",
+  "bun": "1.4.4"
+ },
+ "model": "gpt-5.6-luna",
+ "results": [
+  {
+   "holdMs": 30000,
+   "duringHold": [
+    "turn/moderationMetadata"
+   ],
+   "status": "completed",
+   "reply": "pong-7hev1m",
+   "matched": true,
+   "toolItem": {
+    "type": "dynamicToolCall",
+    "id": "exec-f12ebd3a-a9f4-47d3-acfc-3e2784f7052f",
+    "namespace": null,
+    "tool": "bridge_delegate",
+    "arguments": {
+     "task": "ping"
+    },
+    "status": "completed",
+    "contentItems": [
+     {
+      "type": "inputText",
+      "text": "pong-7hev1m"
+     }
+    ],
+    "success": true,
+    "durationMs": 30001
+   }
+  },
+  {
+   "holdMs": 300000,
+   "duringHold": [
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata"
+   ],
+   "status": "completed",
+   "reply": "pong-k66dqt",
+   "matched": true,
+   "toolItem": {
+    "type": "dynamicToolCall",
+    "id": "exec-05ca2c6f-038d-4502-b708-1771cb6ad894",
+    "namespace": null,
+    "tool": "bridge_delegate",
+    "arguments": {
+     "task": "ping"
+    },
+    "status": "completed",
+    "contentItems": [
+     {
+      "type": "inputText",
+      "text": "pong-k66dqt"
+     }
+    ],
+    "success": true,
+    "durationMs": 300000
+   }
+  },
+  {
+   "holdMs": 900000,
+   "duringHold": [
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata",
+    "thread/tokenUsage/updated",
+    "item/started",
+    "item/completed",
+    "turn/moderationMetadata"
+   ],
+   "status": "completed",
+   "reply": "pong-jqd7g7",
+   "matched": true,
+   "toolItem": {
+    "type": "dynamicToolCall",
+    "id": "exec-37c6ddca-0dd5-44d2-b89d-5eeb8fce10ef",
+    "namespace": null,
+    "tool": "bridge_delegate",
+    "arguments": {
+     "task": "ping"
+    },
+    "status": "completed",
+    "contentItems": [
+     {
+      "type": "inputText",
+      "text": "pong-jqd7g7"
+     }
+    ],
+    "success": true,
+    "durationMs": 899997
+   }
+  }
+ ],
+ "log": [
+  {
+   "t": 2,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "clientInfo": {
+      "name": "cbp3-A",
+      "title": null,
+      "version": "0"
+     },
+     "capabilities": {
+      "experimentalApi": true,
+      "requestAttestation": false
+     }
+    }
+   }
+  },
+  {
+   "t": 25,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 1,
+    "result": {
+     "userAgent": "cbp3-A/0.163.0 (Mac OS 26.6.2; arm64) WezTerm (cbp3-A; 0)",
+     "codexHome": "~/.codex-bridge/codex-home",
+     "platformFamily": "unix",
+     "platformOs": "macos"
+    }
+   }
+  },
+  {
+   "t": 25,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "method": "initialized"
+   }
+  },
+  {
+   "t": 25,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 2,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call/",
+     "ephemeral": true,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "dynamicTools": [
+      {
+       "type": "function",
+       "name": "bridge_delegate",
+       "description": "Delegate a task to another agent. Returns a receipt text.",
+       "inputSchema": {
+        "type": "object",
+        "properties": {
+         "task": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "task"
+        ],
+        "additionalProperties": false
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 25,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 3,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call/",
+     "ephemeral": true,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "dynamicTools": [
+      {
+       "type": "function",
+       "name": "bridge_delegate",
+       "description": "Delegate a task to another agent. Returns a receipt text.",
+       "inputSchema": {
+        "type": "object",
+        "properties": {
+         "task": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "task"
+        ],
+        "additionalProperties": false
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 25,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 4,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call/",
+     "ephemeral": true,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "dynamicTools": [
+      {
+       "type": "function",
+       "name": "bridge_delegate",
+       "description": "Delegate a task to another agent. Returns a receipt text.",
+       "inputSchema": {
+        "type": "object",
+        "properties": {
+         "task": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "task"
+        ],
+        "additionalProperties": false
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 25,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "remoteControl/status/changed",
+    "params": {
+     "status": "disabled",
+     "serverName": "<host>",
+     "installationId": "ff9d05b6-4b4e-42bd-aadf-f58844e54431",
+     "environmentId": null
+    },
+    "emittedAtMs": 1792738875145
+   }
+  },
+  {
+   "t": 40,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 4,
+    "result": {
+     "thread": {
+      "id": "01a16790-570d-7c13-80fe-a9e7122033e6",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": true,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": null,
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 5,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "input": [
+      {
+       "type": "text",
+       "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 2,
+    "result": {
+     "thread": {
+      "id": "01a16790-570d-7c13-80fe-a9f298477cf5",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": true,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": null,
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16790-570d-7c13-80fe-a9e7122033e6",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": true,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": null,
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792738875161
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16790-570d-7c13-80fe-a9f298477cf5",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": true,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": null,
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792738875161
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 3,
+    "result": {
+     "thread": {
+      "id": "01a16790-570d-7c13-80fe-aa071e56d063",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570d-7c13-80fe-aa071e56d063",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": true,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": null,
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "openai",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+     "runtimeWorkspaceRoots": [
+      "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a16790-570d-7c13-80fe-aa071e56d063",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+        "runtimeWorkspaceRoots": [
+         "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a16790-570d-7c13-80fe-aa071e56d063",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": true,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792738875,
+      "updatedAt": 1792738875,
+      "recencyAt": 1792738875,
+      "status": {
+       "type": "idle"
+      },
+      "path": null,
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "cliVersion": "0.163.0",
+      "originator": "cbp3-A",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792738875161
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 6,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "input": [
+      {
+       "type": "text",
+       "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 41,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 7,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "input": [
+      {
+       "type": "text",
+       "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 42,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792738875163
+   }
+  },
+  {
+   "t": 42,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792738875163
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/codex-hold-tool-call",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "openai",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792738875164
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 5,
+    "result": {
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7c83c37e86ac",
+      "rootTurnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 6,
+    "result": {
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7c954e47b3c2",
+      "rootTurnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792738875164
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7c83c37e86ac",
+      "rootTurnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792738875,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792738875164
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792738875164
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7c954e47b3c2",
+      "rootTurnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792738875,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792738875164
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "id": 7,
+    "result": {
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7ca574214aa0",
+      "rootTurnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792738875164
+   }
+  },
+  {
+   "t": 43,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7ca574214aa0",
+      "rootTurnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792738875,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792738875164
+   }
+  },
+  {
+   "t": 1121,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/updated",
+    "params": {
+     "authMode": "chatgpt",
+     "planType": "team"
+    },
+    "emittedAtMs": 1792738876242
+   }
+  },
+  {
+   "t": 3026,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-62c2-7de0-9cb2-268b17180273",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "startedAtMs": 1792738878146
+    },
+    "emittedAtMs": 1792738878147
+   }
+  },
+  {
+   "t": 3026,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-62c2-7de0-9cb2-268b17180273",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "completedAtMs": 1792738878146
+    },
+    "emittedAtMs": 1792738878147
+   }
+  },
+  {
+   "t": 3376,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-6420-7ed2-9580-484b2296341c",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792738878497
+    },
+    "emittedAtMs": 1792738878497
+   }
+  },
+  {
+   "t": 3377,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-6420-7ed2-9580-484b2296341c",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792738878497
+    },
+    "emittedAtMs": 1792738878497
+   }
+  },
+  {
+   "t": 3377,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-6421-7f11-89bf-43a7d416d56c",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792738878497
+    },
+    "emittedAtMs": 1792738878498
+   }
+  },
+  {
+   "t": 3378,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a16790-6421-7f11-89bf-43a7d416d56c",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "Call the tool bridge_delegate exactly once with task \"ping\". Then reply with exactly the text the tool returned, nothing else.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792738878497
+    },
+    "emittedAtMs": 1792738878498
+   }
+  },
+  {
+   "t": 4452,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb064382d08191970c6f504212e2a6",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792738879572
+    },
+    "emittedAtMs": 1792738879572
+   }
+  },
+  {
+   "t": 4452,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb064382d08191970c6f504212e2a6",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792738879572
+    },
+    "emittedAtMs": 1792738879572
+   }
+  },
+  {
+   "t": 4696,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-05ca2c6f-038d-4502-b708-1771cb6ad894",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "ping"
+      },
+      "status": "inProgress",
+      "contentItems": null,
+      "success": null,
+      "durationMs": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792738879817
+    },
+    "emittedAtMs": 1792738879817
+   }
+  },
+  {
+   "t": 4696,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/tool/call",
+    "id": 0,
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "callId": "exec-05ca2c6f-038d-4502-b708-1771cb6ad894",
+     "namespace": null,
+     "tool": "bridge_delegate",
+     "arguments": {
+      "task": "ping"
+     }
+    }
+   }
+  },
+  {
+   "t": 4752,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {
+       "omnimod": {
+        "protection_type": "omnimod",
+        "outputs": [
+         {
+          "results": [
+           {
+            "category_flags": {
+             "A1": false,
+             "A2": false,
+             "A3": false,
+             "C1": false,
+             "C11": false,
+             "C2": false,
+             "E1": false,
+             "E2": false,
+             "E3": false,
+             "H1": false,
+             "H2": false,
+             "H3": false,
+             "JB1": false,
+             "K1": false,
+             "K2": false,
+             "K3": false,
+             "K4": false,
+             "P1": false,
+             "P2": false,
+             "P3": false,
+             "P4": false,
+             "PD1": false,
+             "PD4": false,
+             "S1": false,
+             "S3+": false,
+             "S4": false,
+             "SH": false,
+             "TXT-C3": false,
+             "TXT-C4": false,
+             "V1": false,
+             "V2+": false,
+             "V4+": false,
+             "REFUSED": false,
+             "CBRN-B1+": false,
+             "IMG-C1": false,
+             "IMG-C11": false,
+             "IMG-C2": false,
+             "IMG-S1": false,
+             "IMG-SH": false,
+             "IMG-V1": false,
+             "IMG-V2+": false,
+             "IMG-V4+": false
+            }
+           }
+          ],
+          "is_blocked": false
+         }
+        ]
+       }
+      },
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738879873
+   }
+  },
+  {
+   "t": 4970,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb064406988191bed5aca51f9a9921",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792738880091
+    },
+    "emittedAtMs": 1792738880091
+   }
+  },
+  {
+   "t": 4970,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb064406988191bed5aca51f9a9921",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792738880091
+    },
+    "emittedAtMs": 1792738880091
+   }
+  },
+  {
+   "t": 5158,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-37c6ddca-0dd5-44d2-b89d-5eeb8fce10ef",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "ping"
+      },
+      "status": "inProgress",
+      "contentItems": null,
+      "success": null,
+      "durationMs": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792738880278
+    },
+    "emittedAtMs": 1792738880278
+   }
+  },
+  {
+   "t": 5158,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/tool/call",
+    "id": 1,
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "callId": "exec-37c6ddca-0dd5-44d2-b89d-5eeb8fce10ef",
+     "namespace": null,
+     "tool": "bridge_delegate",
+     "arguments": {
+      "task": "ping"
+     }
+    }
+   }
+  },
+  {
+   "t": 5275,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {
+       "omnimod": {
+        "protection_type": "omnimod",
+        "outputs": [
+         {
+          "results": [
+           {
+            "category_flags": {
+             "A1": false,
+             "A2": false,
+             "A3": false,
+             "C1": false,
+             "C11": false,
+             "C2": false,
+             "E1": false,
+             "E2": false,
+             "E3": false,
+             "H1": false,
+             "H2": false,
+             "H3": false,
+             "JB1": false,
+             "K1": false,
+             "K2": false,
+             "K3": false,
+             "K4": false,
+             "P1": false,
+             "P2": false,
+             "P3": false,
+             "P4": false,
+             "PD1": false,
+             "PD4": false,
+             "S1": false,
+             "S3+": false,
+             "S4": false,
+             "SH": false,
+             "TXT-C3": false,
+             "TXT-C4": false,
+             "V1": false,
+             "V2+": false,
+             "V4+": false,
+             "REFUSED": false,
+             "CBRN-B1+": false,
+             "IMG-C1": false,
+             "IMG-C11": false,
+             "IMG-C2": false,
+             "IMG-S1": false,
+             "IMG-SH": false,
+             "IMG-V1": false,
+             "IMG-V2+": false,
+             "IMG-V4+": false
+            }
+           }
+          ],
+          "is_blocked": false
+         }
+        ]
+       }
+      },
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738880396
+   }
+  },
+  {
+   "t": 5997,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0645d12dee31650c016adb064501108191bdf34dfde5d6ae24",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "startedAtMs": 1792738881118
+    },
+    "emittedAtMs": 1792738881118
+   }
+  },
+  {
+   "t": 5997,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0645d12dee31650c016adb064501108191bdf34dfde5d6ae24",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "completedAtMs": 1792738881118
+    },
+    "emittedAtMs": 1792738881118
+   }
+  },
+  {
+   "t": 6188,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-f12ebd3a-a9f4-47d3-acfc-3e2784f7052f",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "ping"
+      },
+      "status": "inProgress",
+      "contentItems": null,
+      "success": null,
+      "durationMs": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "startedAtMs": 1792738881309
+    },
+    "emittedAtMs": 1792738881309
+   }
+  },
+  {
+   "t": 6188,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/tool/call",
+    "id": 2,
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "callId": "exec-f12ebd3a-a9f4-47d3-acfc-3e2784f7052f",
+     "namespace": null,
+     "tool": "bridge_delegate",
+     "arguments": {
+      "task": "ping"
+     }
+    }
+   }
+  },
+  {
+   "t": 6218,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "metadata": {
+      "prompt": {
+       "omnimod": {
+        "protection_type": "omnimod",
+        "outputs": [
+         {
+          "results": [
+           {
+            "category_flags": {
+             "A1": false,
+             "A2": false,
+             "A3": false,
+             "C1": false,
+             "C11": false,
+             "C2": false,
+             "E1": false,
+             "E2": false,
+             "E3": false,
+             "H1": false,
+             "H2": false,
+             "H3": false,
+             "JB1": false,
+             "K1": false,
+             "K2": false,
+             "K3": false,
+             "K4": false,
+             "P1": false,
+             "P2": false,
+             "P3": false,
+             "P4": false,
+             "PD1": false,
+             "PD4": false,
+             "S1": false,
+             "S3+": false,
+             "S4": false,
+             "SH": false,
+             "TXT-C3": false,
+             "TXT-C4": false,
+             "V1": false,
+             "V2+": false,
+             "V4+": false,
+             "REFUSED": false,
+             "CBRN-B1+": false,
+             "IMG-C1": false,
+             "IMG-C11": false,
+             "IMG-C2": false,
+             "IMG-S1": false,
+             "IMG-SH": false,
+             "IMG-V1": false,
+             "IMG-V2+": false,
+             "IMG-V4+": false
+            }
+           }
+          ],
+          "is_blocked": false
+         }
+        ]
+       }
+      },
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738881338
+   }
+  },
+  {
+   "t": 35700,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 11953,
+       "inputTokens": 11915,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 38,
+       "reasoningOutputTokens": 10
+      },
+      "last": {
+       "totalTokens": 11953,
+       "inputTokens": 11915,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 38,
+       "reasoningOutputTokens": 10
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738910821
+   }
+  },
+  {
+   "t": 35700,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738910821
+   }
+  },
+  {
+   "t": 36160,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 11957,
+       "inputTokens": 11915,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 42,
+       "reasoningOutputTokens": 14
+      },
+      "last": {
+       "totalTokens": 11957,
+       "inputTokens": 11915,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 42,
+       "reasoningOutputTokens": 14
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738911281
+   }
+  },
+  {
+   "t": 36160,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738911281
+   }
+  },
+  {
+   "t": 36189,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 2,
+    "result": {
+     "success": true,
+     "contentItems": [
+      {
+       "type": "inputText",
+       "text": "pong-7hev1m"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 36190,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-f12ebd3a-a9f4-47d3-acfc-3e2784f7052f",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "ping"
+      },
+      "status": "completed",
+      "contentItems": [
+       {
+        "type": "inputText",
+        "text": "pong-7hev1m"
+       }
+      ],
+      "success": true,
+      "durationMs": 30001
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "completedAtMs": 1792738911311
+    },
+    "emittedAtMs": 1792738911311
+   }
+  },
+  {
+   "t": 36190,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 11960,
+       "inputTokens": 11915,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 45,
+       "reasoningOutputTokens": 17
+      },
+      "last": {
+       "totalTokens": 11960,
+       "inputTokens": 11915,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 45,
+       "reasoningOutputTokens": 17
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738911311
+   }
+  },
+  {
+   "t": 36190,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738911311
+   }
+  },
+  {
+   "t": 36504,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb0663906481919b99e43b7323428a",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792738911625
+    },
+    "emittedAtMs": 1792738911625
+   }
+  },
+  {
+   "t": 36504,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb0663906481919b99e43b7323428a",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792738911625
+    },
+    "emittedAtMs": 1792738911625
+   }
+  },
+  {
+   "t": 36804,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738911925
+   }
+  },
+  {
+   "t": 37258,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06644da88191a337aadd7a25f6aa",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792738912379
+    },
+    "emittedAtMs": 1792738912379
+   }
+  },
+  {
+   "t": 37259,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06644da88191a337aadd7a25f6aa",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792738912379
+    },
+    "emittedAtMs": 1792738912379
+   }
+  },
+  {
+   "t": 37297,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0645d12dee31650c016adb06645abc8191a0c202340aaddaff",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "startedAtMs": 1792738912418
+    },
+    "emittedAtMs": 1792738912418
+   }
+  },
+  {
+   "t": 37298,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0645d12dee31650c016adb06645abc8191a0c202340aaddaff",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "completedAtMs": 1792738912418
+    },
+    "emittedAtMs": 1792738912418
+   }
+  },
+  {
+   "t": 37344,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+      "text": "",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "startedAtMs": 1792738912464
+    },
+    "emittedAtMs": 1792738912464
+   }
+  },
+  {
+   "t": 37344,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "itemId": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+     "delta": "pong"
+    },
+    "emittedAtMs": 1792738912464
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "itemId": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+     "delta": "-"
+    },
+    "emittedAtMs": 1792738912578
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "itemId": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+     "delta": "7"
+    },
+    "emittedAtMs": 1792738912578
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "itemId": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+     "delta": "hev"
+    },
+    "emittedAtMs": 1792738912578
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "itemId": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+     "delta": "1"
+    },
+    "emittedAtMs": 1792738912578
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "itemId": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+     "delta": "m"
+    },
+    "emittedAtMs": 1792738912578
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738912578
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+      "text": "pong-7hev1m",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "completedAtMs": 1792738912578
+    },
+    "emittedAtMs": 1792738912578
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 23970,
+       "inputTokens": 23904,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 66,
+       "reasoningOutputTokens": 26
+      },
+      "last": {
+       "totalTokens": 12010,
+       "inputTokens": 11989,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 21,
+       "reasoningOutputTokens": 9
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738912579
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738912579
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792738912579
+   }
+  },
+  {
+   "t": 37458,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9f298477cf5",
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7c954e47b3c2",
+      "rootTurnId": "01a16790-571a-7c51-a116-7c954e47b3c2",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_0645d12dee31650c016adb0664666081918ab09902c128d7f9",
+        "text": "pong-7hev1m",
+        "phase": "final_answer",
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792738875,
+      "completedAt": 1792738912,
+      "durationMs": 37415
+     }
+    },
+    "emittedAtMs": 1792738912579
+   }
+  },
+  {
+   "t": 37521,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738912642
+   }
+  },
+  {
+   "t": 67749,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 23974,
+       "inputTokens": 23896,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 78,
+       "reasoningOutputTokens": 17
+      },
+      "last": {
+       "totalTokens": 12021,
+       "inputTokens": 11981,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 40,
+       "reasoningOutputTokens": 7
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738942869
+   }
+  },
+  {
+   "t": 67749,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738942869
+   }
+  },
+  {
+   "t": 68524,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 23982,
+       "inputTokens": 23900,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 82,
+       "reasoningOutputTokens": 21
+      },
+      "last": {
+       "totalTokens": 12025,
+       "inputTokens": 11985,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 40,
+       "reasoningOutputTokens": 7
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738943645
+   }
+  },
+  {
+   "t": 68524,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738943645
+   }
+  },
+  {
+   "t": 69122,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06842d888191acc0013d0a98c7dc",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792738944242
+    },
+    "emittedAtMs": 1792738944242
+   }
+  },
+  {
+   "t": 69122,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06842d888191acc0013d0a98c7dc",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792738944242
+    },
+    "emittedAtMs": 1792738944243
+   }
+  },
+  {
+   "t": 69339,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738944460
+   }
+  },
+  {
+   "t": 69628,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0684b0ec8191a39a1ea851942b4d",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792738944748
+    },
+    "emittedAtMs": 1792738944748
+   }
+  },
+  {
+   "t": 69629,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0684b0ec8191a39a1ea851942b4d",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792738944750
+    },
+    "emittedAtMs": 1792738944750
+   }
+  },
+  {
+   "t": 69830,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738944951
+   }
+  },
+  {
+   "t": 100300,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 36062,
+       "inputTokens": 35945,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 117,
+       "reasoningOutputTokens": 23
+      },
+      "last": {
+       "totalTokens": 12088,
+       "inputTokens": 12049,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738975421
+   }
+  },
+  {
+   "t": 100300,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738975421
+   }
+  },
+  {
+   "t": 100801,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 36074,
+       "inputTokens": 35953,
+       "cachedInputTokens": 23552,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 121,
+       "reasoningOutputTokens": 27
+      },
+      "last": {
+       "totalTokens": 12092,
+       "inputTokens": 12053,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792738975922
+   }
+  },
+  {
+   "t": 100801,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792738975922
+   }
+  },
+  {
+   "t": 101746,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06a4c2388191bc203f753da2bf5c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792738976867
+    },
+    "emittedAtMs": 1792738976867
+   }
+  },
+  {
+   "t": 101746,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06a4c2388191bc203f753da2bf5c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792738976867
+    },
+    "emittedAtMs": 1792738976867
+   }
+  },
+  {
+   "t": 101976,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738977097
+   }
+  },
+  {
+   "t": 102691,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06a5b88c8191b8538a540875021d",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792738977812
+    },
+    "emittedAtMs": 1792738977812
+   }
+  },
+  {
+   "t": 102691,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06a5b88c8191b8538a540875021d",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792738977812
+    },
+    "emittedAtMs": 1792738977812
+   }
+  },
+  {
+   "t": 102861,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792738977982
+   }
+  },
+  {
+   "t": 132829,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 48217,
+       "inputTokens": 48061,
+       "cachedInputTokens": 23552,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 156,
+       "reasoningOutputTokens": 29
+      },
+      "last": {
+       "totalTokens": 12155,
+       "inputTokens": 12116,
+       "cachedInputTokens": 11776,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739007950
+   }
+  },
+  {
+   "t": 132830,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739007950
+   }
+  },
+  {
+   "t": 133816,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 48233,
+       "inputTokens": 48073,
+       "cachedInputTokens": 23552,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 160,
+       "reasoningOutputTokens": 33
+      },
+      "last": {
+       "totalTokens": 12159,
+       "inputTokens": 12120,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739008937
+   }
+  },
+  {
+   "t": 133816,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739008937
+   }
+  },
+  {
+   "t": 134253,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06c54bb48191bf47af5e03c96c50",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739009373
+    },
+    "emittedAtMs": 1792739009373
+   }
+  },
+  {
+   "t": 134253,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06c54bb48191bf47af5e03c96c50",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739009373
+    },
+    "emittedAtMs": 1792739009373
+   }
+  },
+  {
+   "t": 134466,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739009586
+   }
+  },
+  {
+   "t": 135185,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06c6389c81918f3296e90bd23146",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739010305
+    },
+    "emittedAtMs": 1792739010305
+   }
+  },
+  {
+   "t": 135185,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06c6389c81918f3296e90bd23146",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739010305
+    },
+    "emittedAtMs": 1792739010305
+   }
+  },
+  {
+   "t": 135497,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739010618
+   }
+  },
+  {
+   "t": 165452,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 60440,
+       "inputTokens": 60244,
+       "cachedInputTokens": 35456,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 196,
+       "reasoningOutputTokens": 36
+      },
+      "last": {
+       "totalTokens": 12223,
+       "inputTokens": 12183,
+       "cachedInputTokens": 11904,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 40,
+       "reasoningOutputTokens": 7
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739040573
+   }
+  },
+  {
+   "t": 165452,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739040573
+   }
+  },
+  {
+   "t": 166252,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06e54e388191aab666b6dd53167e",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739041372
+    },
+    "emittedAtMs": 1792739041372
+   }
+  },
+  {
+   "t": 166252,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb06e54e388191aab666b6dd53167e",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739041372
+    },
+    "emittedAtMs": 1792739041372
+   }
+  },
+  {
+   "t": 166395,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 60463,
+       "inputTokens": 60260,
+       "cachedInputTokens": 35456,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 203,
+       "reasoningOutputTokens": 43
+      },
+      "last": {
+       "totalTokens": 12230,
+       "inputTokens": 12187,
+       "cachedInputTokens": 11904,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 43,
+       "reasoningOutputTokens": 10
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739041516
+   }
+  },
+  {
+   "t": 166395,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739041516
+   }
+  },
+  {
+   "t": 166468,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739041589
+   }
+  },
+  {
+   "t": 169956,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06e904b081919dc01e2a0763d38c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739045077
+    },
+    "emittedAtMs": 1792739045077
+   }
+  },
+  {
+   "t": 169956,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb06e904b081919dc01e2a0763d38c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739045077
+    },
+    "emittedAtMs": 1792739045077
+   }
+  },
+  {
+   "t": 170251,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739045372
+   }
+  },
+  {
+   "t": 197435,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 72730,
+       "inputTokens": 72495,
+       "cachedInputTokens": 47488,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 235,
+       "reasoningOutputTokens": 42
+      },
+      "last": {
+       "totalTokens": 12290,
+       "inputTokens": 12251,
+       "cachedInputTokens": 12032,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739072556
+   }
+  },
+  {
+   "t": 197436,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739072556
+   }
+  },
+  {
+   "t": 198411,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb0705745081918106f550c08199ff",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739073531
+    },
+    "emittedAtMs": 1792739073531
+   }
+  },
+  {
+   "t": 198411,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb0705745081918106f550c08199ff",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739073531
+    },
+    "emittedAtMs": 1792739073531
+   }
+  },
+  {
+   "t": 198611,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739073732
+   }
+  },
+  {
+   "t": 201229,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 72760,
+       "inputTokens": 72518,
+       "cachedInputTokens": 47488,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 242,
+       "reasoningOutputTokens": 49
+      },
+      "last": {
+       "totalTokens": 12297,
+       "inputTokens": 12258,
+       "cachedInputTokens": 12032,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739076349
+   }
+  },
+  {
+   "t": 201229,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739076349
+   }
+  },
+  {
+   "t": 202834,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0709e48c81919531fb74ad374f7b",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739077954
+    },
+    "emittedAtMs": 1792739077955
+   }
+  },
+  {
+   "t": 202835,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0709e48c81919531fb74ad374f7b",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739077956
+    },
+    "emittedAtMs": 1792739077956
+   }
+  },
+  {
+   "t": 203131,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739078252
+   }
+  },
+  {
+   "t": 229580,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 85094,
+       "inputTokens": 84813,
+       "cachedInputTokens": 59392,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 281,
+       "reasoningOutputTokens": 55
+      },
+      "last": {
+       "totalTokens": 12364,
+       "inputTokens": 12318,
+       "cachedInputTokens": 11904,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 46,
+       "reasoningOutputTokens": 13
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739104701
+   }
+  },
+  {
+   "t": 229581,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739104701
+   }
+  },
+  {
+   "t": 230812,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb0725dec0819190f645a892884db7",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739105933
+    },
+    "emittedAtMs": 1792739105933
+   }
+  },
+  {
+   "t": 230813,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb0725dec0819190f645a892884db7",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739105933
+    },
+    "emittedAtMs": 1792739105933
+   }
+  },
+  {
+   "t": 231041,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739106162
+   }
+  },
+  {
+   "t": 234134,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 85130,
+       "inputTokens": 84843,
+       "cachedInputTokens": 59520,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 287,
+       "reasoningOutputTokens": 61
+      },
+      "last": {
+       "totalTokens": 12370,
+       "inputTokens": 12325,
+       "cachedInputTokens": 12032,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 45,
+       "reasoningOutputTokens": 12
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739109255
+   }
+  },
+  {
+   "t": 234134,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739109255
+   }
+  },
+  {
+   "t": 235164,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb072a39d08191977528ff6f8d6a2b",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739110285
+    },
+    "emittedAtMs": 1792739110285
+   }
+  },
+  {
+   "t": 235164,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb072a39d08191977528ff6f8d6a2b",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739110285
+    },
+    "emittedAtMs": 1792739110285
+   }
+  },
+  {
+   "t": 235440,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739110561
+   }
+  },
+  {
+   "t": 262026,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 97525,
+       "inputTokens": 97205,
+       "cachedInputTokens": 71552,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 320,
+       "reasoningOutputTokens": 61
+      },
+      "last": {
+       "totalTokens": 12431,
+       "inputTokens": 12392,
+       "cachedInputTokens": 12160,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739137147
+   }
+  },
+  {
+   "t": 262026,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739137147
+   }
+  },
+  {
+   "t": 263228,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb074632408191840d247f145aa9ca",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739138348
+    },
+    "emittedAtMs": 1792739138348
+   }
+  },
+  {
+   "t": 263228,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb074632408191840d247f145aa9ca",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739138348
+    },
+    "emittedAtMs": 1792739138348
+   }
+  },
+  {
+   "t": 263425,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739138546
+   }
+  },
+  {
+   "t": 266344,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 97572,
+       "inputTokens": 97241,
+       "cachedInputTokens": 71424,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 331,
+       "reasoningOutputTokens": 72
+      },
+      "last": {
+       "totalTokens": 12442,
+       "inputTokens": 12398,
+       "cachedInputTokens": 11904,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 44,
+       "reasoningOutputTokens": 11
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739141465
+   }
+  },
+  {
+   "t": 266345,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739141465
+   }
+  },
+  {
+   "t": 267658,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb074ab7ac81919ccbeff3eaafaf92",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739142778
+    },
+    "emittedAtMs": 1792739142778
+   }
+  },
+  {
+   "t": 267658,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb074ab7ac81919ccbeff3eaafaf92",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739142778
+    },
+    "emittedAtMs": 1792739142778
+   }
+  },
+  {
+   "t": 267948,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739143068
+   }
+  },
+  {
+   "t": 294428,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 110029,
+       "inputTokens": 109664,
+       "cachedInputTokens": 83584,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 365,
+       "reasoningOutputTokens": 73
+      },
+      "last": {
+       "totalTokens": 12504,
+       "inputTokens": 12459,
+       "cachedInputTokens": 12032,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 45,
+       "reasoningOutputTokens": 12
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739169549
+   }
+  },
+  {
+   "t": 294428,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739169549
+   }
+  },
+  {
+   "t": 295405,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb076675b88191bc54949f6dbcb372",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739170526
+    },
+    "emittedAtMs": 1792739170526
+   }
+  },
+  {
+   "t": 295405,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb076675b88191bc54949f6dbcb372",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739170526
+    },
+    "emittedAtMs": 1792739170526
+   }
+  },
+  {
+   "t": 295734,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739170855
+   }
+  },
+  {
+   "t": 298951,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 110086,
+       "inputTokens": 109711,
+       "cachedInputTokens": 83584,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 375,
+       "reasoningOutputTokens": 83
+      },
+      "last": {
+       "totalTokens": 12514,
+       "inputTokens": 12470,
+       "cachedInputTokens": 12160,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 44,
+       "reasoningOutputTokens": 11
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739174072
+   }
+  },
+  {
+   "t": 298951,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739174072
+   }
+  },
+  {
+   "t": 300791,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb076bd4148191883f4820977f7311",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739175912
+    },
+    "emittedAtMs": 1792739175912
+   }
+  },
+  {
+   "t": 300791,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb076bd4148191883f4820977f7311",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739175912
+    },
+    "emittedAtMs": 1792739175912
+   }
+  },
+  {
+   "t": 300997,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739176118
+   }
+  },
+  {
+   "t": 304699,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 0,
+    "result": {
+     "success": true,
+     "contentItems": [
+      {
+       "type": "inputText",
+       "text": "pong-k66dqt"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 304700,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-05ca2c6f-038d-4502-b708-1771cb6ad894",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "ping"
+      },
+      "status": "completed",
+      "contentItems": [
+       {
+        "type": "inputText",
+        "text": "pong-k66dqt"
+       }
+      ],
+      "success": true,
+      "durationMs": 300000
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739179820
+    },
+    "emittedAtMs": 1792739179821
+   }
+  },
+  {
+   "t": 304702,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 122603,
+       "inputTokens": 122196,
+       "cachedInputTokens": 95872,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 407,
+       "reasoningOutputTokens": 82
+      },
+      "last": {
+       "totalTokens": 12574,
+       "inputTokens": 12532,
+       "cachedInputTokens": 12288,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 42,
+       "reasoningOutputTokens": 9
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739179822
+   }
+  },
+  {
+   "t": 304702,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739179822
+   }
+  },
+  {
+   "t": 305523,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb077094088191b3292ba3b8ae0a2c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739180644
+    },
+    "emittedAtMs": 1792739180644
+   }
+  },
+  {
+   "t": 305524,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_0e0876b51eee6a86016adb077094088191b3292ba3b8ae0a2c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739180644
+    },
+    "emittedAtMs": 1792739180644
+   }
+  },
+  {
+   "t": 305580,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+      "text": "",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "startedAtMs": 1792739180701
+    },
+    "emittedAtMs": 1792739180701
+   }
+  },
+  {
+   "t": 305581,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "itemId": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+     "delta": "pong"
+    },
+    "emittedAtMs": 1792739180701
+   }
+  },
+  {
+   "t": 305696,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "itemId": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+     "delta": "-k"
+    },
+    "emittedAtMs": 1792739180817
+   }
+  },
+  {
+   "t": 305697,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "itemId": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+     "delta": "66"
+    },
+    "emittedAtMs": 1792739180817
+   }
+  },
+  {
+   "t": 305697,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "itemId": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+     "delta": "d"
+    },
+    "emittedAtMs": 1792739180817
+   }
+  },
+  {
+   "t": 305697,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "itemId": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+     "delta": "qt"
+    },
+    "emittedAtMs": 1792739180817
+   }
+  },
+  {
+   "t": 305697,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739180817
+   }
+  },
+  {
+   "t": 305699,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+      "text": "pong-k66dqt",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "completedAtMs": 1792739180820
+    },
+    "emittedAtMs": 1792739180820
+   }
+  },
+  {
+   "t": 305787,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 135224,
+       "inputTokens": 134798,
+       "cachedInputTokens": 108032,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 426,
+       "reasoningOutputTokens": 90
+      },
+      "last": {
+       "totalTokens": 12621,
+       "inputTokens": 12602,
+       "cachedInputTokens": 12160,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 19,
+       "reasoningOutputTokens": 8
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739180908
+   }
+  },
+  {
+   "t": 305787,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739180908
+   }
+  },
+  {
+   "t": 305787,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792739180908
+   }
+  },
+  {
+   "t": 305787,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-aa071e56d063",
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7ca574214aa0",
+      "rootTurnId": "01a16790-571a-7c51-a116-7ca574214aa0",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_0e0876b51eee6a86016adb0770a0308191999e3c9841068c58",
+        "text": "pong-k66dqt",
+        "phase": "final_answer",
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792738875,
+      "completedAt": 1792739180,
+      "durationMs": 305742
+     }
+    },
+    "emittedAtMs": 1792739180908
+   }
+  },
+  {
+   "t": 331985,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 122669,
+       "inputTokens": 122253,
+       "cachedInputTokens": 95872,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 416,
+       "reasoningOutputTokens": 91
+      },
+      "last": {
+       "totalTokens": 12583,
+       "inputTokens": 12542,
+       "cachedInputTokens": 12288,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 41,
+       "reasoningOutputTokens": 8
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739207106
+   }
+  },
+  {
+   "t": 331986,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739207106
+   }
+  },
+  {
+   "t": 333506,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb078c7b988191941d98a20836b7ab",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739208627
+    },
+    "emittedAtMs": 1792739208627
+   }
+  },
+  {
+   "t": 333507,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb078c7b988191941d98a20836b7ab",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739208628
+    },
+    "emittedAtMs": 1792739208628
+   }
+  },
+  {
+   "t": 333772,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739208892
+   }
+  },
+  {
+   "t": 364682,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 135326,
+       "inputTokens": 134864,
+       "cachedInputTokens": 108288,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 462,
+       "reasoningOutputTokens": 104
+      },
+      "last": {
+       "totalTokens": 12657,
+       "inputTokens": 12611,
+       "cachedInputTokens": 12416,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 46,
+       "reasoningOutputTokens": 13
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739239802
+   }
+  },
+  {
+   "t": 364682,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739239802
+   }
+  },
+  {
+   "t": 365989,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb07acea248191b3255753279ce9c9",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739241110
+    },
+    "emittedAtMs": 1792739241110
+   }
+  },
+  {
+   "t": 365989,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb07acea248191b3255753279ce9c9",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739241110
+    },
+    "emittedAtMs": 1792739241110
+   }
+  },
+  {
+   "t": 366545,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739241666
+   }
+  },
+  {
+   "t": 401528,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 148063,
+       "inputTokens": 147549,
+       "cachedInputTokens": 120704,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 514,
+       "reasoningOutputTokens": 123
+      },
+      "last": {
+       "totalTokens": 12737,
+       "inputTokens": 12685,
+       "cachedInputTokens": 12416,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 52,
+       "reasoningOutputTokens": 19
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739276649
+   }
+  },
+  {
+   "t": 401530,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739276649
+   }
+  },
+  {
+   "t": 403223,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb07ce2fe481919a6c7d1d2045b346",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739278344
+    },
+    "emittedAtMs": 1792739278344
+   }
+  },
+  {
+   "t": 403223,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb07ce2fe481919a6c7d1d2045b346",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739278344
+    },
+    "emittedAtMs": 1792739278344
+   }
+  },
+  {
+   "t": 403438,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739278559
+   }
+  },
+  {
+   "t": 434383,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 160878,
+       "inputTokens": 160314,
+       "cachedInputTokens": 133248,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 564,
+       "reasoningOutputTokens": 140
+      },
+      "last": {
+       "totalTokens": 12815,
+       "inputTokens": 12765,
+       "cachedInputTokens": 12544,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 50,
+       "reasoningOutputTokens": 17
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739309504
+   }
+  },
+  {
+   "t": 434383,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739309504
+   }
+  },
+  {
+   "t": 435880,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb07eee4988191a5af4e6294e1f3f6",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739311000
+    },
+    "emittedAtMs": 1792739311000
+   }
+  },
+  {
+   "t": 435880,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb07eee4988191a5af4e6294e1f3f6",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739311000
+    },
+    "emittedAtMs": 1792739311000
+   }
+  },
+  {
+   "t": 436137,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739311258
+   }
+  },
+  {
+   "t": 467092,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 173766,
+       "inputTokens": 173157,
+       "cachedInputTokens": 145408,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 609,
+       "reasoningOutputTokens": 152
+      },
+      "last": {
+       "totalTokens": 12888,
+       "inputTokens": 12843,
+       "cachedInputTokens": 12160,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 45,
+       "reasoningOutputTokens": 12
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739342212
+   }
+  },
+  {
+   "t": 467092,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739342212
+   }
+  },
+  {
+   "t": 469089,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb081008dc8191af991c0245c149e0",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739344210
+    },
+    "emittedAtMs": 1792739344210
+   }
+  },
+  {
+   "t": 469089,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb081008dc8191af991c0245c149e0",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739344210
+    },
+    "emittedAtMs": 1792739344210
+   }
+  },
+  {
+   "t": 469193,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739344314
+   }
+  },
+  {
+   "t": 500197,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 186730,
+       "inputTokens": 186073,
+       "cachedInputTokens": 158080,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 657,
+       "reasoningOutputTokens": 167
+      },
+      "last": {
+       "totalTokens": 12964,
+       "inputTokens": 12916,
+       "cachedInputTokens": 12672,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 48,
+       "reasoningOutputTokens": 15
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739375318
+   }
+  },
+  {
+   "t": 500197,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739375318
+   }
+  },
+  {
+   "t": 501267,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08304ab481919e56e7259c2eef97",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739376388
+    },
+    "emittedAtMs": 1792739376388
+   }
+  },
+  {
+   "t": 501267,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08304ab481919e56e7259c2eef97",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739376388
+    },
+    "emittedAtMs": 1792739376388
+   }
+  },
+  {
+   "t": 502118,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739377239
+   }
+  },
+  {
+   "t": 532813,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 199776,
+       "inputTokens": 199065,
+       "cachedInputTokens": 170880,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 711,
+       "reasoningOutputTokens": 188
+      },
+      "last": {
+       "totalTokens": 13046,
+       "inputTokens": 12992,
+       "cachedInputTokens": 12800,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 54,
+       "reasoningOutputTokens": 21
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739407934
+   }
+  },
+  {
+   "t": 532813,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739407934
+   }
+  },
+  {
+   "t": 534331,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb085160d8819195839861e2a0c495",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739409452
+    },
+    "emittedAtMs": 1792739409452
+   }
+  },
+  {
+   "t": 534331,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb085160d8819195839861e2a0c495",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739409452
+    },
+    "emittedAtMs": 1792739409452
+   }
+  },
+  {
+   "t": 534820,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739409940
+   }
+  },
+  {
+   "t": 565626,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 212889,
+       "inputTokens": 212139,
+       "cachedInputTokens": 183680,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 750,
+       "reasoningOutputTokens": 194
+      },
+      "last": {
+       "totalTokens": 13113,
+       "inputTokens": 13074,
+       "cachedInputTokens": 12800,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 39,
+       "reasoningOutputTokens": 6
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739440747
+   }
+  },
+  {
+   "t": 565627,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739440747
+   }
+  },
+  {
+   "t": 567131,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0872209481918485006c2de68f0b",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739442252
+    },
+    "emittedAtMs": 1792739442252
+   }
+  },
+  {
+   "t": 567131,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0872209481918485006c2de68f0b",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739442252
+    },
+    "emittedAtMs": 1792739442252
+   }
+  },
+  {
+   "t": 567334,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739442455
+   }
+  },
+  {
+   "t": 598330,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 226079,
+       "inputTokens": 225280,
+       "cachedInputTokens": 196608,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 799,
+       "reasoningOutputTokens": 210
+      },
+      "last": {
+       "totalTokens": 13190,
+       "inputTokens": 13141,
+       "cachedInputTokens": 12928,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 49,
+       "reasoningOutputTokens": 16
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739473451
+   }
+  },
+  {
+   "t": 598330,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739473451
+   }
+  },
+  {
+   "t": 599479,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0892889c8191895db74bbcc2218f",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739474600
+    },
+    "emittedAtMs": 1792739474600
+   }
+  },
+  {
+   "t": 599479,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0892889c8191895db74bbcc2218f",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739474600
+    },
+    "emittedAtMs": 1792739474600
+   }
+  },
+  {
+   "t": 599733,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739474853
+   }
+  },
+  {
+   "t": 630673,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 239340,
+       "inputTokens": 238498,
+       "cachedInputTokens": 209536,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 842,
+       "reasoningOutputTokens": 220
+      },
+      "last": {
+       "totalTokens": 13261,
+       "inputTokens": 13218,
+       "cachedInputTokens": 12928,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 43,
+       "reasoningOutputTokens": 10
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739505794
+   }
+  },
+  {
+   "t": 630673,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739505794
+   }
+  },
+  {
+   "t": 632865,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08b3a8588191ba45a66249aa01af",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739507986
+    },
+    "emittedAtMs": 1792739507986
+   }
+  },
+  {
+   "t": 632867,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08b3a8588191ba45a66249aa01af",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739507986
+    },
+    "emittedAtMs": 1792739507986
+   }
+  },
+  {
+   "t": 633085,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739508206
+   }
+  },
+  {
+   "t": 664014,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 252686,
+       "inputTokens": 251787,
+       "cachedInputTokens": 222592,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 899,
+       "reasoningOutputTokens": 244
+      },
+      "last": {
+       "totalTokens": 13346,
+       "inputTokens": 13289,
+       "cachedInputTokens": 13056,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 57,
+       "reasoningOutputTokens": 24
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739539134
+   }
+  },
+  {
+   "t": 664014,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739539134
+   }
+  },
+  {
+   "t": 666069,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08d51e2c819190b8bb5a05bcf4d9",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739541190
+    },
+    "emittedAtMs": 1792739541190
+   }
+  },
+  {
+   "t": 666070,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08d51e2c819190b8bb5a05bcf4d9",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739541190
+    },
+    "emittedAtMs": 1792739541190
+   }
+  },
+  {
+   "t": 666319,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739541440
+   }
+  },
+  {
+   "t": 697275,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 266110,
+       "inputTokens": 265161,
+       "cachedInputTokens": 235648,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 949,
+       "reasoningOutputTokens": 261
+      },
+      "last": {
+       "totalTokens": 13424,
+       "inputTokens": 13374,
+       "cachedInputTokens": 13056,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 50,
+       "reasoningOutputTokens": 17
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739572396
+   }
+  },
+  {
+   "t": 697275,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739572396
+   }
+  },
+  {
+   "t": 698403,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08f56a0481918d180a4c6dc26a6e",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739573524
+    },
+    "emittedAtMs": 1792739573524
+   }
+  },
+  {
+   "t": 698403,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb08f56a0481918d180a4c6dc26a6e",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739573524
+    },
+    "emittedAtMs": 1792739573524
+   }
+  },
+  {
+   "t": 698607,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739573728
+   }
+  },
+  {
+   "t": 729559,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 279612,
+       "inputTokens": 278613,
+       "cachedInputTokens": 248192,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 999,
+       "reasoningOutputTokens": 278
+      },
+      "last": {
+       "totalTokens": 13502,
+       "inputTokens": 13452,
+       "cachedInputTokens": 12544,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 50,
+       "reasoningOutputTokens": 17
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739604679
+   }
+  },
+  {
+   "t": 729560,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739604679
+   }
+  },
+  {
+   "t": 730710,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0915b0a08191b7b0b2bd366f7060",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739605830
+    },
+    "emittedAtMs": 1792739605831
+   }
+  },
+  {
+   "t": 730710,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0915b0a08191b7b0b2bd366f7060",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739605831
+    },
+    "emittedAtMs": 1792739605831
+   }
+  },
+  {
+   "t": 730911,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739606032
+   }
+  },
+  {
+   "t": 761914,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 293186,
+       "inputTokens": 292143,
+       "cachedInputTokens": 261376,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1043,
+       "reasoningOutputTokens": 289
+      },
+      "last": {
+       "totalTokens": 13574,
+       "inputTokens": 13530,
+       "cachedInputTokens": 13184,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 44,
+       "reasoningOutputTokens": 11
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739637035
+   }
+  },
+  {
+   "t": 761915,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739637035
+   }
+  },
+  {
+   "t": 763490,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0936895c819193ac8aad8e060f44",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739638611
+    },
+    "emittedAtMs": 1792739638611
+   }
+  },
+  {
+   "t": 763490,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb0936895c819193ac8aad8e060f44",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739638611
+    },
+    "emittedAtMs": 1792739638611
+   }
+  },
+  {
+   "t": 763755,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739638876
+   }
+  },
+  {
+   "t": 794747,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 306843,
+       "inputTokens": 305745,
+       "cachedInputTokens": 274688,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1098,
+       "reasoningOutputTokens": 311
+      },
+      "last": {
+       "totalTokens": 13657,
+       "inputTokens": 13602,
+       "cachedInputTokens": 13312,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 55,
+       "reasoningOutputTokens": 22
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739669868
+   }
+  },
+  {
+   "t": 794747,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739669868
+   }
+  },
+  {
+   "t": 796467,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb095784c081919164435a775b338c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739671587
+    },
+    "emittedAtMs": 1792739671587
+   }
+  },
+  {
+   "t": 796467,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb095784c081919164435a775b338c",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739671587
+    },
+    "emittedAtMs": 1792739671588
+   }
+  },
+  {
+   "t": 796774,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739671894
+   }
+  },
+  {
+   "t": 827641,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 320583,
+       "inputTokens": 319430,
+       "cachedInputTokens": 288128,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1153,
+       "reasoningOutputTokens": 333
+      },
+      "last": {
+       "totalTokens": 13740,
+       "inputTokens": 13685,
+       "cachedInputTokens": 13440,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 55,
+       "reasoningOutputTokens": 22
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739702761
+   }
+  },
+  {
+   "t": 827641,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739702761
+   }
+  },
+  {
+   "t": 829382,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb09786160819185e6f9fa809056cc",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739704503
+    },
+    "emittedAtMs": 1792739704503
+   }
+  },
+  {
+   "t": 829382,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "reasoning",
+      "id": "rs_04c4ea4d36288f7c016adb09786160819185e6f9fa809056cc",
+      "summary": [],
+      "content": []
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739704503
+    },
+    "emittedAtMs": 1792739704503
+   }
+  },
+  {
+   "t": 829563,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739704684
+   }
+  },
+  {
+   "t": 909169,
+   "conn": "A",
+   "dir": "out",
+   "msg": {
+    "id": 1,
+    "result": {
+     "success": true,
+     "contentItems": [
+      {
+       "type": "inputText",
+       "text": "pong-jqd7g7"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "t": 909171,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "dynamicToolCall",
+      "id": "exec-37c6ddca-0dd5-44d2-b89d-5eeb8fce10ef",
+      "namespace": null,
+      "tool": "bridge_delegate",
+      "arguments": {
+       "task": "ping"
+      },
+      "status": "completed",
+      "contentItems": [
+       {
+        "type": "inputText",
+        "text": "pong-jqd7g7"
+       }
+      ],
+      "success": true,
+      "durationMs": 899997
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739784291
+    },
+    "emittedAtMs": 1792739784292
+   }
+  },
+  {
+   "t": 909173,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 334438,
+       "inputTokens": 333198,
+       "cachedInputTokens": 301440,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1240,
+       "reasoningOutputTokens": 387
+      },
+      "last": {
+       "totalTokens": 13855,
+       "inputTokens": 13768,
+       "cachedInputTokens": 13312,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 87,
+       "reasoningOutputTokens": 54
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739784293
+   }
+  },
+  {
+   "t": 909173,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739784293
+   }
+  },
+  {
+   "t": 910549,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+      "text": "",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "startedAtMs": 1792739785669
+    },
+    "emittedAtMs": 1792739785670
+   }
+  },
+  {
+   "t": 910549,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "itemId": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+     "delta": "pong"
+    },
+    "emittedAtMs": 1792739785670
+   }
+  },
+  {
+   "t": 910549,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "itemId": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+     "delta": "-j"
+    },
+    "emittedAtMs": 1792739785670
+   }
+  },
+  {
+   "t": 910549,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "itemId": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+     "delta": "qd"
+    },
+    "emittedAtMs": 1792739785670
+   }
+  },
+  {
+   "t": 910554,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "itemId": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+     "delta": "7"
+    },
+    "emittedAtMs": 1792739785675
+   }
+  },
+  {
+   "t": 910555,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "itemId": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+     "delta": "g"
+    },
+    "emittedAtMs": 1792739785675
+   }
+  },
+  {
+   "t": 910555,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/agentMessage/delta",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "itemId": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+     "delta": "7"
+    },
+    "emittedAtMs": 1792739785675
+   }
+  },
+  {
+   "t": 910742,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/moderationMetadata",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "metadata": {
+      "prompt": {},
+      "generation": {},
+      "tool_call": {},
+      "tool_response": {}
+     }
+    },
+    "emittedAtMs": 1792739785863
+   }
+  },
+  {
+   "t": 910742,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+      "text": "pong-jqd7g7",
+      "phase": "final_answer",
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "completedAtMs": 1792739785863
+    },
+    "emittedAtMs": 1792739785863
+   }
+  },
+  {
+   "t": 910743,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 348332,
+       "inputTokens": 347082,
+       "cachedInputTokens": 315008,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1250,
+       "reasoningOutputTokens": 387
+      },
+      "last": {
+       "totalTokens": 13894,
+       "inputTokens": 13884,
+       "cachedInputTokens": 13568,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 10,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792739785863
+   }
+  },
+  {
+   "t": 910743,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+       "usedPercent": 0,
+       "windowDurationMins": 300,
+       "resetsAt": 1792756854
+      },
+      "secondary": {
+       "usedPercent": 16,
+       "windowDurationMins": 10080,
+       "resetsAt": 1793299313
+      },
+      "credits": {
+       "hasCredits": false,
+       "unlimited": false,
+       "balance": null
+      },
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "team",
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792739785864
+   }
+  },
+  {
+   "t": 910743,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792739785864
+   }
+  },
+  {
+   "t": 910743,
+   "conn": "A",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a16790-570d-7c13-80fe-a9e7122033e6",
+     "turn": {
+      "id": "01a16790-571a-7c51-a116-7c83c37e86ac",
+      "rootTurnId": "01a16790-571a-7c51-a116-7c83c37e86ac",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_04c4ea4d36288f7c016adb09c962f881919a082cc7198c17f7",
+        "text": "pong-jqd7g7",
+        "phase": "final_answer",
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792738875,
+      "completedAt": 1792739785,
+      "durationMs": 906684
+     }
+    },
+    "emittedAtMs": 1792739785864
+   }
+  }
+ ]
+}
