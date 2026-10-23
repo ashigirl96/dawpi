@@ -1,0 +1,1 @@
+{ "name": "cbp14", "version": "0.1.0", "description": "PROTOTYPE: wake a parent worker that yielded on a held bridge_wait, for Codex's new bridge_delegate (dawpi #14)" }

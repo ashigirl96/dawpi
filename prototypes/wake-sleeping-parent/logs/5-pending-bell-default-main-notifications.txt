@@ -1,0 +1,10 @@
+2026-10-23T13:49:28.710Z
+<task-notification>
+<task-id>a3cb3a693bb1dd295</task-id>
+<status>completed</status>
+<summary>Agent "cbp14 d1" finished</summary>
+<note>A task-notification fires each time this agent stops with no live background children of its own. The user can send it another message and resume it, so the same task-id may notify more than once.</note>
+<result>cbp14 report {"runId":"run_sn10i1fv","depth":1,"turnStatus":"completed","codexAnswer":"CHILD-RESULT lqolslxl\nCHILD-RESULT 7mfxsobn","ops":[{"childRunId":"run_xcfd9gb6","state":"answered","whileAsleep":false,"child":"reported"},{"childRunId":"run_28p23vl4","state":"answered","whileAsleep":true,"child":"reported"}],"waits":[{"childRunId":"run_xcfd9gb6","state":"pending"},{"childRunId":"run_28p23vl4","state":"answered"},{"childRunId":"run_xcfd9gb6","state":"answered"}],"wakes":1}</result>
+<usage><subagent_tokens>248</subagent_tokens><tool_uses>6</tool_uses><duration_ms>30258</duration_ms></usage>
+</task-notification>
+

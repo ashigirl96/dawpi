@@ -1,0 +1,24 @@
+2026-10-23T13:50:18.494Z [DEBUG] Ignoring dangerous permission Agent(cbp14:worker) from .claude/settings.local.json (bypasses classifier)
+2026-10-23T13:50:18.791Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=e70c853b-4d96-47a5-95f5-745747d6de18 source=quota_check
+2026-10-23T13:50:18.992Z [DEBUG] Ignoring dangerous permission Agent(cbp14:worker) from .claude/settings.local.json (bypasses classifier)
+2026-10-23T13:50:26.411Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=c37d95ee-5b7e-42e5-ad01-9515e67aee17 source=generate_session_title
+2026-10-23T13:50:26.428Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=5f291709-ad5b-4750-90ed-ab89efaabb2b source=generate_session_title
+2026-10-23T13:50:26.461Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=6fa2a403-6219-4fef-9c34-4d86992071ad source=repl_main_thread
+2026-10-23T13:50:29.175Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2052bbe3-c796-46e0-a604-f1f5c6f6c8af source=repl_main_thread
+2026-10-23T13:50:36.031Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01FNUB7fc69TrQL6N5GjbjKM permissionDecisionMs=5937
+2026-10-23T13:50:36.080Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=1194edd5-7533-4179-90ab-fa9272438201 source=repl_main_thread
+2026-10-23T13:50:38.227Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=573e1baf-d2ab-4c99-ac15-ab66e9d07d14 source=prompt_suggestion
+2026-10-23T13:50:38.227Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=b1a2fe74-3036-4d6e-ab84-bc673025916e source=side_query
+2026-10-23T13:50:42.565Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp14zr2apomi permissionDecisionMs=2
+2026-10-23T13:50:44.155Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp14ops6dx3i permissionDecisionMs=4
+2026-10-23T13:50:49.311Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp140xbwbk4i permissionDecisionMs=1
+2026-10-23T13:50:51.372Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp14h3b8gzo2 permissionDecisionMs=2
+2026-10-23T13:50:52.114Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T13:50:52.114Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp14g5nbaj91 permissionDecisionMs=2
+2026-10-23T13:51:05.568Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T13:51:05.568Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp14oryhband permissionDecisionMs=1
+2026-10-23T13:51:07.690Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T13:51:07.690Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp14kjhl4t5c permissionDecisionMs=1
+2026-10-23T13:51:07.743Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=4a6c22c9-1b40-4083-898d-2effd8b0a15e source=repl_main_thread
+2026-10-23T13:51:12.113Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=8b863863-4b41-48bb-91ce-39442c6e4dc2 source=prompt_suggestion
+2026-10-23T13:51:12.113Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=9317e4bd-e8db-4185-b3ff-69fd49a870ff source=side_query

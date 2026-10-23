@@ -1,0 +1,5 @@
+2026-10-23T13:42:36.223Z [DEBUG] Applying permission update: Adding 2 allow rule(s) to destination 'userSettings': ["Bash(gh pr merge *)","Bash(gcloud auth login *)"]
+2026-10-23T13:42:36.224Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(cat /tmp/cbp14/bell-*)"]
+2026-10-23T13:42:54.929Z [DEBUG] "Permission suggestions for Bash: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"Read\",\n        \"ruleContent\": \"//private/tmp/cbp14/**\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"session\"\n  }\n]"
+2026-10-23T13:44:02.796Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'session': ["Read(//private/tmp/cbp14/**)"]
+2026-10-23T13:44:02.799Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp14611ycasn permissionDecisionMs=67876

@@ -1,0 +1,19 @@
+2026-10-23T13:48:47.795Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=553acc8c-0caf-4c15-9827-fd0bcd3cff03 source=quota_check
+2026-10-23T13:48:55.383Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=62ea772f-5685-411a-881c-fde6a0d503fc source=generate_session_title
+2026-10-23T13:48:55.399Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=00c27921-dbef-431f-84ff-29dfcfee017e source=generate_session_title
+2026-10-23T13:48:55.432Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=b0d19ecf-56a7-44f0-9f4d-4ca2b19fc878 source=repl_main_thread
+2026-10-23T13:48:57.529Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=db57a3df-54c4-4e3f-960d-430074190480 source=repl_main_thread
+2026-10-23T13:48:58.440Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_012yDohKEknUVpeePrMbvHsH permissionDecisionMs=2
+2026-10-23T13:48:58.483Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=a78c8567-5682-48c1-9eb7-2e9647d05662 source=repl_main_thread
+2026-10-23T13:49:00.559Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=93fbcb18-2cd9-4136-9807-4cb7883cab36 source=prompt_suggestion
+2026-10-23T13:49:00.559Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=225cb820-c809-40f8-bca6-818ebf9a0fae source=side_query
+2026-10-23T13:49:03.293Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp143u8uvzt2 permissionDecisionMs=2
+2026-10-23T13:49:04.573Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp147lk4wzu2 permissionDecisionMs=5
+2026-10-23T13:49:05.286Z [DEBUG] [AsyncAgent a3cb3a693bb1dd295] parked on keepalive — deferring owner notification until resume
+2026-10-23T13:49:08.343Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp14stq84um8 permissionDecisionMs=1
+2026-10-23T13:49:09.665Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp14kuku8rbq permissionDecisionMs=3
+2026-10-23T13:49:10.183Z [DEBUG] [AsyncAgent a3cb3a693bb1dd295] parked on keepalive — deferring owner notification until resume
+2026-10-23T13:49:14.426Z [DEBUG] [AsyncAgent a3cb3a693bb1dd295] parked on keepalive — deferring owner notification until resume
+2026-10-23T13:49:28.763Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2bf6918d-7481-41cf-95cf-d53cdfcdf25c source=repl_main_thread
+2026-10-23T13:49:33.166Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=ef1f782d-6159-40b6-8f2b-d65b7ea32c95 source=prompt_suggestion
+2026-10-23T13:49:33.166Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=558629f5-5366-4a32-901c-186da217c9d7 source=side_query
