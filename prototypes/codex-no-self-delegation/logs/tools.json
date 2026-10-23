@@ -1,0 +1,4639 @@
+{
+ "scenario": "tools",
+ "versions": {
+  "codex": "0.163.0",
+  "bun": "1.4.4"
+ },
+ "results": [
+  {
+   "profile": "bridge",
+   "model": "gpt-5.6-luna",
+   "effort": "low",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta",
+     "multi_agent_version": "disabled"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "disabled",
+     "approvals_reviewer": "user",
+     "effort": "low",
+     "model": "gpt-5.6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-5.6-luna",
+     "reasoning": {
+      "effort": "low",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.wait",
+      "functions.request_user_input"
+     ],
+     "collabInTools": [],
+     "developerTags": []
+    }
+   ]
+  },
+  {
+   "profile": "bridge",
+   "model": "gpt-5.6-luna",
+   "effort": "ultra",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta",
+     "multi_agent_version": "disabled"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "disabled",
+     "approvals_reviewer": "user",
+     "effort": "ultra",
+     "model": "gpt-5.6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-5.6-luna",
+     "reasoning": {
+      "effort": "max",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.wait",
+      "functions.request_user_input"
+     ],
+     "collabInTools": [],
+     "developerTags": []
+    }
+   ]
+  },
+  {
+   "profile": "bridge",
+   "model": "gpt-6-luna",
+   "effort": "low",
+   "threadStart": {
+    "model": "gpt-6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta",
+     "multi_agent_version": "disabled"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "disabled",
+     "approvals_reviewer": "user",
+     "effort": "low",
+     "model": "gpt-6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-6-luna",
+     "reasoning": {
+      "effort": "low",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.exec>clock__curr_time",
+      "functions.wait",
+      "functions.request_user_input",
+      "functions.request_user_input_async",
+      "clock.sleep"
+     ],
+     "collabInTools": [],
+     "developerTags": []
+    }
+   ]
+  },
+  {
+   "profile": "bridge",
+   "model": "gpt-6-luna",
+   "effort": "ultra",
+   "threadStart": {
+    "model": "gpt-6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta",
+     "multi_agent_version": "disabled"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "disabled",
+     "approvals_reviewer": "user",
+     "effort": "ultra",
+     "model": "gpt-6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-6-luna",
+     "reasoning": {
+      "effort": "max",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.exec>clock__curr_time",
+      "functions.wait",
+      "functions.request_user_input",
+      "functions.request_user_input_async",
+      "clock.sleep"
+     ],
+     "collabInTools": [],
+     "developerTags": []
+    }
+   ]
+  },
+  {
+   "profile": "open",
+   "model": "gpt-5.6-luna",
+   "effort": "low",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "v1",
+     "approvals_reviewer": "user",
+     "effort": "low",
+     "model": "gpt-5.6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-5.6-luna",
+     "reasoning": {
+      "effort": "low",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.wait",
+      "functions.request_user_input"
+     ],
+     "collabInTools": [],
+     "developerTags": []
+    }
+   ]
+  },
+  {
+   "profile": "open",
+   "model": "gpt-5.6-luna",
+   "effort": "ultra",
+   "threadStart": {
+    "model": "gpt-5.6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "v1",
+     "approvals_reviewer": "user",
+     "effort": "ultra",
+     "model": "gpt-5.6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-5.6-luna",
+     "reasoning": {
+      "effort": "max",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.wait",
+      "functions.request_user_input"
+     ],
+     "collabInTools": [],
+     "developerTags": []
+    }
+   ]
+  },
+  {
+   "profile": "open",
+   "model": "gpt-6-luna",
+   "effort": "low",
+   "threadStart": {
+    "model": "gpt-6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "v2",
+     "approvals_reviewer": "user",
+     "effort": "low",
+     "model": "gpt-6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-6-luna",
+     "reasoning": {
+      "effort": "low",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.exec>clock__curr_time",
+      "functions.wait",
+      "functions.request_user_input",
+      "functions.request_user_input_async",
+      "clock.sleep",
+      "collaboration.followup_task",
+      "collaboration.interrupt_agent",
+      "collaboration.list_agents",
+      "collaboration.send_message",
+      "collaboration.spawn_agent",
+      "collaboration.wait_agent"
+     ],
+     "collabInTools": [
+      "spawn_agent",
+      "wait_agent",
+      "collab"
+     ],
+     "developerTags": [
+      "<multi_agent_role>",
+      "<multi_agent_mode>"
+     ]
+    }
+   ]
+  },
+  {
+   "profile": "open",
+   "model": "gpt-6-luna",
+   "effort": "ultra",
+   "threadStart": {
+    "model": "gpt-6-luna",
+    "reasoningEffort": null,
+    "approvalsReviewer": "user"
+   },
+   "turnStatus": "completed",
+   "tripwires": [],
+   "rollout": [
+    {
+     "type": "session_meta"
+    },
+    {
+     "type": "turn_context",
+     "multi_agent_version": "v2",
+     "approvals_reviewer": "user",
+     "effort": "ultra",
+     "model": "gpt-6-luna"
+    }
+   ],
+   "requests": [
+    {
+     "model": "gpt-6-luna",
+     "reasoning": {
+      "effort": "max",
+      "context": "all_turns"
+     },
+     "tools": [
+      "functions.exec",
+      "functions.exec>apply_patch",
+      "functions.exec>create_goal",
+      "functions.exec>exec_command",
+      "functions.exec>get_goal",
+      "functions.exec>list_mcp_resource_templates",
+      "functions.exec>list_mcp_resources",
+      "functions.exec>read_mcp_resource",
+      "functions.exec>update_goal",
+      "functions.exec>view_image",
+      "functions.exec>write_stdin",
+      "functions.exec>clock__curr_time",
+      "functions.wait",
+      "functions.request_user_input",
+      "functions.request_user_input_async",
+      "clock.sleep",
+      "collaboration.followup_task",
+      "collaboration.interrupt_agent",
+      "collaboration.list_agents",
+      "collaboration.send_message",
+      "collaboration.spawn_agent",
+      "collaboration.wait_agent"
+     ],
+     "collabInTools": [
+      "spawn_agent",
+      "wait_agent",
+      "collab"
+     ],
+     "developerTags": [
+      "<multi_agent_role>",
+      "<multi_agent_mode>"
+     ]
+    }
+   ]
+  }
+ ],
+ "log": [
+  {
+   "t": 2,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "clientInfo": {
+      "name": "cbp9-bridge",
+      "title": null,
+      "version": "0"
+     },
+     "capabilities": {
+      "experimentalApi": true,
+      "requestAttestation": false
+     }
+    }
+   }
+  },
+  {
+   "t": 27,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 1,
+    "result": {
+     "userAgent": "cbp9-bridge/0.163.0 (Mac OS 26.6.2; arm64) WezTerm (cbp9-bridge; 0)",
+     "codexHome": "~/.codex-bridge/codex-home",
+     "platformFamily": "unix",
+     "platformOs": "macos"
+    }
+   }
+  },
+  {
+   "t": 27,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "method": "initialized"
+   }
+  },
+  {
+   "t": 27,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 2,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 27,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "remoteControl/status/changed",
+    "params": {
+     "status": "disabled",
+     "serverName": "<hostname>",
+     "installationId": "<installation-id>",
+     "environmentId": null
+    },
+    "emittedAtMs": 1792742595067
+   }
+  },
+  {
+   "t": 28,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 28,
+   "conn": "bridge",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:15.069921Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 30,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 30,
+   "conn": "bridge",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:15.071105Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 93,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 2,
+    "result": {
+     "thread": {
+      "id": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742595,
+      "updatedAt": 1792742595,
+      "recencyAt": 1792742595,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-15-01a167c9-19fd-7ad3-ba58-ba7c6db431bd.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 93,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 3,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 93,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742595,
+      "updatedAt": 1792742595,
+      "recencyAt": 1792742595,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-15-01a167c9-19fd-7ad3-ba58-ba7c6db431bd.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742595134
+   }
+  },
+  {
+   "t": 96,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742595137
+   }
+  },
+  {
+   "t": 96,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 3,
+    "result": {
+     "turn": {
+      "id": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+      "rootTurnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 140,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742595181
+   }
+  },
+  {
+   "t": 140,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "turn": {
+      "id": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+      "rootTurnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742595,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742595181
+   }
+  },
+  {
+   "t": 553,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-1c09-7842-ba64-3f81f329461d",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "turnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+     "startedAtMs": 1792742595594
+    },
+    "emittedAtMs": 1792742595594
+   }
+  },
+  {
+   "t": 554,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-1c09-7842-ba64-3f81f329461d",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "turnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+     "completedAtMs": 1792742595594
+    },
+    "emittedAtMs": 1792742595595
+   }
+  },
+  {
+   "t": 556,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 556,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_286cfa72-0911-4fd8-921a-5cc89ab4cb93",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "turnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+     "startedAtMs": 1792742595597
+    },
+    "emittedAtMs": 1792742595597
+   }
+  },
+  {
+   "t": 557,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_286cfa72-0911-4fd8-921a-5cc89ab4cb93",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "turnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+     "completedAtMs": 1792742595597
+    },
+    "emittedAtMs": 1792742595598
+   }
+  },
+  {
+   "t": 559,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "turnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742595599
+   }
+  },
+  {
+   "t": 559,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742595600
+   }
+  },
+  {
+   "t": 561,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027"
+      },
+      "revision": "a3847ea0-3c50-41d9-b04f-17502bdc36c4"
+     }
+    },
+    "emittedAtMs": 1792742595602
+   }
+  },
+  {
+   "t": 561,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742595602
+   }
+  },
+  {
+   "t": 561,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-19fd-7ad3-ba58-ba7c6db431bd",
+     "turn": {
+      "id": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+      "rootTurnId": "01a167c9-1a3f-7093-9ad0-f8de9cf50027",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_286cfa72-0911-4fd8-921a-5cc89ab4cb93",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742595,
+      "completedAt": 1792742595,
+      "durationMs": 463
+     }
+    },
+    "emittedAtMs": 1792742595602
+   }
+  },
+  {
+   "t": 579,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 4,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 582,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 582,
+   "conn": "bridge",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:15.623700Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 645,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 4,
+    "result": {
+     "thread": {
+      "id": "01a167c9-1c26-7503-81de-493c8f518cc5",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742595,
+      "updatedAt": 1792742595,
+      "recencyAt": 1792742595,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-15-01a167c9-1c26-7503-81de-493c8f518cc5.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 645,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 5,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "ultra"
+    }
+   }
+  },
+  {
+   "t": 645,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-1c26-7503-81de-493c8f518cc5",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742595,
+      "updatedAt": 1792742595,
+      "recencyAt": 1792742595,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-15-01a167c9-1c26-7503-81de-493c8f518cc5.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742595686
+   }
+  },
+  {
+   "t": 646,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "ultra",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "ultra",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742595687
+   }
+  },
+  {
+   "t": 646,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 5,
+    "result": {
+     "turn": {
+      "id": "01a167c9-1c66-7580-b806-b83ed264fa52",
+      "rootTurnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 687,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742595728
+   }
+  },
+  {
+   "t": 687,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "turn": {
+      "id": "01a167c9-1c66-7580-b806-b83ed264fa52",
+      "rootTurnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742595,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742595728
+   }
+  },
+  {
+   "t": 1131,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-1e4c-7b02-bd3b-c5d0808a4ebc",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "turnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+     "startedAtMs": 1792742596172
+    },
+    "emittedAtMs": 1792742596172
+   }
+  },
+  {
+   "t": 1132,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-1e4c-7b02-bd3b-c5d0808a4ebc",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "turnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+     "completedAtMs": 1792742596172
+    },
+    "emittedAtMs": 1792742596173
+   }
+  },
+  {
+   "t": 1135,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 1135,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_174330e5-9847-4bd7-a897-b50dc88d87a7",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "turnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+     "startedAtMs": 1792742596176
+    },
+    "emittedAtMs": 1792742596176
+   }
+  },
+  {
+   "t": 1136,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_174330e5-9847-4bd7-a897-b50dc88d87a7",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "turnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+     "completedAtMs": 1792742596176
+    },
+    "emittedAtMs": 1792742596177
+   }
+  },
+  {
+   "t": 1137,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "turnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742596178
+   }
+  },
+  {
+   "t": 1137,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742596178
+   }
+  },
+  {
+   "t": 1140,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-1c66-7580-b806-b83ed264fa52"
+      },
+      "revision": "2c16c10d-5bf5-465a-ac51-7f11f6e7b4c4"
+     }
+    },
+    "emittedAtMs": 1792742596181
+   }
+  },
+  {
+   "t": 1140,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742596181
+   }
+  },
+  {
+   "t": 1140,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-1c26-7503-81de-493c8f518cc5",
+     "turn": {
+      "id": "01a167c9-1c66-7580-b806-b83ed264fa52",
+      "rootTurnId": "01a167c9-1c66-7580-b806-b83ed264fa52",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_174330e5-9847-4bd7-a897-b50dc88d87a7",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742595,
+      "completedAt": 1792742596,
+      "durationMs": 491
+     }
+    },
+    "emittedAtMs": 1792742596181
+   }
+  },
+  {
+   "t": 1156,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 6,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 1159,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 1159,
+   "conn": "bridge",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:16.200240Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 1216,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 6,
+    "result": {
+     "thread": {
+      "id": "01a167c9-1e67-7553-a4f5-3989c462968a",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742596,
+      "updatedAt": 1792742596,
+      "recencyAt": 1792742596,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-16-01a167c9-1e67-7553-a4f5-3989c462968a.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 1216,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 7,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 1216,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-1e67-7553-a4f5-3989c462968a",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742596,
+      "updatedAt": 1792742596,
+      "recencyAt": 1792742596,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-16-01a167c9-1e67-7553-a4f5-3989c462968a.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742596257
+   }
+  },
+  {
+   "t": 1217,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742596258
+   }
+  },
+  {
+   "t": 1217,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 7,
+    "result": {
+     "turn": {
+      "id": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+      "rootTurnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 1255,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742596296
+   }
+  },
+  {
+   "t": 1255,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "turn": {
+      "id": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+      "rootTurnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742596,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742596296
+   }
+  },
+  {
+   "t": 1728,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-20a1-72b1-b0af-4b401759544f",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "turnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+     "startedAtMs": 1792742596769
+    },
+    "emittedAtMs": 1792742596769
+   }
+  },
+  {
+   "t": 1730,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-20a1-72b1-b0af-4b401759544f",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "turnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+     "completedAtMs": 1792742596769
+    },
+    "emittedAtMs": 1792742596771
+   }
+  },
+  {
+   "t": 1733,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 1733,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_6d151002-ab19-4aa8-8371-e80da08dd04f",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "turnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+     "startedAtMs": 1792742596774
+    },
+    "emittedAtMs": 1792742596774
+   }
+  },
+  {
+   "t": 1734,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_6d151002-ab19-4aa8-8371-e80da08dd04f",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "turnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+     "completedAtMs": 1792742596774
+    },
+    "emittedAtMs": 1792742596775
+   }
+  },
+  {
+   "t": 1736,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "turnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742596777
+   }
+  },
+  {
+   "t": 1736,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742596777
+   }
+  },
+  {
+   "t": 1740,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a"
+      },
+      "revision": "c96e3659-4c07-4891-b7c9-3e17288d1eb3"
+     }
+    },
+    "emittedAtMs": 1792742596781
+   }
+  },
+  {
+   "t": 1740,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742596781
+   }
+  },
+  {
+   "t": 1740,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-1e67-7553-a4f5-3989c462968a",
+     "turn": {
+      "id": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+      "rootTurnId": "01a167c9-1ea1-78b2-92eb-9a0daf21d48a",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_6d151002-ab19-4aa8-8371-e80da08dd04f",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742596,
+      "completedAt": 1792742596,
+      "durationMs": 519
+     }
+    },
+    "emittedAtMs": 1792742596781
+   }
+  },
+  {
+   "t": 1760,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 8,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 1764,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 1764,
+   "conn": "bridge",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:16.805365Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 1824,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 8,
+    "result": {
+     "thread": {
+      "id": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742596,
+      "updatedAt": 1792742596,
+      "recencyAt": 1792742596,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-16-01a167c9-20c3-7891-b2fa-b2d6f8172577.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 1824,
+   "conn": "bridge",
+   "dir": "out",
+   "msg": {
+    "id": 9,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-6-luna",
+     "effort": "ultra"
+    }
+   }
+  },
+  {
+   "t": 1824,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742596,
+      "updatedAt": 1792742596,
+      "recencyAt": 1792742596,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-16-01a167c9-20c3-7891-b2fa-b2d6f8172577.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-bridge",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742596865
+   }
+  },
+  {
+   "t": 1825,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "ultra",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-6-luna",
+        "reasoning_effort": "ultra",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742596866
+   }
+  },
+  {
+   "t": 1825,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "id": 9,
+    "result": {
+     "turn": {
+      "id": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+      "rootTurnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 1862,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742596903
+   }
+  },
+  {
+   "t": 1862,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "turn": {
+      "id": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+      "rootTurnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742596,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742596903
+   }
+  },
+  {
+   "t": 2399,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-233e-72d2-8fec-c882421cb692",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "turnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+     "startedAtMs": 1792742597439
+    },
+    "emittedAtMs": 1792742597439
+   }
+  },
+  {
+   "t": 2401,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-233e-72d2-8fec-c882421cb692",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "turnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+     "completedAtMs": 1792742597439
+    },
+    "emittedAtMs": 1792742597441
+   }
+  },
+  {
+   "t": 2404,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 2405,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_60195073-24b3-461d-9600-4069fd9b7821",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "turnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+     "startedAtMs": 1792742597446
+    },
+    "emittedAtMs": 1792742597446
+   }
+  },
+  {
+   "t": 2407,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_60195073-24b3-461d-9600-4069fd9b7821",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "turnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+     "completedAtMs": 1792742597446
+    },
+    "emittedAtMs": 1792742597448
+   }
+  },
+  {
+   "t": 2410,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "turnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742597451
+   }
+  },
+  {
+   "t": 2410,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742597451
+   }
+  },
+  {
+   "t": 2413,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-2101-7de2-b74d-55baa0d0f581"
+      },
+      "revision": "13aa17a1-14c4-4cd8-967e-ff76a89b2014"
+     }
+    },
+    "emittedAtMs": 1792742597454
+   }
+  },
+  {
+   "t": 2413,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742597454
+   }
+  },
+  {
+   "t": 2413,
+   "conn": "bridge",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-20c3-7891-b2fa-b2d6f8172577",
+     "turn": {
+      "id": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+      "rootTurnId": "01a167c9-2101-7de2-b74d-55baa0d0f581",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_60195073-24b3-461d-9600-4069fd9b7821",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742596,
+      "completedAt": 1792742597,
+      "durationMs": 586
+     }
+    },
+    "emittedAtMs": 1792742597454
+   }
+  },
+  {
+   "t": 2440,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "clientInfo": {
+      "name": "cbp9-open",
+      "title": null,
+      "version": "0"
+     },
+     "capabilities": {
+      "experimentalApi": true,
+      "requestAttestation": false
+     }
+    }
+   }
+  },
+  {
+   "t": 2466,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 1,
+    "result": {
+     "userAgent": "cbp9-open/0.163.0 (Mac OS 26.6.2; arm64) WezTerm (cbp9-open; 0)",
+     "codexHome": "~/.codex-bridge/codex-home",
+     "platformFamily": "unix",
+     "platformOs": "macos"
+    }
+   }
+  },
+  {
+   "t": 2466,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "method": "initialized"
+   }
+  },
+  {
+   "t": 2466,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 2,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 2466,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "remoteControl/status/changed",
+    "params": {
+     "status": "disabled",
+     "serverName": "<hostname>",
+     "installationId": "<installation-id>",
+     "environmentId": null
+    },
+    "emittedAtMs": 1792742597507
+   }
+  },
+  {
+   "t": 2468,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 2468,
+   "conn": "open",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:17.509228Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 2469,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 2469,
+   "conn": "open",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:17.510314Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 2531,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 2,
+    "result": {
+     "thread": {
+      "id": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742597,
+      "updatedAt": 1792742597,
+      "recencyAt": 1792742597,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-17-01a167c9-2385-7e62-ad10-8b0f4ee6afb4.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 2532,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 3,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 2532,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742597,
+      "updatedAt": 1792742597,
+      "recencyAt": 1792742597,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-17-01a167c9-2385-7e62-ad10-8b0f4ee6afb4.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742597572
+   }
+  },
+  {
+   "t": 2534,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742597574
+   }
+  },
+  {
+   "t": 2534,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 3,
+    "result": {
+     "turn": {
+      "id": "01a167c9-23c5-7372-aee2-6dad11afb967",
+      "rootTurnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 2578,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742597619
+   }
+  },
+  {
+   "t": 2578,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "turn": {
+      "id": "01a167c9-23c5-7372-aee2-6dad11afb967",
+      "rootTurnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742597,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742597619
+   }
+  },
+  {
+   "t": 3242,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-268a-7b23-a0f6-2bf1686e6372",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "turnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+     "startedAtMs": 1792742598283
+    },
+    "emittedAtMs": 1792742598283
+   }
+  },
+  {
+   "t": 3247,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-268a-7b23-a0f6-2bf1686e6372",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "turnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+     "completedAtMs": 1792742598283
+    },
+    "emittedAtMs": 1792742598288
+   }
+  },
+  {
+   "t": 3251,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 3252,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_b191138a-e49e-4841-badc-2f37e3c6743f",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "turnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+     "startedAtMs": 1792742598293
+    },
+    "emittedAtMs": 1792742598293
+   }
+  },
+  {
+   "t": 3254,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_b191138a-e49e-4841-badc-2f37e3c6743f",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "turnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+     "completedAtMs": 1792742598293
+    },
+    "emittedAtMs": 1792742598294
+   }
+  },
+  {
+   "t": 3257,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "turnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742598298
+   }
+  },
+  {
+   "t": 3257,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742598298
+   }
+  },
+  {
+   "t": 3262,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-23c5-7372-aee2-6dad11afb967"
+      },
+      "revision": "89d6e65f-7c13-41c3-bfd0-94721c828016"
+     }
+    },
+    "emittedAtMs": 1792742598303
+   }
+  },
+  {
+   "t": 3262,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742598303
+   }
+  },
+  {
+   "t": 3262,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-2385-7e62-ad10-8b0f4ee6afb4",
+     "turn": {
+      "id": "01a167c9-23c5-7372-aee2-6dad11afb967",
+      "rootTurnId": "01a167c9-23c5-7372-aee2-6dad11afb967",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_b191138a-e49e-4841-badc-2f37e3c6743f",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742597,
+      "completedAt": 1792742598,
+      "durationMs": 725
+     }
+    },
+    "emittedAtMs": 1792742598303
+   }
+  },
+  {
+   "t": 3279,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 4,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-5.6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 3287,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 3287,
+   "conn": "open",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:18.328309Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 3357,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 4,
+    "result": {
+     "thread": {
+      "id": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742598,
+      "updatedAt": 1792742598,
+      "recencyAt": 1792742598,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-18-01a167c9-26b6-7bd2-bdbc-9f0756330d0f.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-5.6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 3357,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 5,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-5.6-luna",
+     "effort": "ultra"
+    }
+   }
+  },
+  {
+   "t": 3357,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742598,
+      "updatedAt": 1792742598,
+      "recencyAt": 1792742598,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-18-01a167c9-26b6-7bd2-bdbc-9f0756330d0f.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742598398
+   }
+  },
+  {
+   "t": 3358,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-5.6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "ultra",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "ultra",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742598399
+   }
+  },
+  {
+   "t": 3358,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 5,
+    "result": {
+     "turn": {
+      "id": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+      "rootTurnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 3400,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742598441
+   }
+  },
+  {
+   "t": 3400,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "turn": {
+      "id": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+      "rootTurnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742598,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742598441
+   }
+  },
+  {
+   "t": 3977,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-2968-7861-8657-ec7052d17e6d",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "turnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+     "startedAtMs": 1792742599017
+    },
+    "emittedAtMs": 1792742599017
+   }
+  },
+  {
+   "t": 3979,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-2968-7861-8657-ec7052d17e6d",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "turnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+     "completedAtMs": 1792742599017
+    },
+    "emittedAtMs": 1792742599020
+   }
+  },
+  {
+   "t": 3984,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 3985,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_1008bdab-dc48-4a65-b73f-1d6091321ca0",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "turnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+     "startedAtMs": 1792742599025
+    },
+    "emittedAtMs": 1792742599026
+   }
+  },
+  {
+   "t": 3987,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_1008bdab-dc48-4a65-b73f-1d6091321ca0",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "turnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+     "completedAtMs": 1792742599025
+    },
+    "emittedAtMs": 1792742599028
+   }
+  },
+  {
+   "t": 3992,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "turnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742599033
+   }
+  },
+  {
+   "t": 3992,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742599033
+   }
+  },
+  {
+   "t": 3998,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f"
+      },
+      "revision": "703d1407-bb06-4814-9c37-3d45fe8e46ad"
+     }
+    },
+    "emittedAtMs": 1792742599039
+   }
+  },
+  {
+   "t": 3998,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742599039
+   }
+  },
+  {
+   "t": 3998,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-26b6-7bd2-bdbc-9f0756330d0f",
+     "turn": {
+      "id": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+      "rootTurnId": "01a167c9-26fe-7481-89c3-e4a1fa97b45f",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_1008bdab-dc48-4a65-b73f-1d6091321ca0",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742598,
+      "completedAt": 1792742599,
+      "durationMs": 635
+     }
+    },
+    "emittedAtMs": 1792742599039
+   }
+  },
+  {
+   "t": 4023,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 6,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 4026,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 4026,
+   "conn": "open",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:19.067908Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 4089,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 6,
+    "result": {
+     "thread": {
+      "id": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742599,
+      "updatedAt": 1792742599,
+      "recencyAt": 1792742599,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-19-01a167c9-299a-7f93-b85a-38f71d1b9002.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 4089,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 7,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-6-luna",
+     "effort": "low"
+    }
+   }
+  },
+  {
+   "t": 4089,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742599,
+      "updatedAt": 1792742599,
+      "recencyAt": 1792742599,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-19-01a167c9-299a-7f93-b85a-38f71d1b9002.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742599130
+   }
+  },
+  {
+   "t": 4091,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "low",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-6-luna",
+        "reasoning_effort": "low",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742599132
+   }
+  },
+  {
+   "t": 4091,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 7,
+    "result": {
+     "turn": {
+      "id": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+      "rootTurnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 4138,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742599179
+   }
+  },
+  {
+   "t": 4138,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "turn": {
+      "id": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+      "rootTurnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742599,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742599179
+   }
+  },
+  {
+   "t": 4698,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-2c39-70b1-86c9-24f6cc8dc249",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "turnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+     "startedAtMs": 1792742599738
+    },
+    "emittedAtMs": 1792742599739
+   }
+  },
+  {
+   "t": 4700,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-2c39-70b1-86c9-24f6cc8dc249",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "turnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+     "completedAtMs": 1792742599739
+    },
+    "emittedAtMs": 1792742599741
+   }
+  },
+  {
+   "t": 4704,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 4705,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_109c83e8-b0d5-4280-b32e-05e95ad3ab9e",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "turnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+     "startedAtMs": 1792742599746
+    },
+    "emittedAtMs": 1792742599746
+   }
+  },
+  {
+   "t": 4707,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_109c83e8-b0d5-4280-b32e-05e95ad3ab9e",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "turnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+     "completedAtMs": 1792742599746
+    },
+    "emittedAtMs": 1792742599748
+   }
+  },
+  {
+   "t": 4711,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "turnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742599752
+   }
+  },
+  {
+   "t": 4711,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742599752
+   }
+  },
+  {
+   "t": 4714,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-29db-7c31-af3b-6f583caa89d8"
+      },
+      "revision": "e62b199d-8f33-4158-8d88-7a2f19a5b1fd"
+     }
+    },
+    "emittedAtMs": 1792742599755
+   }
+  },
+  {
+   "t": 4714,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742599755
+   }
+  },
+  {
+   "t": 4714,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-299a-7f93-b85a-38f71d1b9002",
+     "turn": {
+      "id": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+      "rootTurnId": "01a167c9-29db-7c31-af3b-6f583caa89d8",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_109c83e8-b0d5-4280-b32e-05e95ad3ab9e",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742599,
+      "completedAt": 1792742599,
+      "durationMs": 621
+     }
+    },
+    "emittedAtMs": 1792742599755
+   }
+  },
+  {
+   "t": 4741,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 8,
+    "method": "thread/start",
+    "params": {
+     "model": "gpt-6-luna",
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation/",
+     "ephemeral": false,
+     "approvalPolicy": "never",
+     "sandbox": "read-only",
+     "approvalsReviewer": "user"
+    }
+   }
+  },
+  {
+   "t": 4745,
+   "conn": "mock",
+   "dir": "unhandled",
+   "msg": "GET /v1/models"
+  },
+  {
+   "t": 4745,
+   "conn": "open",
+   "dir": "stderr",
+   "msg": "\u001b[2m2026-10-23T08:03:19.786904Z\u001b[0m \u001b[31mERROR\u001b[0m \u001b[2mcodex_models_manager::manager\u001b[0m\u001b[2m:\u001b[0m failed to refresh available models: unexpected status 404 Not Found: not found, url: http://127.0.0.1:63413/v1/models?client_version=0.163.0"
+  },
+  {
+   "t": 4809,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 8,
+    "result": {
+     "thread": {
+      "id": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742599,
+      "updatedAt": 1792742599,
+      "recencyAt": 1792742599,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-19-01a167c9-2c69-7b20-8ae4-9ec007ae738b.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     },
+     "model": "gpt-6-luna",
+     "modelProvider": "mock",
+     "serviceTier": null,
+     "disabledPluginIds": [],
+     "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+     "runtimeWorkspaceRoots": [
+      "<worktree>/prototypes/codex-no-self-delegation"
+     ],
+     "instructionSources": [],
+     "approvalPolicy": "never",
+     "approvalsReviewer": "user",
+     "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+     },
+     "activePermissionProfile": null,
+     "reasoningEffort": null,
+     "multiAgentMode": "explicitRequestOnly"
+    }
+   }
+  },
+  {
+   "t": 4809,
+   "conn": "open",
+   "dir": "out",
+   "msg": {
+    "id": 9,
+    "method": "turn/start",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "input": [
+      {
+       "type": "text",
+       "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+       "text_elements": []
+      }
+     ],
+     "model": "gpt-6-luna",
+     "effort": "ultra"
+    }
+   }
+  },
+  {
+   "t": 4809,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/started",
+    "params": {
+     "thread": {
+      "id": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+      "environments": [
+       {
+        "environmentId": "local",
+        "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+        "runtimeWorkspaceRoots": [
+         "<worktree>/prototypes/codex-no-self-delegation"
+        ]
+       }
+      ],
+      "extra": null,
+      "sessionId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "mock",
+      "model": "gpt-6-luna",
+      "reasoningEffort": null,
+      "createdAt": 1792742599,
+      "updatedAt": 1792742599,
+      "recencyAt": 1792742599,
+      "status": {
+       "type": "idle"
+      },
+      "path": "~/.codex-bridge/codex-home/sessions/2026/10/23/rollout-2026-10-23T17-03-19-01a167c9-2c69-7b20-8ae4-9ec007ae738b.jsonl",
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "cliVersion": "0.163.0",
+      "originator": "cbp9-open",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+     }
+    },
+    "emittedAtMs": 1792742599849
+   }
+  },
+  {
+   "t": 4810,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/settings/updated",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "threadSettings": {
+      "disabledPluginIds": [],
+      "cwd": "<worktree>/prototypes/codex-no-self-delegation",
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandboxPolicy": {
+       "type": "readOnly",
+       "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "model": "gpt-6-luna",
+      "modelProvider": "mock",
+      "serviceTier": null,
+      "effort": "ultra",
+      "summary": null,
+      "collaborationMode": {
+       "mode": "default",
+       "settings": {
+        "model": "gpt-6-luna",
+        "reasoning_effort": "ultra",
+        "developer_instructions": null
+       }
+      },
+      "multiAgentMode": "explicitRequestOnly",
+      "personality": null
+     }
+    },
+    "emittedAtMs": 1792742599851
+   }
+  },
+  {
+   "t": 4810,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "id": 9,
+    "result": {
+     "turn": {
+      "id": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+      "rootTurnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": null,
+      "completedAt": null,
+      "durationMs": null
+     }
+    }
+   }
+  },
+  {
+   "t": 4858,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "status": {
+      "type": "active",
+      "activeFlags": []
+     }
+    },
+    "emittedAtMs": 1792742599899
+   }
+  },
+  {
+   "t": 4858,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/started",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "turn": {
+      "id": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+      "rootTurnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+      "items": [],
+      "itemsView": "notLoaded",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1792742599,
+      "completedAt": null,
+      "durationMs": null
+     }
+    },
+    "emittedAtMs": 1792742599899
+   }
+  },
+  {
+   "t": 5452,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-2f2c-7e81-bcab-6155c69b7f0c",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "turnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+     "startedAtMs": 1792742600493
+    },
+    "emittedAtMs": 1792742600493
+   }
+  },
+  {
+   "t": 5453,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "userMessage",
+      "id": "01a167c9-2f2c-7e81-bcab-6155c69b7f0c",
+      "clientId": null,
+      "content": [
+       {
+        "type": "text",
+        "text": "This task is large. Delegate it: spawn a sub-agent (or several in parallel) to list the files in the current directory, wait for it, and report what it found. If you have no tool for spawning agents, reply with exactly NO_AGENT_TOOLS followed by the names of every tool you can call.",
+        "text_elements": []
+       }
+      ]
+     },
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "turnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+     "completedAtMs": 1792742600493
+    },
+    "emittedAtMs": 1792742600494
+   }
+  },
+  {
+   "t": 5456,
+   "conn": "mock",
+   "dir": "reply",
+   "msg": {
+    "agent": "/root",
+    "items": [
+     "ok"
+    ]
+   }
+  },
+  {
+   "t": 5457,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/started",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_eda04e50-cec1-4f43-9f5f-f627e3102adb",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "turnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+     "startedAtMs": 1792742600498
+    },
+    "emittedAtMs": 1792742600498
+   }
+  },
+  {
+   "t": 5457,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "item/completed",
+    "params": {
+     "item": {
+      "type": "agentMessage",
+      "id": "msg_eda04e50-cec1-4f43-9f5f-f627e3102adb",
+      "text": "ok",
+      "phase": null,
+      "memoryCitation": null,
+      "delivery": null,
+      "questions": null
+     },
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "turnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+     "completedAtMs": 1792742600498
+    },
+    "emittedAtMs": 1792742600498
+   }
+  },
+  {
+   "t": 5460,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/tokenUsage/updated",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "turnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+     "tokenUsage": {
+      "total": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "last": {
+       "totalTokens": 2,
+       "inputTokens": 1,
+       "cachedInputTokens": 0,
+       "cacheWriteInputTokens": 0,
+       "outputTokens": 1,
+       "reasoningOutputTokens": 0
+      },
+      "modelContextWindow": 258400
+     }
+    },
+    "emittedAtMs": 1792742600500
+   }
+  },
+  {
+   "t": 5460,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "account/rateLimits/updated",
+    "params": {
+     "rateLimits": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": null,
+      "secondary": null,
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": null,
+      "rateLimitReachedType": null
+     }
+    },
+    "emittedAtMs": 1792742600500
+   }
+  },
+  {
+   "t": 5462,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/readState/changed",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "readState": {
+      "firstUnread": {
+       "type": "turn",
+       "turnId": "01a167c9-2caa-72c1-b904-6dfa738260ca"
+      },
+      "revision": "d8f16249-fb9a-47b0-b730-0c1c44bbaa1d"
+     }
+    },
+    "emittedAtMs": 1792742600503
+   }
+  },
+  {
+   "t": 5462,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "thread/status/changed",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "status": {
+      "type": "idle"
+     }
+    },
+    "emittedAtMs": 1792742600503
+   }
+  },
+  {
+   "t": 5462,
+   "conn": "open",
+   "dir": "in",
+   "msg": {
+    "method": "turn/completed",
+    "params": {
+     "threadId": "01a167c9-2c69-7b20-8ae4-9ec007ae738b",
+     "turn": {
+      "id": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+      "rootTurnId": "01a167c9-2caa-72c1-b904-6dfa738260ca",
+      "items": [
+       {
+        "type": "agentMessage",
+        "id": "msg_eda04e50-cec1-4f43-9f5f-f627e3102adb",
+        "text": "ok",
+        "phase": null,
+        "memoryCitation": null,
+        "delivery": null,
+        "questions": null
+       }
+      ],
+      "itemsView": "summary",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1792742599,
+      "completedAt": 1792742600,
+      "durationMs": 650
+     }
+    },
+    "emittedAtMs": 1792742600503
+   }
+  }
+ ]
+}
