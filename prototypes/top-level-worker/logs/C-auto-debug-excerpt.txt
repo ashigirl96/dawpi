@@ -1,0 +1,13 @@
+2026-10-23T08:49:01.718Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=ef0dd201-c80e-499a-a959-a981cae37a75 source=repl_main_thread
+2026-10-23T08:49:04.788Z [DEBUG] hooks module cbp11@inline tool.call: hooks 2 left out for re-entry (origin cbp11#2)
+2026-10-23T08:49:04.794Z [WARN] Auto mode classifier unavailable, denying with retry guidance (fail closed)
+2026-10-23T08:49:04.798Z [DEBUG] hooks module cbp11@inline tool.call settled in 10.4ms (worker hop, next() included)
+2026-10-23T08:49:04.799Z [DEBUG] hooks module cbp11@inline tool.call settled in 16.3ms (worker hop, next() included)
+2026-10-23T08:49:04.799Z [DEBUG] tool.call mcp__cbp11__delegate toolu_016N7XoefVFmmbtbSKmB9BWC: resolved by a hooks module (deny: spawn refused: The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used.)
+2026-10-23T08:49:05.396Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=f231b02e-c4ff-4347-a282-8ce571f22a62 source=repl_main_thread
+2026-10-23T08:49:07.102Z [DEBUG] hooks module cbp11@inline tool.call: hooks 2 left out for re-entry (origin cbp11#2)
+2026-10-23T08:49:07.105Z [WARN] Auto mode classifier unavailable, denying with retry guidance (fail closed)
+2026-10-23T08:49:07.107Z [DEBUG] hooks module cbp11@inline tool.call settled in 4.7ms (worker hop, next() included)
+2026-10-23T08:49:07.107Z [DEBUG] hooks module cbp11@inline tool.call settled in 8.4ms (worker hop, next() included)
+2026-10-23T08:49:07.107Z [DEBUG] tool.call mcp__cbp11__delegate toolu_01PnCo69ppwuH3MmCFFo6SRM: resolved by a hooks module (deny: spawn refused: The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used.)
+2026-10-23T08:49:07.453Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=181625af-402f-4dae-bc20-5a01f14417ed source=repl_main_thread

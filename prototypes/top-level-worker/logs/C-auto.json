@@ -1,0 +1,115 @@
+[
+  {
+    "t": 1792745332437,
+    "ev": "session.start",
+    "variant": "C"
+  },
+  {
+    "t": 1792745341646,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745344784,
+    "ev": "delegate.call",
+    "caller": "main",
+    "input": {
+      "task": {
+        "title": "README の要約",
+        "prompt": "README.md を 3 行で要約して"
+      },
+      "execution": {
+        "model": "gpt-5.6-luna",
+        "effort": "low"
+      }
+    },
+    "errors": []
+  },
+  {
+    "t": 1792745344797,
+    "ev": "agent.result",
+    "caller": "main",
+    "input": {
+      "description": "cbp11 README の要約",
+      "prompt": "run_a8ut4uzy",
+      "run_in_background": true
+    },
+    "elapsedMs": 9,
+    "result": {
+      "ref": 1,
+      "result": "Error: The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used.",
+      "text": "The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used.",
+      "isError": true
+    }
+  },
+  {
+    "t": 1792745344799,
+    "ev": "C.spawn",
+    "runId": "run_a8ut4uzy",
+    "elapsedMs": 15,
+    "spawned": {
+      "deny": "The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used."
+    }
+  },
+  {
+    "t": 1792745345375,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745347099,
+    "ev": "delegate.call",
+    "caller": "main",
+    "input": {
+      "task": {
+        "title": "README の要約",
+        "prompt": "README.md を 3 行で要約して"
+      },
+      "execution": {
+        "model": "gpt-5.6-luna",
+        "effort": "low"
+      }
+    },
+    "errors": []
+  },
+  {
+    "t": 1792745347106,
+    "ev": "agent.result",
+    "caller": "main",
+    "input": {
+      "description": "cbp11 README の要約",
+      "prompt": "run_matodeia",
+      "run_in_background": true
+    },
+    "elapsedMs": 4,
+    "result": {
+      "ref": 1,
+      "result": "Error: The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used.",
+      "text": "The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used.",
+      "isError": true
+    }
+  },
+  {
+    "t": 1792745347107,
+    "ev": "C.spawn",
+    "runId": "run_matodeia",
+    "elapsedMs": 8,
+    "spawned": {
+      "deny": "The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used."
+    }
+  },
+  {
+    "t": 1792745347444,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  }
+]

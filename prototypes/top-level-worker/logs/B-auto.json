@@ -1,0 +1,267 @@
+[
+  {
+    "t": 1792745216517,
+    "ev": "session.start",
+    "variant": "B"
+  },
+  {
+    "t": 1792745225763,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745229894,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745229907,
+    "ev": "spawn.bound",
+    "runId": "run_mdzwtwkt",
+    "agentId": "a9c34832f1d7c7ea9",
+    "model": "claude-haiku-5-5",
+    "caller": "main",
+    "permissionMode": "auto",
+    "background": true,
+    "resume": null,
+    "stateAfter": "bound",
+    "ms": 11
+  },
+  {
+    "t": 1792745229907,
+    "ev": "agent.result",
+    "caller": "main",
+    "input": {
+      "description": "cbp11 README の要約",
+      "prompt": "{\"task\":{\"title\":\"README の要約\",\"prompt\":\"README.md を 3 行で要約して\"},\"execution\":{\"model\":\"gpt-5.6-luna\",\"effort\":\"low\"},\"workspace\":{\"directory\":\"/tmp/cbp11-work\",\"isolation\":\"shared-read\"},\"permissions\":{\"sandbox\":\"read-only\"}}"
+    },
+    "elapsedMs": 361,
+    "result": {
+      "ref": 1,
+      "result": {
+        "isAsync": true,
+        "status": "async_launched",
+        "agentId": "a9c34832f1d7c7ea9",
+        "description": "cbp11 README の要約",
+        "resolvedModel": "claude-haiku-5-5",
+        "prompt": "run_mdzwtwkt",
+        "outputFile": "<claude の一時ディレクトリ>/-private-tmp-cbp11-work/70e00103-b995-4343-ac7b-c3e69a923795/tasks/a9c34832f1d7c7ea9.output",
+        "canReadOutputFile": true,
+        "canContinueAgent": true
+      },
+      "text": "Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)\nagentId: a9c34832f1d7c7ea9 (internal ID - do not mention to user. Use SendMessage with to: 'a9c34832f1d7c7ea9', summary: '<5-10 word recap>' to continue this agent.)\nThe agent is working in the background. You will be notified automatically when it completes. You know nothing about its results until that notification arrives — do not report, assume, or predict them; continue other work or respond to the user in the meantime.\nDo not duplicate this agent's work — avoid working with the same files or topics it is using.\noutput_file: <claude の一時ディレクトリ>/-private-tmp-cbp11-work/70e00103-b995-4343-ac7b-c3e69a923795/tasks/a9c34832f1d7c7ea9.output\nDo NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.",
+      "isReadOnly": true
+    }
+  },
+  {
+    "t": 1792745229919,
+    "ev": "step.seen",
+    "agentId": "a9c34832f1d7c7ea9",
+    "runId": "run_mdzwtwkt",
+    "boundBySpawn": true,
+    "index": 0,
+    "n": 1,
+    "state": "bound",
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792745229919,
+    "ev": "activate",
+    "runId": "run_mdzwtwkt",
+    "agentId": "a9c34832f1d7c7ea9",
+    "input": {
+      "task": {
+        "title": "README の要約",
+        "prompt": "README.md を 3 行で要約して"
+      },
+      "execution": {
+        "model": "gpt-5.6-luna",
+        "effort": "low"
+      },
+      "workspace": {
+        "directory": "/tmp/cbp11-work",
+        "isolation": "shared-read"
+      },
+      "permissions": {
+        "sandbox": "read-only"
+      }
+    },
+    "timeline": {
+      "prepared": 1792745229896,
+      "spawnHook": 1792745229896,
+      "spawnResolved": 1792745229907,
+      "activated": 1792745229919
+    }
+  },
+  {
+    "t": 1792745229931,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745230011,
+    "ev": "turn.complete",
+    "agentId": "a9c34832f1d7c7ea9",
+    "reason": "answer",
+    "answer": "Note: The server-side auto mode classifier (the safety classifier) was unavailable when reviewing this subagent's work. Please carefully verify the subagent's actions and output before acting on them.\n\ncbp11 run_mdzwtwkt: (stub Codex) received {\"task\":{\"title\":\"README の要約\",\"prompt\":\"README.md を 3 行で要約して\"},\"execution\":{\"model\":\"gpt-5.6-luna\",\"effort\":\"low\"},\"workspace\":{\"directory\":\"/tmp/cbp11-work\",\"isolation\":\"shared-read\"},\"permissions\":{\"sandbox\":\"read-only\"}}",
+    "usage": null
+  },
+  {
+    "t": 1792745280508,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745284282,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745284286,
+    "ev": "spawn.deny",
+    "reason": "schema",
+    "errors": [
+      "$.execution.effort: one of low, medium, high, xhigh"
+    ],
+    "caller": "main",
+    "permissionMode": "auto",
+    "background": true,
+    "resume": null
+  },
+  {
+    "t": 1792745284299,
+    "ev": "agent.result",
+    "caller": "main",
+    "input": {
+      "description": "cbp11 x",
+      "prompt": "{\"task\":{\"title\":\"x\",\"prompt\":\"y\"},\"execution\":{\"model\":\"gpt-5.6-luna\",\"effort\":\"ultra\"}}"
+    },
+    "elapsedMs": 306,
+    "result": {
+      "ref": 1,
+      "result": "Error: Subagent spawn denied by a plugin: invalid launch input: $.execution.effort: one of low, medium, high, xhigh",
+      "text": "Subagent spawn denied by a plugin: invalid launch input: $.execution.effort: one of low, medium, high, xhigh",
+      "isError": true,
+      "isReadOnly": true
+    }
+  },
+  {
+    "t": 1792745284320,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745287079,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745287095,
+    "ev": "spawn.bound",
+    "runId": "run_xl8cnna9",
+    "agentId": "a1b696f9739300b63",
+    "model": "claude-haiku-5-5",
+    "caller": "main",
+    "permissionMode": "auto",
+    "background": true,
+    "resume": null,
+    "stateAfter": "bound",
+    "ms": 14
+  },
+  {
+    "t": 1792745287095,
+    "ev": "agent.result",
+    "caller": "main",
+    "input": {
+      "description": "cbp11 x",
+      "prompt": "{\"task\":{\"title\":\"x\",\"prompt\":\"y\"},\"execution\":{\"model\":\"gpt-5.6-luna\",\"effort\":\"xhigh\"}}"
+    },
+    "elapsedMs": 267,
+    "result": {
+      "ref": 1,
+      "result": {
+        "isAsync": true,
+        "status": "async_launched",
+        "agentId": "a1b696f9739300b63",
+        "description": "cbp11 x",
+        "resolvedModel": "claude-haiku-5-5",
+        "prompt": "run_xl8cnna9",
+        "outputFile": "<claude の一時ディレクトリ>/-private-tmp-cbp11-work/70e00103-b995-4343-ac7b-c3e69a923795/tasks/a1b696f9739300b63.output",
+        "canReadOutputFile": true,
+        "canContinueAgent": true
+      },
+      "text": "Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)\nagentId: a1b696f9739300b63 (internal ID - do not mention to user. Use SendMessage with to: 'a1b696f9739300b63', summary: '<5-10 word recap>' to continue this agent.)\nThe agent is working in the background. You will be notified automatically when it completes. You know nothing about its results until that notification arrives — do not report, assume, or predict them; continue other work or respond to the user in the meantime.\nDo not duplicate this agent's work — avoid working with the same files or topics it is using.\noutput_file: <claude の一時ディレクトリ>/-private-tmp-cbp11-work/70e00103-b995-4343-ac7b-c3e69a923795/tasks/a1b696f9739300b63.output\nDo NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.",
+      "isReadOnly": true
+    }
+  },
+  {
+    "t": 1792745287104,
+    "ev": "step.seen",
+    "agentId": "a1b696f9739300b63",
+    "runId": "run_xl8cnna9",
+    "boundBySpawn": true,
+    "index": 0,
+    "n": 1,
+    "state": "bound",
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792745287104,
+    "ev": "activate",
+    "runId": "run_xl8cnna9",
+    "agentId": "a1b696f9739300b63",
+    "input": {
+      "task": {
+        "title": "x",
+        "prompt": "y"
+      },
+      "execution": {
+        "model": "gpt-5.6-luna",
+        "effort": "xhigh"
+      }
+    },
+    "timeline": {
+      "prepared": 1792745287081,
+      "spawnHook": 1792745287081,
+      "spawnResolved": 1792745287095,
+      "activated": 1792745287104
+    }
+  },
+  {
+    "t": 1792745287107,
+    "ev": "agent.offer",
+    "agent": "cbp11:worker",
+    "result": {
+      "isOffered": true
+    }
+  },
+  {
+    "t": 1792745287148,
+    "ev": "turn.complete",
+    "agentId": "a1b696f9739300b63",
+    "reason": "answer",
+    "answer": "Note: The server-side auto mode classifier (the safety classifier) was unavailable when reviewing this subagent's work. Please carefully verify the subagent's actions and output before acting on them.\n\ncbp11 run_xl8cnna9: (stub Codex) received {\"task\":{\"title\":\"x\",\"prompt\":\"y\"},\"execution\":{\"model\":\"gpt-5.6-luna\",\"effort\":\"xhigh\"}}",
+    "usage": null
+  }
+]

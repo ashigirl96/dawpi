@@ -1,0 +1,22 @@
+2026-10-23T08:47:05.807Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=4b7aa995-cf9d-4950-8eea-91d1775ca85e source=repl_main_thread
+2026-10-23T08:47:09.892Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01BFC65YciVTzq645w3TyFon permissionDecisionMs=341
+2026-10-23T08:47:09.913Z [DEBUG] hooks module cbp11@inline agent.spawn settled in 17.6ms (worker hop, next() included)
+2026-10-23T08:47:09.913Z [DEBUG] hooks module cbp11@inline tool.call settled in 368.0ms (worker hop, next() included)
+2026-10-23T08:47:09.948Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:47:09.949Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp11w8pfcj7kjx permissionDecisionMs=13
+2026-10-23T08:47:10.007Z [DEBUG] hooks module cbp11@inline tool.call settled in 72.8ms (worker hop, next() included)
+2026-10-23T08:47:10.028Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=d379bf05-1c7e-4fea-954f-2fa23fea498f source=repl_main_thread
+2026-10-23T08:47:11.515Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=231fc1d6-04f5-401b-8450-e62b98193417 source=repl_main_thread
+2026-10-23T08:48:00.567Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=9cddf60d-cd2e-4f05-bfe3-ac3fbce1a0b0 source=repl_main_thread
+2026-10-23T08:48:04.278Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01QfZ5srvFPeyx82mJDg619o permissionDecisionMs=280
+2026-10-23T08:48:04.295Z [DEBUG] hooks module cbp11@inline agent.spawn settled in 10.5ms (worker hop, next() included)
+2026-10-23T08:48:04.300Z [DEBUG] hooks module cbp11@inline tool.call settled in 307.1ms (worker hop, next() included)
+2026-10-23T08:48:04.331Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=95ad5aea-3514-4226-88fb-edac90f141df source=repl_main_thread
+2026-10-23T08:48:07.076Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01S2WYDZWu2ve4NSrVM5yhFD permissionDecisionMs=244
+2026-10-23T08:48:07.099Z [DEBUG] hooks module cbp11@inline agent.spawn settled in 18.0ms (worker hop, next() included)
+2026-10-23T08:48:07.099Z [DEBUG] hooks module cbp11@inline tool.call settled in 271.1ms (worker hop, next() included)
+2026-10-23T08:48:07.128Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:48:07.129Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp11c79xsypt9m permissionDecisionMs=19
+2026-10-23T08:48:07.146Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=95985e6b-fe6e-4420-a2aa-a16a431c2bdb source=repl_main_thread
+2026-10-23T08:48:07.146Z [DEBUG] hooks module cbp11@inline tool.call settled in 36.7ms (worker hop, next() included)
+2026-10-23T08:48:08.691Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=448ebae4-5ec3-448a-b7ed-4127a4d85d56 source=repl_main_thread

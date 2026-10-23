@@ -1,0 +1,7 @@
+2026-10-23T08:50:08.724Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=ec466237-2f59-42a6-8c47-9ee82fef75a9 source=repl_main_thread
+2026-10-23T08:50:12.373Z [DEBUG] hooks module cbp11@inline tool.call settled in 3.2ms (worker hop, next() included)
+2026-10-23T08:50:12.401Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=aeeb4d68-0878-4194-893b-0867b31dbcb2 source=repl_main_thread
+2026-10-23T08:50:13.228Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_012F5qA125d7gaVH73tjtFuz permissionDecisionMs=3
+2026-10-23T08:50:13.249Z [DEBUG] hooks module cbp11@inline agent.spawn settled in 18.2ms (worker hop, next() included)
+2026-10-23T08:50:13.249Z [DEBUG] hooks module cbp11@inline tool.call settled in 32.0ms (worker hop, next() included)
+2026-10-23T08:50:13.334Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=c480f065-9e7e-44d8-8cde-70856803236e source=repl_main_thread
