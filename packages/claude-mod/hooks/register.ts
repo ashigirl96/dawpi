@@ -1,29 +1,10 @@
 import type { EngineInterface, Register } from 'claude-code'
 import { serveLaunches, currentSnapshot, ensureSupervisor, pollOnce, request, type SupervisorHandle } from '../control-client/supervisor.ts'
+import { raceAbort } from './race-abort.ts'
+import { registerDelegation, registerRuns } from './runs.ts'
 
 const DIAGNOSE = 'mcp__codex-bridge__diagnose'
 const MAX_DIAGNOSE_WAIT_MS = 600_000
-
-type Raced<T> = { aborted: true } | { aborted: false; value: T }
-
-// $.http.fetch takes no signal, so an abort can only stop our wait; the Supervisor ends the request within its 30 s cap.
-function raceAbort<T>(work: Promise<T>, signal: AbortSignal): Promise<Raced<T>> {
-  if (signal.aborted) return Promise.resolve({ aborted: true })
-  return new Promise((resolve, reject) => {
-    const onAbort = () => resolve({ aborted: true })
-    signal.addEventListener('abort', onAbort, { once: true })
-    work.then(
-      value => {
-        signal.removeEventListener('abort', onAbort)
-        resolve({ aborted: false, value })
-      },
-      err => {
-        signal.removeEventListener('abort', onAbort)
-        reject(err)
-      },
-    )
-  })
-}
 
 async function waitForEvents($: EngineInterface, handle: SupervisorHandle, after: number, waitMs: number, signal: AbortSignal) {
   const t0 = Date.now()
@@ -53,6 +34,8 @@ function readWaitMs(input: unknown): number {
 }
 
 export const register: Register = on => {
+  registerRuns(on)
+
   on('session.start', async ($, e, next) => {
     void serveLaunches($)
     await $.tool.register({
@@ -66,6 +49,7 @@ export const register: Register = on => {
       },
       isDeferred: false,
     })
+    await registerDelegation($)
     return next(e)
   })
 
@@ -75,7 +59,7 @@ export const register: Register = on => {
     const waitMs = readWaitMs((e as { waitMs?: unknown }).waitMs)
     const handle = await ensureSupervisor()
     const status = await request<{ cursor: number }>($, handle, '/command', { op: 'status' })
-    if (!status.ok) return { isError: true, result: status.error, text: `${status.error.code}: ${status.error.message}` }
+    if (!status.ok) return { isError: true, result: JSON.stringify(status), text: `${status.error.code}: ${status.error.message}` }
     const waited = waitMs > 0 ? await waitForEvents($, handle, status.value.cursor, waitMs, next.signal) : undefined
     return { result: JSON.stringify({ supervisor: status.value, snapshot: currentSnapshot(), waited }) }
   }).catch(($, e, next) => {

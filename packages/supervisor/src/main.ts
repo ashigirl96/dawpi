@@ -7,6 +7,7 @@ import { createCommands } from "./commands.ts";
 import { EventLog } from "./control/event-log.ts";
 import { createGuardFiles, HANDBACK_DECISIONS, type HandbackDecision } from "./host/guard-files.ts";
 import { serveControl } from "./control/server.ts";
+import { createRunBook } from "./runs/run-book.ts";
 import {
   assertSessionId,
   prepareSessionDir,
@@ -17,6 +18,7 @@ import {
 import { watchParent } from "./lifecycle/parent-watch.ts";
 
 const PARENT_POLL_MS = 1_000;
+const EXPIRY_SWEEP_MS = 1_000;
 const SESSION_TOUCH_MS = 6 * 60 * 60 * 1000;
 
 const say = (line: Record<string, unknown>) => process.stdout.write(`${JSON.stringify(line)}\n`);
@@ -53,7 +55,8 @@ function main() {
     socketPath,
     startedAt: new Date().toISOString(),
   };
-  serveControl({ socketPath, log, command: createCommands(info, log, guard) });
+  const runs = createRunBook({ log, guard });
+  serveControl({ socketPath, log, command: createCommands(info, log, guard, runs) });
   const socketIno = lstatSync(socketPath).ino;
   log.append({ origin: "supervisor", kind: "supervisor.started", payload: { version: info.version, pid: info.pid } });
 
@@ -73,6 +76,7 @@ function main() {
   };
   watchParent(PARENT_POLL_MS, () => exit("parent-gone"));
   setInterval(() => touch(sessionDir), SESSION_TOUCH_MS);
+  setInterval(() => runs.expireOverdue(), EXPIRY_SWEEP_MS);
   // The Supervisor shares Claude Code's process group, so closing its terminal sends SIGHUP here too.
   for (const signal of ["SIGTERM", "SIGINT", "SIGHUP"] as const) process.on(signal, () => exit(signal));
 
