@@ -1,0 +1,332 @@
+2026-10-23T13:20:29.107Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:20:29.154Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Agent(cbp13:worker)"]
+2026-10-23T13:20:29.156Z [DEBUG] Ignoring dangerous permission Agent(cbp13:worker) from .claude/settings.local.json (bypasses classifier)
+2026-10-23T13:20:29.156Z [DEBUG] Applying permission update: Removing 1 allow rule(s) from source 'localSettings': ["Agent(cbp13:worker)"]
+2026-10-23T13:20:29.242Z [DEBUG] Read hooks.json for plugin cbp13 (enabled=true): <claude-tmp>
+2026-10-23T13:20:29.249Z [DEBUG] Loaded inline plugin from path: cbp13
+2026-10-23T13:20:29.275Z [DEBUG] Checking plugin cbp13: skillsPath=none, skillsPaths=0 paths
+2026-10-23T13:20:29.385Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:20:29.427Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=c6a87e12-523c-4b11-b833-e81d1ac42eee source=quota_check
+2026-10-23T13:20:29.491Z [DEBUG] hooks module cbp13@inline loaded (worker, environment 2, tier user); events: session.start,tool.call,tool.check,agent.spawn,turn.step,turn.complete
+2026-10-23T13:20:29.500Z [DEBUG] Watching for changes in setting files ~/.claude/settings.json, /private/tmp/cbp13-work/.claude/settings.json, /private/tmp/cbp13-work/.claude/settings.local.json...
+2026-10-23T13:20:29.502Z [DEBUG] engine.create: no plugin-provided interfaces; $ built for cc-plugin-sec-default,cbp13,mermaid-render,cc-plugin-agents-md,cc-plugin-telemetry,cc-plugin-plugin-authoring,cc-plugin-diff,cc-plugin-you-should-know
+2026-10-23T13:20:29.504Z [DEBUG] plugin.register: cbp13 (user, cbp13@inline), judged by cc-plugin-sec-default: admitted
+2026-10-23T13:20:29.518Z [DEBUG] plugin-dir watch: watching cbp13, mermaid-render; folders of plugins none
+2026-10-23T13:20:29.564Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:20:29.619Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:20:29.620Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:20:29.637Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:20:29.637Z [DEBUG] Replacing all allow rules for destination 'localSettings' with 1 rule(s): ["Agent(cbp13:worker)"]
+2026-10-23T13:20:29.637Z [DEBUG] Ignoring dangerous permission Agent(cbp13:worker) from .claude/settings.local.json (bypasses classifier)
+2026-10-23T13:20:29.637Z [DEBUG] Applying permission update: Removing 1 allow rule(s) from source 'localSettings': ["Agent(cbp13:worker)"]
+2026-10-23T13:20:29.692Z [DEBUG] type root of cbp13 at <claude-tmp> entries claude-code, claude-code-tools, claude-code-mcp; wrote nothing
+2026-10-23T13:20:29.706Z [DEBUG] $.process.run (cbp13): mkdir with 4 args in /private/tmp/cbp13-work (pid 74511)
+2026-10-23T13:20:29.711Z [DEBUG] $.process.run (cbp13): mkdir exited 0 in 6ms, 0 + 0 chars
+2026-10-23T13:20:29.712Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): tool.register nested in cbp13#0
+2026-10-23T13:20:29.712Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): settings.read nested in cbp13#0 > cc-plugin-sec-default#18
+2026-10-23T13:20:29.713Z [DEBUG] $.tool.register (cbp13): 1 tool(s) served at 127.0.0.1:57552/<secret>/cbp13 v1
+2026-10-23T13:20:29.714Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__delegate (1 tool(s) on server "cbp13"); connecting
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": Initializing HTTP transport to http://127.0.0.1:57552/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": Node version: v26.3.0, Platform: darwin
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": HTTP transport options: {"url":"http://127.0.0.1:57552/REDACTED/cbp13?v=REDACTED","headers":{"User-Agent":"claude-code/2.1.309 (cli)","Accept-Encoding":"identity"},"hasAuthProvider":true,"timeoutMs":60000}
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": HTTP transport created successfully
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": Starting connection with timeout of 30000ms
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": Testing basic HTTP connectivity to http://127.0.0.1:57552/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": Parsed URL: host=127.0.0.1, port=57552, protocol=http:
+2026-10-23T13:20:29.744Z [DEBUG] MCP server "cbp13": Using loopback address: 127.0.0.1
+2026-10-23T13:20:29.745Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.753Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.763Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.766Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.766Z [DEBUG] MCP server "cbp13": Successfully connected (transport: http) in 22ms
+2026-10-23T13:20:29.766Z [DEBUG] MCP server "cbp13": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"cbp13","version":"plugin-tools-1"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-10-23T13:20:29.766Z [DEBUG] [MCP] Server "cbp13" connected with subscribe=false
+2026-10-23T13:20:29.767Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.768Z [DEBUG] MCP server "cbp13": Channel notifications skipped: server did not declare claude/channel capability
+2026-10-23T13:20:29.814Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__delegate visible after 100ms
+2026-10-23T13:20:29.817Z [DEBUG] $.agent.register (cbp13): cbp13:worker listed
+2026-10-23T13:20:29.822Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): tool.register nested in cbp13#0
+2026-10-23T13:20:29.822Z [DEBUG] $.tool.register (cbp13): 2 tool(s) served at 127.0.0.1:57552/<secret>/cbp13 v2
+2026-10-23T13:20:29.822Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__status (2 tool(s) on server "cbp13"); connecting
+2026-10-23T13:20:29.830Z [DEBUG] MCP server "cbp13": excludeStalePluginClients: marking stale (config hash changed)
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": Initializing HTTP transport to http://127.0.0.1:57552/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": Node version: v26.3.0, Platform: darwin
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": HTTP transport options: {"url":"http://127.0.0.1:57552/REDACTED/cbp13?v=REDACTED","headers":{"User-Agent":"claude-code/2.1.309 (cli)","Accept-Encoding":"identity"},"hasAuthProvider":true,"timeoutMs":60000}
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": HTTP transport created successfully
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": Starting connection with timeout of 30000ms
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": Testing basic HTTP connectivity to http://127.0.0.1:57552/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": Parsed URL: host=127.0.0.1, port=57552, protocol=http:
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": Using loopback address: 127.0.0.1
+2026-10-23T13:20:29.832Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.840Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.842Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.843Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.843Z [DEBUG] MCP server "cbp13": Successfully connected (transport: http) in 11ms
+2026-10-23T13:20:29.844Z [DEBUG] MCP server "cbp13": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"cbp13","version":"plugin-tools-2"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-10-23T13:20:29.844Z [DEBUG] [MCP] Server "cbp13" connected with subscribe=false
+2026-10-23T13:20:29.844Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:20:29.847Z [DEBUG] MCP server "cbp13": Channel notifications skipped: server did not declare claude/channel capability
+2026-10-23T13:20:29.927Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__status visible after 105ms
+2026-10-23T13:20:29.943Z [DEBUG] $.process.run (cc-plugin-telemetry): sh with 2 args in /private/tmp/cbp13-work (pid 74577)
+2026-10-23T13:20:29.944Z [DEBUG] hooks module cbp13@inline, mermaid-render@inline session.start settled in 251.0ms (worker hop, next() included)
+2026-10-23T13:20:29.949Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (85 bytes)
+2026-10-23T13:20:52.180Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=031303f0-8acb-4a0e-8f13-5e4cc7b59fb8 source=generate_session_title
+2026-10-23T13:20:52.198Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=a9b2fc96-afc0-43e3-8d5d-45dd8195f3ae source=generate_session_title
+2026-10-23T13:20:52.227Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=bb09d627-4969-424e-a4bf-0f317d9408bf source=repl_main_thread
+2026-10-23T13:20:54.382Z [DEBUG] cbp13 (user) answered tool.call without next() in 0.7ms; nothing beneath it ran for this dispatch
+2026-10-23T13:20:54.382Z [DEBUG] hooks module cbp13@inline tool.call settled in 3.8ms (worker hop, next() included)
+2026-10-23T13:20:54.382Z [DEBUG] tool.call mcp__cbp13__delegate toolu_015cddBcpAC32Gf7ZGHdub3W: resolved by a hooks module (result)
+2026-10-23T13:20:54.388Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (195 bytes)
+2026-10-23T13:20:54.609Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 2394.8ms (worker hop, next() included)
+2026-10-23T13:20:54.633Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2660766d-ba71-4d0a-95fe-d9df718e89c0 source=repl_main_thread
+2026-10-23T13:20:54.874Z [DEBUG] [bridge:repl] derived title from message 1: mcp__cbp13__delegate 経由の cbp13:worker
+2026-10-23T13:20:55.478Z [DEBUG] hooks module cbp13@inline tool.check settled in 2.0ms (worker hop, next() included)
+2026-10-23T13:20:55.601Z [DEBUG] [bridge:repl] derived title from message 1: Mcp__cbp13__delegate と cbp13:worker
+2026-10-23T13:20:55.921Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01XKXqC3ZA5bNsYEBbeY9Yqq permissionDecisionMs=445
+2026-10-23T13:20:55.952Z [DEBUG] hooks module cbp13@inline agent.spawn settled in 25.5ms (worker hop, next() included)
+2026-10-23T13:20:55.952Z [DEBUG] hooks module cbp13@inline tool.call settled in 487.1ms (worker hop, next() included)
+2026-10-23T13:20:55.958Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 1335.5ms (worker hop, next() included)
+2026-10-23T13:20:55.962Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (429 bytes)
+2026-10-23T13:20:55.971Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (2163 bytes)
+2026-10-23T13:20:55.976Z [DEBUG] $.process.run (cbp13): mkdir with 4 args in /private/tmp/cbp13-work (pid 75403)
+2026-10-23T13:20:55.980Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (2483 bytes)
+2026-10-23T13:20:55.982Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=c8fbb83c-6c68-44ee-97f3-a965b0fedcf4 source=repl_main_thread
+2026-10-23T13:20:55.983Z [DEBUG] $.process.run (cbp13): mkdir exited 0 in 7ms, 0 + 0 chars
+2026-10-23T13:20:55.984Z [DEBUG] $.process.run (cbp13): mkdir with 2 args in /private/tmp/cbp13-work (pid 75404)
+2026-10-23T13:20:55.985Z [DEBUG] $.process.run (cbp13): mkdir exited 0 in 2ms, 0 + 0 chars
+2026-10-23T13:20:55.986Z [DEBUG] $.process.run (cbp13): rm with 2 args in /private/tmp/cbp13-work (pid 75405)
+2026-10-23T13:20:55.988Z [DEBUG] $.process.run (cbp13): rm exited 0 in 2ms, 0 + 0 chars
+2026-10-23T13:20:55.989Z [DEBUG] $.process.spawn (cbp13): bun with 2 args in /private/tmp/cbp13-work (pid 75406)
+2026-10-23T13:20:55.990Z [DEBUG] $.http.fetch (cbp13): GET http://relay/health over /tmp/cbp13/r.sock
+2026-10-23T13:20:55.991Z [DEBUG] $.process.run (cbp13): sleep with 1 args in /private/tmp/cbp13-work (pid 75407)
+2026-10-23T13:20:56.024Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (2642 bytes)
+2026-10-23T13:20:56.198Z [DEBUG] $.process.run (cbp13): sleep exited 0 in 208ms, 0 + 0 chars
+2026-10-23T13:20:56.198Z [DEBUG] $.http.fetch (cbp13): GET http://relay/health over /tmp/cbp13/r.sock
+2026-10-23T13:20:56.199Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 271 chars
+2026-10-23T13:20:56.199Z [DEBUG] $.http.fetch (cbp13): POST http://relay/call over /tmp/cbp13/r.sock
+2026-10-23T13:20:56.199Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (3104 bytes)
+2026-10-23T13:20:56.233Z [DEBUG] $.http.fetch (cbp13): 200 in 34ms, 1198 chars
+2026-10-23T13:20:56.234Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=0&waitMs=0 over /tmp/cbp13/r.sock
+2026-10-23T13:20:56.234Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 1198 chars
+2026-10-23T13:20:56.235Z [DEBUG] $.http.fetch (cbp13): POST http://relay/call over /tmp/cbp13/r.sock
+2026-10-23T13:20:56.237Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 248 chars
+2026-10-23T13:20:56.237Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=2&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:20:56.237Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 1277 chars
+2026-10-23T13:20:56.238Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=5&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:20:56.239Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (3336 bytes)
+2026-10-23T13:20:56.239Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (3487 bytes)
+2026-10-23T13:20:57.182Z [DEBUG] $.http.fetch (cbp13): 200 in 944ms, 180 chars
+2026-10-23T13:20:57.183Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=6&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:20:57.184Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (3640 bytes)
+2026-10-23T13:20:58.583Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 2607.3ms (worker hop, next() included)
+2026-10-23T13:20:58.601Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=6600ba14-8b1b-4a7a-a4eb-34e851c4da07 source=prompt_suggestion
+2026-10-23T13:20:58.601Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=7d7e1e4d-968e-4a21-af63-c5beea604e16 source=side_query
+2026-10-23T13:20:58.601Z [DEBUG] hooks module cbp13@inline turn.complete settled in 9.4ms (worker hop, next() included)
+2026-10-23T13:20:58.862Z [DEBUG] $.http.fetch (cbp13): 200 in 1679ms, 1341 chars
+2026-10-23T13:20:58.864Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=8&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:20:58.865Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (3794 bytes)
+2026-10-23T13:20:58.867Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (4367 bytes)
+2026-10-23T13:21:00.466Z [DEBUG] $.http.fetch (cbp13): 200 in 1602ms, 380 chars
+2026-10-23T13:21:00.467Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=9&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.473Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (4521 bytes)
+2026-10-23T13:21:00.473Z [DEBUG] $.http.fetch (cbp13): 200 in 6ms, 383 chars
+2026-10-23T13:21:00.476Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=10&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.477Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (4672 bytes)
+2026-10-23T13:21:00.477Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (4917 bytes)
+2026-10-23T13:21:00.771Z [DEBUG] $.http.fetch (cbp13): 200 in 294ms, 952 chars
+2026-10-23T13:21:00.771Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=11&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.772Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (5071 bytes)
+2026-10-23T13:21:00.774Z [DEBUG] $.http.fetch (cbp13): 200 in 3ms, 495 chars
+2026-10-23T13:21:00.775Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=12&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.775Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 343 chars
+2026-10-23T13:21:00.775Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (5223 bytes)
+2026-10-23T13:21:00.778Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (5375 bytes)
+2026-10-23T13:21:00.778Z [DEBUG] cbp13 (user) answered turn.step without next() in 4817.0ms; nothing beneath it ran for this dispatch
+2026-10-23T13:21:00.778Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 4820.0ms (worker hop, next() included)
+2026-10-23T13:21:00.782Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (5862 bytes)
+2026-10-23T13:21:00.782Z [DEBUG] cbp13 (user) answered tool.check without next() in 0.2ms; nothing beneath it ran for this dispatch
+2026-10-23T13:21:00.782Z [DEBUG] hooks module cbp13@inline tool.check settled in 1.2ms (worker hop, next() included)
+2026-10-23T13:21:00.783Z [DEBUG] cbp13: tool.check bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T13:21:00.783Z [DEBUG] [cbp13] $.ui.log: its tool.check hook was skipped. "cc-plugin-sec-default" runs first and sent the event on past it.
+2026-10-23T13:21:00.784Z [DEBUG] tool.check Agent toolu_cbp13en69qmm8: ask -> allow by plugins cc-plugin-sec-default, cbp13
+2026-10-23T13:21:00.785Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp13en69qmm8 permissionDecisionMs=4
+2026-10-23T13:21:00.789Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (6047 bytes)
+2026-10-23T13:21:00.792Z [INFO] [Stall] tool_dispatch_end tool=Agent toolUseId=toolu_cbp13en69qmm8 outcome=ok durationMs=7
+2026-10-23T13:21:00.796Z [DEBUG] hooks module cbp13@inline tool.call settled in 16.3ms (worker hop, next() included)
+2026-10-23T13:21:00.802Z [DEBUG] $.http.fetch (cbp13): POST http://relay/send over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.806Z [DEBUG] $.http.fetch (cbp13): 200 in 4ms, 11 chars
+2026-10-23T13:21:00.807Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (6294 bytes)
+2026-10-23T13:21:00.807Z [DEBUG] $.http.fetch (cbp13): POST http://relay/call over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.807Z [DEBUG] hooks module cbp13@inline agent.spawn settled in 21.2ms (worker hop, next() included)
+2026-10-23T13:21:00.809Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (7685 bytes)
+2026-10-23T13:21:00.813Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (7949 bytes)
+2026-10-23T13:21:00.814Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=13&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.814Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (8115 bytes)
+2026-10-23T13:21:00.814Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 1617 chars
+2026-10-23T13:21:00.815Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (8459 bytes)
+2026-10-23T13:21:00.815Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=16&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.815Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (8611 bytes)
+2026-10-23T13:21:00.815Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (9183 bytes)
+2026-10-23T13:21:00.833Z [DEBUG] $.http.fetch (cbp13): 200 in 26ms, 1198 chars
+2026-10-23T13:21:00.834Z [DEBUG] $.http.fetch (cbp13): 200 in 18ms, 941 chars
+2026-10-23T13:21:00.834Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=0&waitMs=0 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.834Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=17&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.834Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 8731 chars
+2026-10-23T13:21:00.834Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (9336 bytes)
+2026-10-23T13:21:00.835Z [DEBUG] $.http.fetch (cbp13): POST http://relay/call over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.836Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 691 chars
+2026-10-23T13:21:00.836Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 248 chars
+2026-10-23T13:21:00.836Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=18&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.837Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=17&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.837Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 627 chars
+2026-10-23T13:21:00.837Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 1281 chars
+2026-10-23T13:21:00.837Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (9488 bytes)
+2026-10-23T13:21:00.837Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=20&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.837Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=20&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:00.837Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (9720 bytes)
+2026-10-23T13:21:00.837Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (9872 bytes)
+2026-10-23T13:21:00.838Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (10024 bytes)
+2026-10-23T13:21:02.045Z [DEBUG] $.http.fetch (cbp13): 200 in 1208ms, 500 chars
+2026-10-23T13:21:02.045Z [DEBUG] $.http.fetch (cbp13): 200 in 1208ms, 500 chars
+2026-10-23T13:21:02.047Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=21&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:02.048Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=21&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:02.048Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 345 chars
+2026-10-23T13:21:02.049Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 345 chars
+2026-10-23T13:21:02.049Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (10179 bytes)
+2026-10-23T13:21:02.053Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=22&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:02.060Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 1257.9ms (worker hop, next() included)
+2026-10-23T13:21:02.098Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (10334 bytes)
+2026-10-23T13:21:02.098Z [DEBUG] $.http.fetch (cbp13): 200 in 45ms, 323 chars
+2026-10-23T13:21:02.106Z [DEBUG] hooks module cbp13@inline turn.complete settled in 32.9ms (worker hop, next() included)
+2026-10-23T13:21:02.106Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=23&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:02.106Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (10486 bytes)
+2026-10-23T13:21:02.107Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (10975 bytes)
+2026-10-23T13:21:02.107Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (11140 bytes)
+2026-10-23T13:21:02.107Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (11292 bytes)
+2026-10-23T13:21:02.107Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (11576 bytes)
+2026-10-23T13:21:02.107Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (11729 bytes)
+2026-10-23T13:21:02.974Z [DEBUG] $.http.fetch (cbp13): 200 in 868ms, 499 chars
+2026-10-23T13:21:02.975Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=24&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:02.976Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (11883 bytes)
+2026-10-23T13:21:02.976Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 501 chars
+2026-10-23T13:21:02.976Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=25&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:02.977Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (12035 bytes)
+2026-10-23T13:21:02.977Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (12410 bytes)
+2026-10-23T13:21:04.678Z [DEBUG] $.http.fetch (cbp13): 200 in 1702ms, 448 chars
+2026-10-23T13:21:04.681Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=26&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:04.682Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (12565 bytes)
+2026-10-23T13:21:04.682Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 613 chars
+2026-10-23T13:21:04.684Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=28&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:04.685Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (12717 bytes)
+2026-10-23T13:21:04.727Z [DEBUG] $.http.fetch (cbp13): 200 in 44ms, 331 chars
+2026-10-23T13:21:04.729Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=29&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:04.731Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (12870 bytes)
+2026-10-23T13:21:04.731Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 2055 chars
+2026-10-23T13:21:04.733Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=36&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:04.734Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (13022 bytes)
+2026-10-23T13:21:04.873Z [DEBUG] $.http.fetch (cbp13): 200 in 141ms, 952 chars
+2026-10-23T13:21:04.875Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=37&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:04.876Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (13176 bytes)
+2026-10-23T13:21:04.877Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 466 chars
+2026-10-23T13:21:04.879Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=38&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:04.880Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (13328 bytes)
+2026-10-23T13:21:04.881Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (13669 bytes)
+2026-10-23T13:21:04.964Z [DEBUG] $.http.fetch (cbp13): 200 in 85ms, 584 chars
+2026-10-23T13:21:04.966Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=39&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:04.968Z [DEBUG] $.http.fetch (cbp13): 200 in 2ms, 1305 chars
+2026-10-23T13:21:04.968Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (13822 bytes)
+2026-10-23T13:21:04.979Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (13974 bytes)
+2026-10-23T13:21:04.981Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 4174.4ms (worker hop, next() included)
+2026-10-23T13:21:04.994Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (14151 bytes)
+2026-10-23T13:21:04.995Z [DEBUG] hooks module cbp13@inline tool.check settled in 5.5ms (worker hop, next() included)
+2026-10-23T13:21:04.998Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T13:21:05.001Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp13ao0iiep7 permissionDecisionMs=12
+2026-10-23T13:21:05.005Z [INFO] [Stall] tool_dispatch_end tool=SubagentHandback toolUseId=toolu_cbp13ao0iiep7 outcome=ok durationMs=4
+2026-10-23T13:21:05.007Z [DEBUG] hooks module cbp13@inline tool.call settled in 21.5ms (worker hop, next() included)
+2026-10-23T13:21:05.011Z [INFO] [Stall] agent_completion agentId=a0b7b675d7890f890 agentType=cbp13:worker exitPath=completed durationMs=4220 turns=1 finalStopReason=tool_use lastChunkAgeMs=2 lastToolUseId=toolu_cbp13ao0iiep7 lastToolResultSeen=toolu_cbp13ao0iiep7
+2026-10-23T13:21:05.014Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (14426 bytes)
+2026-10-23T13:21:05.019Z [DEBUG] hooks module cbp13@inline turn.complete settled in 8.0ms (worker hop, next() included)
+2026-10-23T13:21:05.020Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (15008 bytes)
+2026-10-23T13:21:05.029Z [DEBUG] hooks module cbp13@inline agent.spawn settled in 7.4ms (worker hop, next() included)
+2026-10-23T13:21:05.031Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (15292 bytes)
+2026-10-23T13:21:05.035Z [DEBUG] $.http.fetch (cbp13): POST http://relay/send over /tmp/cbp13/r.sock
+2026-10-23T13:21:05.035Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (16166 bytes)
+2026-10-23T13:21:05.036Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 11 chars
+2026-10-23T13:21:05.036Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=22&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:05.036Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (16671 bytes)
+2026-10-23T13:21:05.036Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 8272 chars
+2026-10-23T13:21:05.037Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=43&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:05.037Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (16824 bytes)
+2026-10-23T13:21:05.037Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 1087 chars
+2026-10-23T13:21:05.037Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=45&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:05.037Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (17433 bytes)
+2026-10-23T13:21:05.038Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (17585 bytes)
+2026-10-23T13:21:06.419Z [DEBUG] $.http.fetch (cbp13): 200 in 1382ms, 382 chars
+2026-10-23T13:21:06.421Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=46&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.422Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (17740 bytes)
+2026-10-23T13:21:06.422Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 383 chars
+2026-10-23T13:21:06.423Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=47&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.423Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (17892 bytes)
+2026-10-23T13:21:06.424Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (18137 bytes)
+2026-10-23T13:21:06.474Z [DEBUG] $.http.fetch (cbp13): 200 in 51ms, 446 chars
+2026-10-23T13:21:06.475Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=48&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.476Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 327 chars
+2026-10-23T13:21:06.476Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (18290 bytes)
+2026-10-23T13:21:06.477Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=49&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.478Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (18442 bytes)
+2026-10-23T13:21:06.549Z [DEBUG] $.http.fetch (cbp13): 200 in 72ms, 328 chars
+2026-10-23T13:21:06.551Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=50&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.552Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 5556 chars
+2026-10-23T13:21:06.552Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (18595 bytes)
+2026-10-23T13:21:06.553Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=69&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.554Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (18748 bytes)
+2026-10-23T13:21:06.582Z [DEBUG] $.http.fetch (cbp13): 200 in 29ms, 327 chars
+2026-10-23T13:21:06.583Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=70&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.583Z [DEBUG] $.http.fetch (cbp13): 200 in 0ms, 1190 chars
+2026-10-23T13:21:06.584Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (18901 bytes)
+2026-10-23T13:21:06.584Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=74&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.585Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (19053 bytes)
+2026-10-23T13:21:06.598Z [DEBUG] $.http.fetch (cbp13): 200 in 14ms, 326 chars
+2026-10-23T13:21:06.600Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=75&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.601Z [DEBUG] $.http.fetch (cbp13): 200 in 1ms, 615 chars
+2026-10-23T13:21:06.601Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (19206 bytes)
+2026-10-23T13:21:06.602Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=77&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.603Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (19358 bytes)
+2026-10-23T13:21:06.677Z [DEBUG] $.http.fetch (cbp13): 200 in 75ms, 819 chars
+2026-10-23T13:21:06.679Z [DEBUG] $.http.fetch (cbp13): GET http://relay/events?after=79&waitMs=8000 over /tmp/cbp13/r.sock
+2026-10-23T13:21:06.681Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (19511 bytes)
+2026-10-23T13:21:06.682Z [DEBUG] $.http.fetch (cbp13): 200 in 3ms, 1922 chars
+2026-10-23T13:21:06.684Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (19943 bytes)
+2026-10-23T13:21:06.693Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (20095 bytes)
+2026-10-23T13:21:06.694Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 1662.6ms (worker hop, next() included)
+2026-10-23T13:21:06.706Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (20355 bytes)
+2026-10-23T13:21:06.707Z [DEBUG] hooks module cbp13@inline tool.check settled in 3.0ms (worker hop, next() included)
+2026-10-23T13:21:06.709Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T13:21:06.710Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp13nq2qdx3l permissionDecisionMs=7
+2026-10-23T13:21:06.711Z [INFO] [Stall] tool_dispatch_end tool=SubagentHandback toolUseId=toolu_cbp13nq2qdx3l outcome=ok durationMs=1
+2026-10-23T13:21:06.736Z [DEBUG] hooks module cbp13@inline tool.call settled in 35.6ms (worker hop, next() included)
+2026-10-23T13:21:06.744Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (20856 bytes)
+2026-10-23T13:21:06.745Z [DEBUG] hooks module cbp13@inline turn.complete settled in 6.9ms (worker hop, next() included)
+2026-10-23T13:21:06.747Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (21664 bytes)
+2026-10-23T13:21:06.778Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=e9e31073-d0bd-4abc-b662-8a34c23e7d78 source=repl_main_thread
+2026-10-23T13:21:06.786Z [DEBUG] hooks module cbp13@inline agent.spawn settled in 4.6ms (worker hop, next() included)
+2026-10-23T13:21:06.790Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (21954 bytes)
+2026-10-23T13:21:06.794Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (23981 bytes)
+2026-10-23T13:21:06.794Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 5.6ms (worker hop, next() included)
+2026-10-23T13:21:06.795Z [INFO] [Stall] agent_completion agentId=a1f2bc6087ec998cc agentType=cbp13:worker exitPath=completed durationMs=11 turns=1 finalStopReason=end_turn lastChunkAgeMs=1 lastToolUseId=none lastToolResultSeen=none
+2026-10-23T13:21:06.799Z [DEBUG] hooks module cbp13@inline turn.complete settled in 3.8ms (worker hop, next() included)
+2026-10-23T13:21:06.799Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (24251 bytes)
+2026-10-23T13:21:10.783Z [DEBUG] cbp13 (user) answered turn.step without next() 4 more times in the last 10s (the last in 4.0ms)
+2026-10-23T13:21:12.376Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 5639.9ms (worker hop, next() included)
+2026-10-23T13:21:12.388Z [DEBUG] hooks module cbp13@inline turn.complete settled in 4.8ms (worker hop, next() included)
+2026-10-23T13:21:12.390Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=a657165a-f57c-4b6b-85e7-795fed0da105 source=prompt_suggestion
+2026-10-23T13:21:12.390Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=9802dfd0-8e8c-4a0a-8535-6f7bebb6c93f source=side_query
+2026-10-23T13:21:12.414Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=9d335b13-a31c-4722-8920-c828c71838d2 source=repl_main_thread
+2026-10-23T13:21:14.719Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 2311.5ms (worker hop, next() included)
+2026-10-23T13:21:14.728Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=8706b7ef-adaa-4adb-accb-5380c9b18c43 source=prompt_suggestion
+2026-10-23T13:21:14.728Z [DEBUG] hooks module cbp13@inline turn.complete settled in 4.5ms (worker hop, next() included)
+2026-10-23T13:21:15.057Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=0d86c9fa-2a40-4c0e-a35f-1dd717d8aefd source=side_query
+2026-10-23T13:22:03.681Z [DEBUG] $.process.spawn (cbp13): bun ended (SIGTERM) in 67692ms, 1 chunks
+2026-10-23T13:22:03.682Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-yield-2026-10-23T13-20-29-711Z.json (24313 bytes)

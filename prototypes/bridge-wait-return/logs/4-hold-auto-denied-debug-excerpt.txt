@@ -1,0 +1,111 @@
+2026-10-23T13:05:51.351Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:05:51.351Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.local.json
+2026-10-23T13:05:51.512Z [DEBUG] Read hooks.json for plugin cbp13 (enabled=true): <claude-tmp>
+2026-10-23T13:05:51.539Z [DEBUG] Loaded inline plugin from path: cbp13
+2026-10-23T13:05:51.545Z [DEBUG] Checking plugin cbp13: skillsPath=none, skillsPaths=0 paths
+2026-10-23T13:05:51.665Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:05:51.665Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.local.json
+2026-10-23T13:05:51.710Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=1bdd7ec8-dbe0-4445-836f-4ca56646f6fb source=quota_check
+2026-10-23T13:05:51.767Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:05:51.767Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.local.json
+2026-10-23T13:05:51.771Z [DEBUG] hooks module cbp13@inline loaded (worker, environment 2, tier user); events: session.start,tool.call,tool.check,agent.spawn,turn.step,turn.complete
+2026-10-23T13:05:51.787Z [DEBUG] Watching /private/tmp/cbp13-work for /private/tmp/cbp13-work/.claude to appear
+2026-10-23T13:05:51.790Z [DEBUG] engine.create: no plugin-provided interfaces; $ built for cc-plugin-sec-default,cbp13,mermaid-render,cc-plugin-agents-md,cc-plugin-telemetry,cc-plugin-plugin-authoring,cc-plugin-diff,cc-plugin-you-should-know
+2026-10-23T13:05:51.791Z [DEBUG] plugin.register: cbp13 (user, cbp13@inline), judged by cc-plugin-sec-default: admitted
+2026-10-23T13:05:51.805Z [DEBUG] plugin-dir watch: watching cbp13, mermaid-render; folders of plugins none
+2026-10-23T13:05:51.987Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:05:51.987Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.local.json
+2026-10-23T13:05:51.989Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:05:51.990Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.local.json
+2026-10-23T13:05:52.024Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.json
+2026-10-23T13:05:52.024Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /private/tmp/cbp13-work/.claude/settings.local.json
+2026-10-23T13:05:52.138Z [DEBUG] type root of cbp13 at <claude-tmp> entries claude-code, claude-code-tools, claude-code-mcp; wrote nothing
+2026-10-23T13:05:52.156Z [DEBUG] $.process.run (cbp13): mkdir with 4 args in /private/tmp/cbp13-work (pid 37019)
+2026-10-23T13:05:52.168Z [DEBUG] $.process.run (cbp13): mkdir exited 0 in 13ms, 0 + 0 chars
+2026-10-23T13:05:52.169Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): tool.register nested in cbp13#0
+2026-10-23T13:05:52.170Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): settings.read nested in cbp13#0 > cc-plugin-sec-default#18
+2026-10-23T13:05:52.172Z [DEBUG] $.tool.register (cbp13): 1 tool(s) served at 127.0.0.1:55971/<secret>/cbp13 v1
+2026-10-23T13:05:52.172Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__delegate (1 tool(s) on server "cbp13"); connecting
+2026-10-23T13:05:52.223Z [DEBUG] MCP server "cbp13": Initializing HTTP transport to http://127.0.0.1:55971/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:05:52.223Z [DEBUG] MCP server "cbp13": Node version: v26.3.0, Platform: darwin
+2026-10-23T13:05:52.223Z [DEBUG] MCP server "cbp13": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2026-10-23T13:05:52.223Z [DEBUG] MCP server "cbp13": HTTP transport options: {"url":"http://127.0.0.1:55971/REDACTED/cbp13?v=REDACTED","headers":{"User-Agent":"claude-code/2.1.309 (cli)","Accept-Encoding":"identity"},"hasAuthProvider":true,"timeoutMs":60000}
+2026-10-23T13:05:52.224Z [DEBUG] MCP server "cbp13": HTTP transport created successfully
+2026-10-23T13:05:52.224Z [DEBUG] MCP server "cbp13": Starting connection with timeout of 30000ms
+2026-10-23T13:05:52.224Z [DEBUG] MCP server "cbp13": Testing basic HTTP connectivity to http://127.0.0.1:55971/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:05:52.224Z [DEBUG] MCP server "cbp13": Parsed URL: host=127.0.0.1, port=55971, protocol=http:
+2026-10-23T13:05:52.224Z [DEBUG] MCP server "cbp13": Using loopback address: 127.0.0.1
+2026-10-23T13:05:52.224Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.236Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.238Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.244Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.245Z [DEBUG] MCP server "cbp13": Successfully connected (transport: http) in 21ms
+2026-10-23T13:05:52.245Z [DEBUG] MCP server "cbp13": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"cbp13","version":"plugin-tools-1"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-10-23T13:05:52.245Z [DEBUG] [MCP] Server "cbp13" connected with subscribe=false
+2026-10-23T13:05:52.246Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.251Z [DEBUG] MCP server "cbp13": Channel notifications skipped: server did not declare claude/channel capability
+2026-10-23T13:05:52.273Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__delegate visible after 101ms
+2026-10-23T13:05:52.277Z [DEBUG] $.agent.register (cbp13): cbp13:worker listed
+2026-10-23T13:05:52.281Z [DEBUG] hooks module cc-plugin-sec-default@builtin (native): tool.register nested in cbp13#0
+2026-10-23T13:05:52.281Z [DEBUG] $.tool.register (cbp13): 2 tool(s) served at 127.0.0.1:55971/<secret>/cbp13 v2
+2026-10-23T13:05:52.281Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__status (2 tool(s) on server "cbp13"); connecting
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": Initializing HTTP transport to http://127.0.0.1:55971/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": Node version: v26.3.0, Platform: darwin
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": Environment: {"NODE_OPTIONS":"not set","UV_THREADPOOL_SIZE":"default","HTTP_PROXY":"not set","HTTPS_PROXY":"not set","NO_PROXY":"not set"}
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": HTTP transport options: {"url":"http://127.0.0.1:55971/REDACTED/cbp13?v=REDACTED","headers":{"User-Agent":"claude-code/2.1.309 (cli)","Accept-Encoding":"identity"},"hasAuthProvider":true,"timeoutMs":60000}
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": HTTP transport created successfully
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": Starting connection with timeout of 30000ms
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": Testing basic HTTP connectivity to http://127.0.0.1:55971/REDACTED/cbp13?v=REDACTED
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": Parsed URL: host=127.0.0.1, port=55971, protocol=http:
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": Using loopback address: 127.0.0.1
+2026-10-23T13:05:52.295Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.296Z [DEBUG] MCP server "cbp13": excludeStalePluginClients: marking stale (config hash changed)
+2026-10-23T13:05:52.302Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.309Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.313Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.313Z [DEBUG] MCP server "cbp13": Successfully connected (transport: http) in 19ms
+2026-10-23T13:05:52.313Z [DEBUG] MCP server "cbp13": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"hasResourceSubscribe":false,"serverVersion":{"name":"cbp13","version":"plugin-tools-2"},"protocolEra":"legacy","negotiatedProtocolVersion":"2025-11-25"}
+2026-10-23T13:05:52.313Z [DEBUG] [MCP] Server "cbp13" connected with subscribe=false
+2026-10-23T13:05:52.314Z [DEBUG] MCP server "cbp13": No token data found
+2026-10-23T13:05:52.315Z [DEBUG] MCP server "cbp13": Channel notifications skipped: server did not declare claude/channel capability
+2026-10-23T13:05:52.382Z [DEBUG] $.tool.register (cbp13): mcp__cbp13__status visible after 101ms
+2026-10-23T13:05:52.398Z [DEBUG] $.process.run (cc-plugin-telemetry): sh with 2 args in /private/tmp/cbp13-work (pid 37027)
+2026-10-23T13:05:52.398Z [DEBUG] hooks module cbp13@inline, mermaid-render@inline session.start settled in 258.9ms (worker hop, next() included)
+2026-10-23T13:05:52.403Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-hold-2026-10-23T13-05-52-168Z.json (84 bytes)
+2026-10-23T13:06:14.383Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=0a4aa21a-5bbc-4de8-8163-78a1c258a44e source=generate_session_title
+2026-10-23T13:06:14.402Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=96235878-0e02-48e2-ab75-af03c0176b9f source=generate_session_title
+2026-10-23T13:06:14.435Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=4288e47f-ddc2-4b41-a443-90bf70963326 source=repl_main_thread
+2026-10-23T13:06:16.385Z [DEBUG] [bridge:repl] derived title from message 1: mcp__cbp13__delegate と cbp13:worker の連携
+2026-10-23T13:06:16.720Z [DEBUG] [bridge:repl] derived title from message 1: mcp__cbp13__delegate と cbp13:worker
+2026-10-23T13:06:17.252Z [DEBUG] cbp13 (user) answered tool.call without next() in 0.9ms; nothing beneath it ran for this dispatch
+2026-10-23T13:06:17.252Z [DEBUG] hooks module cbp13@inline tool.call settled in 5.2ms (worker hop, next() included)
+2026-10-23T13:06:17.253Z [DEBUG] tool.call mcp__cbp13__delegate toolu_01F1ycezNJ242Gg3nj374YjA: resolved by a hooks module (result)
+2026-10-23T13:06:17.260Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-hold-2026-10-23T13-05-52-168Z.json (194 bytes)
+2026-10-23T13:06:17.601Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 3178.5ms (worker hop, next() included)
+2026-10-23T13:06:17.624Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=c90570c6-43de-4d96-8022-7349688e6434 source=repl_main_thread
+2026-10-23T13:06:18.550Z [DEBUG] hooks module cbp13@inline tool.check settled in 2.9ms (worker hop, next() included)
+2026-10-23T13:06:29.687Z [WARN] Auto mode classifier blocked action: The server-side auto mode classifier judged this action dangerous (it gave no explanation)
+2026-10-23T13:06:29.697Z [DEBUG] hooks module cbp13@inline tool.call settled in 11171.4ms (worker hop, next() included)
+2026-10-23T13:06:29.714Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-hold-2026-10-23T13-05-52-168Z.json (2406 bytes)
+2026-10-23T13:06:29.723Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 12110.1ms (worker hop, next() included)
+2026-10-23T13:06:29.763Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=5b21b588-9523-4457-b9a0-934a9a35b0d9 source=repl_main_thread
+2026-10-23T13:06:32.529Z [DEBUG] cbp13 (user) answered tool.call without next() in 0.3ms; nothing beneath it ran for this dispatch
+2026-10-23T13:06:32.529Z [DEBUG] hooks module cbp13@inline tool.call settled in 3.5ms (worker hop, next() included)
+2026-10-23T13:06:32.529Z [DEBUG] tool.call mcp__cbp13__status toolu_01EtEU5gyb8FvnqMfVipGgrT: resolved by a hooks module (result)
+2026-10-23T13:06:32.792Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 3061.0ms (worker hop, next() included)
+2026-10-23T13:06:32.806Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=a14cc724-c0e0-4aa3-ac9f-d1267c19ffc6 source=repl_main_thread
+2026-10-23T13:06:36.618Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 3819.1ms (worker hop, next() included)
+2026-10-23T13:06:36.632Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2f6f1630-880d-442d-8173-a1e2e7e1a6a6 source=prompt_suggestion
+2026-10-23T13:06:36.632Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=01856d0e-84d4-4563-9d76-77697774f491 source=side_query
+2026-10-23T13:06:36.632Z [DEBUG] hooks module cbp13@inline turn.complete settled in 7.6ms (worker hop, next() included)
+2026-10-23T13:10:57.501Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=96e10f8d-e090-42c2-a75b-1ec16c09b4ee source=repl_main_thread
+2026-10-23T13:11:00.100Z [DEBUG] hooks module cbp13@inline tool.check settled in 1.0ms (worker hop, next() included)
+2026-10-23T13:11:09.276Z [WARN] Auto mode classifier blocked action: [Auto-Mode Bypass]
+2026-10-23T13:11:09.289Z [DEBUG] hooks module cbp13@inline tool.call settled in 9197.2ms (worker hop, next() included)
+2026-10-23T13:11:09.314Z [DEBUG] $.fs.write (cbp13): /tmp/cbp13-hold-2026-10-23T13-05-52-168Z.json (4473 bytes)
+2026-10-23T13:11:09.315Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 11859.1ms (worker hop, next() included)
+2026-10-23T13:11:09.334Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=dbe2c59c-3797-4fb6-ab2f-03e89aef905c source=repl_main_thread
+2026-10-23T13:11:13.138Z [DEBUG] hooks module cbp13@inline turn.step stream settled in 3812.4ms (worker hop, next() included)
+2026-10-23T13:11:13.152Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=476f4e66-0cd3-4534-a808-c479389e300d source=prompt_suggestion
+2026-10-23T13:11:13.153Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=a0482c5c-1d85-47db-8df8-5328e619699b source=side_query
+2026-10-23T13:11:13.153Z [DEBUG] hooks module cbp13@inline turn.complete settled in 8.2ms (worker hop, next() included)
