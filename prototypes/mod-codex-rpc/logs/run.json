@@ -1,0 +1,1524 @@
+[
+  {
+    "t": 1792737123474,
+    "ev": "session.start",
+    "pluginRoot": "~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/mod-codex-rpc/mod"
+  },
+  {
+    "t": 1792737210110,
+    "ev": "direct",
+    "before": {
+      "settledAfterMs": 2,
+      "error": "cbp4: $.http.fetch(http://codex/) over /tmp/cbp4/c.sock failed: ECONNRESET: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+    },
+    "afterServerKilled": {
+      "settledAfterMs": 2,
+      "error": "cbp4: $.http.fetch(http://codex/) over /tmp/cbp4/c.sock failed: ECONNRESET: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+    },
+    "serverOutput": ""
+  },
+  {
+    "t": 1792737232546,
+    "ev": "relay.output",
+    "mode": "spawn",
+    "stream": "stdout",
+    "text": "relay ready /tmp/cbp4/s.sock relayPid=11223 codexPid=11227\n"
+  },
+  {
+    "t": 1792737232662,
+    "ev": "relay.up",
+    "mode": "spawn",
+    "health": {
+      "relayPid": 11223,
+      "codexPid": 11227,
+      "initialize": {
+        "id": 1,
+        "result": {
+          "userAgent": "cbp4-relay/0.163.0 (Mac OS 26.6.2; arm64) screen-256color (cbp4-relay; 0)",
+          "codexHome": "~/.codex",
+          "platformFamily": "unix",
+          "platformOs": "macos"
+        }
+      },
+      "events": 1
+    }
+  },
+  {
+    "t": 1792737232668,
+    "ev": "worker.spawned",
+    "mode": "spawn",
+    "spawned": {
+      "deny": "The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used."
+    }
+  },
+  {
+    "t": 1792737236323,
+    "ev": "relay.up",
+    "mode": "spawn",
+    "health": {
+      "relayPid": 11223,
+      "codexPid": 11227,
+      "initialize": {
+        "id": 1,
+        "result": {
+          "userAgent": "cbp4-relay/0.163.0 (Mac OS 26.6.2; arm64) screen-256color (cbp4-relay; 0)",
+          "codexHome": "~/.codex",
+          "platformFamily": "unix",
+          "platformOs": "macos"
+        }
+      },
+      "events": 2
+    }
+  },
+  {
+    "t": 1792737236328,
+    "ev": "worker.spawned",
+    "mode": "spawn",
+    "spawned": {
+      "deny": "The server-side auto mode classifier gave no verdict for Agent: the request that produced this action did not ask for one. Issue the action again once, as-is; if it is denied again, continue with other tasks that don't require it and tell the user that auto mode could not evaluate it. Note: reading files, searching code, and other read-only operations do not require the classifier and can still be used."
+    }
+  },
+  {
+    "t": 1792737236395,
+    "ev": "relay.output",
+    "mode": "spawn",
+    "stream": "stdout",
+    "text": "relay ready /tmp/cbp4/s.sock relayPid=11915 codexPid=11916\n"
+  },
+  {
+    "t": 1792737315342,
+    "ev": "relay.loop.ended",
+    "mode": "spawn"
+  },
+  {
+    "t": 1792737318008,
+    "ev": "step.seen",
+    "agentId": "a16cade1638941684",
+    "mode": "spawn",
+    "index": 0,
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792737318147,
+    "ev": "thread.start",
+    "mode": "spawn",
+    "response": {
+      "id": 2,
+      "result": {
+        "thread": {
+          "id": "01a16778-947f-7752-a921-cd89f3b11f61",
+          "environments": [
+            {
+              "environmentId": "local",
+              "cwd": "/tmp/cbp4",
+              "runtimeWorkspaceRoots": [
+                "/tmp/cbp4"
+              ]
+            }
+          ],
+          "extra": null,
+          "sessionId": "01a16778-947f-7752-a921-cd89f3b11f61",
+          "forkedFromId": null,
+          "parentThreadId": null,
+          "preview": "",
+          "ephemeral": true,
+          "section": null,
+          "sectionEnteredAt": null,
+          "projectId": null,
+          "historyMode": "paginated",
+          "modelProvider": "openai",
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "medium",
+          "createdAt": 1792737318,
+          "updatedAt": 1792737318,
+          "recencyAt": 1792737318,
+          "status": {
+            "type": "idle"
+          },
+          "path": null,
+          "cwd": "/tmp/cbp4",
+          "cliVersion": "0.163.0",
+          "originator": "cbp4-relay",
+          "source": "vscode",
+          "canAcceptDirectInput": true,
+          "threadSource": null,
+          "agentNickname": null,
+          "agentRole": null,
+          "gitInfo": null,
+          "name": null,
+          "daybreakEnabled": null,
+          "turns": []
+        },
+        "model": "gpt-5.6-luna",
+        "modelProvider": "openai",
+        "serviceTier": "default",
+        "disabledPluginIds": [],
+        "cwd": "/tmp/cbp4",
+        "runtimeWorkspaceRoots": [
+          "/tmp/cbp4"
+        ],
+        "instructionSources": [
+          "~/.codex/AGENTS.md"
+        ],
+        "approvalPolicy": "never",
+        "approvalsReviewer": "user",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "activePermissionProfile": null,
+        "reasoningEffort": "medium",
+        "multiAgentMode": "explicitRequestOnly"
+      }
+    }
+  },
+  {
+    "t": 1792737318155,
+    "ev": "turn.start",
+    "mode": "spawn",
+    "response": {
+      "id": 3,
+      "result": {
+        "turn": {
+          "id": "01a16778-9504-7623-9dab-48ee3f34d3c9",
+          "rootTurnId": "01a16778-9504-7623-9dab-48ee3f34d3c9",
+          "items": [],
+          "itemsView": "notLoaded",
+          "status": "inProgress",
+          "error": null,
+          "startedAt": null,
+          "completedAt": null,
+          "durationMs": null
+        }
+      }
+    }
+  },
+  {
+    "t": 1792737318321,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 10,
+    "waitedMs": 163,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737318445,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 11,
+    "waitedMs": 124,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737318795,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 12,
+    "waitedMs": 348,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737319016,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 13,
+    "waitedMs": 221,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737320509,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 14,
+    "waitedMs": 1492,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737320553,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 15,
+    "waitedMs": 43,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737320554,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 16,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737321591,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 18,
+    "waitedMs": 1036,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737321593,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 19,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737321833,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 20,
+    "waitedMs": 239,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737321854,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 21,
+    "waitedMs": 20,
+    "got": 2,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737321854,
+    "ev": "server.request",
+    "mode": "spawn",
+    "msg": {
+      "method": "item/tool/call",
+      "id": 0,
+      "params": {
+        "threadId": "01a16778-947f-7752-a921-cd89f3b11f61",
+        "turnId": "01a16778-9504-7623-9dab-48ee3f34d3c9",
+        "callId": "exec-41de7e0b-292a-4a52-8672-aa6ae87168ba",
+        "namespace": null,
+        "tool": "cbp4_echo",
+        "arguments": {
+          "word": "ping"
+        }
+      }
+    }
+  },
+  {
+    "t": 1792737321858,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 23,
+    "waitedMs": 2,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737321858,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 24,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737322630,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 26,
+    "waitedMs": 770,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737322632,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 27,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737322675,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 29,
+    "waitedMs": 41,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737322677,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 30,
+    "waitedMs": 0,
+    "got": 4,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737322807,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 34,
+    "waitedMs": 118,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737322813,
+    "ev": "poll",
+    "mode": "spawn",
+    "cursor": 35,
+    "waitedMs": 0,
+    "got": 5,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737337817,
+    "ev": "idle.poll",
+    "mode": "spawn",
+    "waitedMs": 15001,
+    "got": 0,
+    "budgetBefore": 9999,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737337817,
+    "ev": "step.result",
+    "mode": "spawn",
+    "result": {
+      "nonce": "8myg3b",
+      "threadId": "01a16778-947f-7752-a921-cd89f3b11f61",
+      "toolCalls": 1,
+      "answer": "pong-8myg3b",
+      "matched": true,
+      "turnStatus": "completed"
+    },
+    "budgetMs": 9998
+  },
+  {
+    "t": 1792737337874,
+    "ev": "step.seen",
+    "agentId": "a16cade1638941684",
+    "mode": "spawn",
+    "index": 1,
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792737337898,
+    "ev": "step.seen",
+    "agentId": "a16cade1638941684",
+    "mode": "spawn",
+    "index": 2,
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792737337920,
+    "ev": "step.seen",
+    "agentId": "a16cade1638941684",
+    "mode": "spawn",
+    "index": 3,
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792737337927,
+    "ev": "turn.complete",
+    "agentId": "a16cade1638941684",
+    "mode": "spawn",
+    "reason": "answer",
+    "answer": "cbp4: already answered",
+    "usage": null
+  },
+  {
+    "t": 1792737416521,
+    "ev": "bootstrap.run",
+    "elapsedMs": 260,
+    "run": {
+      "exitCode": 0,
+      "stdout": "bootstrap ready pid=19657\n",
+      "stderr": "",
+      "isStdoutTruncated": false,
+      "isStderrTruncated": false
+    }
+  },
+  {
+    "t": 1792737416522,
+    "ev": "relay.up",
+    "mode": "detached",
+    "health": {
+      "relayPid": 19657,
+      "codexPid": 19660,
+      "initialize": {
+        "id": 1,
+        "result": {
+          "userAgent": "cbp4-relay/0.163.0 (Mac OS 26.6.2; arm64) screen-256color (cbp4-relay; 0)",
+          "codexHome": "~/.codex",
+          "platformFamily": "unix",
+          "platformOs": "macos"
+        }
+      },
+      "events": 1
+    }
+  },
+  {
+    "t": 1792737416530,
+    "ev": "worker.spawned",
+    "mode": "detached",
+    "spawned": {
+      "model": "claude-haiku-5-5",
+      "agentId": "ad8805996d8f4c489"
+    }
+  },
+  {
+    "t": 1792737416555,
+    "ev": "step.seen",
+    "agentId": "ad8805996d8f4c489",
+    "mode": "detached",
+    "index": 0,
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792737416656,
+    "ev": "thread.start",
+    "mode": "detached",
+    "response": {
+      "id": 2,
+      "result": {
+        "thread": {
+          "id": "01a1677a-156f-7690-aa97-e9a3760249ca",
+          "environments": [
+            {
+              "environmentId": "local",
+              "cwd": "/tmp/cbp4",
+              "runtimeWorkspaceRoots": [
+                "/tmp/cbp4"
+              ]
+            }
+          ],
+          "extra": null,
+          "sessionId": "01a1677a-156f-7690-aa97-e9a3760249ca",
+          "forkedFromId": null,
+          "parentThreadId": null,
+          "preview": "",
+          "ephemeral": true,
+          "section": null,
+          "sectionEnteredAt": null,
+          "projectId": null,
+          "historyMode": "paginated",
+          "modelProvider": "openai",
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "medium",
+          "createdAt": 1792737416,
+          "updatedAt": 1792737416,
+          "recencyAt": 1792737416,
+          "status": {
+            "type": "idle"
+          },
+          "path": null,
+          "cwd": "/tmp/cbp4",
+          "cliVersion": "0.163.0",
+          "originator": "cbp4-relay",
+          "source": "vscode",
+          "canAcceptDirectInput": true,
+          "threadSource": null,
+          "agentNickname": null,
+          "agentRole": null,
+          "gitInfo": null,
+          "name": null,
+          "daybreakEnabled": null,
+          "turns": []
+        },
+        "model": "gpt-5.6-luna",
+        "modelProvider": "openai",
+        "serviceTier": "default",
+        "disabledPluginIds": [],
+        "cwd": "/tmp/cbp4",
+        "runtimeWorkspaceRoots": [
+          "/tmp/cbp4"
+        ],
+        "instructionSources": [
+          "~/.codex/AGENTS.md"
+        ],
+        "approvalPolicy": "never",
+        "approvalsReviewer": "user",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "activePermissionProfile": null,
+        "reasoningEffort": "medium",
+        "multiAgentMode": "explicitRequestOnly"
+      }
+    }
+  },
+  {
+    "t": 1792737416661,
+    "ev": "turn.start",
+    "mode": "detached",
+    "response": {
+      "id": 3,
+      "result": {
+        "turn": {
+          "id": "01a1677a-15d1-71d0-abe6-8d36ca994e18",
+          "rootTurnId": "01a1677a-15d1-71d0-abe6-8d36ca994e18",
+          "items": [],
+          "itemsView": "notLoaded",
+          "status": "inProgress",
+          "error": null,
+          "startedAt": null,
+          "completedAt": null,
+          "durationMs": null
+        }
+      }
+    }
+  },
+  {
+    "t": 1792737416780,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 9,
+    "waitedMs": 118,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737416795,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 10,
+    "waitedMs": 14,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737416964,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 11,
+    "waitedMs": 168,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737417506,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 12,
+    "waitedMs": 540,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737417669,
+    "ev": "step.seen",
+    "agentId": "a28a099049922d69b",
+    "mode": "detached",
+    "index": 0,
+    "budgetMs": 10000
+  },
+  {
+    "t": 1792737417710,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 13,
+    "waitedMs": 201,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737417711,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 14,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737417741,
+    "ev": "thread.start",
+    "mode": "detached",
+    "response": {
+      "id": 4,
+      "result": {
+        "thread": {
+          "id": "01a1677a-19c9-7981-b218-bed826d5c326",
+          "environments": [
+            {
+              "environmentId": "local",
+              "cwd": "/tmp/cbp4",
+              "runtimeWorkspaceRoots": [
+                "/tmp/cbp4"
+              ]
+            }
+          ],
+          "extra": null,
+          "sessionId": "01a1677a-19c9-7981-b218-bed826d5c326",
+          "forkedFromId": null,
+          "parentThreadId": null,
+          "preview": "",
+          "ephemeral": true,
+          "section": null,
+          "sectionEnteredAt": null,
+          "projectId": null,
+          "historyMode": "paginated",
+          "modelProvider": "openai",
+          "model": "gpt-5.6-luna",
+          "reasoningEffort": "medium",
+          "createdAt": 1792737417,
+          "updatedAt": 1792737417,
+          "recencyAt": 1792737417,
+          "status": {
+            "type": "idle"
+          },
+          "path": null,
+          "cwd": "/tmp/cbp4",
+          "cliVersion": "0.163.0",
+          "originator": "cbp4-relay",
+          "source": "vscode",
+          "canAcceptDirectInput": true,
+          "threadSource": null,
+          "agentNickname": null,
+          "agentRole": null,
+          "gitInfo": null,
+          "name": null,
+          "daybreakEnabled": null,
+          "turns": []
+        },
+        "model": "gpt-5.6-luna",
+        "modelProvider": "openai",
+        "serviceTier": "default",
+        "disabledPluginIds": [],
+        "cwd": "/tmp/cbp4",
+        "runtimeWorkspaceRoots": [
+          "/tmp/cbp4"
+        ],
+        "instructionSources": [
+          "~/.codex/AGENTS.md"
+        ],
+        "approvalPolicy": "never",
+        "approvalsReviewer": "user",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "activePermissionProfile": null,
+        "reasoningEffort": "medium",
+        "multiAgentMode": "explicitRequestOnly"
+      }
+    }
+  },
+  {
+    "t": 1792737417741,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 15,
+    "waitedMs": 29,
+    "got": 4,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737417742,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 19,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737417747,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 20,
+    "waitedMs": 5,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737417747,
+    "ev": "turn.start",
+    "mode": "detached",
+    "response": {
+      "id": 5,
+      "result": {
+        "turn": {
+          "id": "01a1677a-1a0e-7b72-948f-f865e5d92094",
+          "rootTurnId": "01a1677a-1a0e-7b72-948f-f865e5d92094",
+          "items": [],
+          "itemsView": "notLoaded",
+          "status": "inProgress",
+          "error": null,
+          "startedAt": null,
+          "completedAt": null,
+          "durationMs": null
+        }
+      }
+    }
+  },
+  {
+    "t": 1792737417748,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 21,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737417899,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 23,
+    "waitedMs": 150,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737417899,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 23,
+    "waitedMs": 150,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737418059,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 24,
+    "waitedMs": 159,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737418059,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 24,
+    "waitedMs": 158,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737418395,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 25,
+    "waitedMs": 336,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737418395,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 25,
+    "waitedMs": 336,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737418728,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 26,
+    "waitedMs": 332,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737418728,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 26,
+    "waitedMs": 332,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737419203,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 27,
+    "waitedMs": 473,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737419203,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 27,
+    "waitedMs": 473,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737419253,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 28,
+    "waitedMs": 49,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737419254,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 28,
+    "waitedMs": 48,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737419255,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 29,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737419255,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 29,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737419924,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 31,
+    "waitedMs": 669,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737419925,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 31,
+    "waitedMs": 669,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737419968,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 32,
+    "waitedMs": 43,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737419968,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 32,
+    "waitedMs": 41,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737419969,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 33,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737419969,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 33,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737420522,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 35,
+    "waitedMs": 553,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737420522,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 35,
+    "waitedMs": 553,
+    "got": 1,
+    "budgetBefore": 10000,
+    "budgetAfter": 10000
+  },
+  {
+    "t": 1792737420524,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 36,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737420524,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 36,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737420775,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 37,
+    "waitedMs": 248,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737420775,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 37,
+    "waitedMs": 248,
+    "got": 1,
+    "budgetBefore": 9999,
+    "budgetAfter": 9999
+  },
+  {
+    "t": 1792737420840,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 38,
+    "waitedMs": 63,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737420840,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 38,
+    "waitedMs": 62,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737420841,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 39,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737420841,
+    "ev": "server.request",
+    "mode": "detached",
+    "msg": {
+      "method": "item/tool/call",
+      "id": 0,
+      "params": {
+        "threadId": "01a1677a-156f-7690-aa97-e9a3760249ca",
+        "turnId": "01a1677a-15d1-71d0-abe6-8d36ca994e18",
+        "callId": "exec-1fa57a4e-46a8-4b09-8031-4ccc9938a694",
+        "namespace": null,
+        "tool": "cbp4_echo",
+        "arguments": {
+          "word": "ping"
+        }
+      }
+    }
+  },
+  {
+    "t": 1792737420841,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 39,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737420842,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 40,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737420842,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 40,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737420842,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 41,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737420842,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 41,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421615,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 43,
+    "waitedMs": 771,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737421616,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 43,
+    "waitedMs": 771,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421618,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 44,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737421619,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 44,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421711,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 45,
+    "waitedMs": 91,
+    "got": 1,
+    "budgetBefore": 9998,
+    "budgetAfter": 9998
+  },
+  {
+    "t": 1792737421712,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 45,
+    "waitedMs": 90,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421715,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 46,
+    "waitedMs": 2,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421716,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 46,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421718,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 47,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421719,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 47,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421831,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 48,
+    "waitedMs": 96,
+    "got": 1,
+    "budgetBefore": 9996,
+    "budgetAfter": 9996
+  },
+  {
+    "t": 1792737421832,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 48,
+    "waitedMs": 95,
+    "got": 1,
+    "budgetBefore": 9997,
+    "budgetAfter": 9997
+  },
+  {
+    "t": 1792737421834,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 49,
+    "waitedMs": 0,
+    "got": 8,
+    "budgetBefore": 9996,
+    "budgetAfter": 9996
+  },
+  {
+    "t": 1792737421834,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 49,
+    "waitedMs": 0,
+    "got": 8,
+    "budgetBefore": 9996,
+    "budgetAfter": 9996
+  },
+  {
+    "t": 1792737421848,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 57,
+    "waitedMs": 13,
+    "got": 1,
+    "budgetBefore": 9996,
+    "budgetAfter": 9996
+  },
+  {
+    "t": 1792737421848,
+    "ev": "idle.poll",
+    "mode": "detached",
+    "waitedMs": 12,
+    "got": 1,
+    "budgetBefore": 9995,
+    "budgetAfter": 9995
+  },
+  {
+    "t": 1792737421849,
+    "ev": "step.result",
+    "mode": "detached",
+    "result": {
+      "nonce": "bean4e",
+      "threadId": "01a1677a-156f-7690-aa97-e9a3760249ca",
+      "toolCalls": 1,
+      "answer": "pong-bean4e",
+      "matched": true,
+      "turnStatus": "completed"
+    },
+    "budgetMs": 9994
+  },
+  {
+    "t": 1792737421851,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 58,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9996,
+    "budgetAfter": 9996
+  },
+  {
+    "t": 1792737421852,
+    "ev": "server.request",
+    "mode": "detached",
+    "msg": {
+      "method": "item/tool/call",
+      "id": 1,
+      "params": {
+        "threadId": "01a1677a-19c9-7981-b218-bed826d5c326",
+        "turnId": "01a1677a-1a0e-7b72-948f-f865e5d92094",
+        "callId": "exec-bf571ed6-5ab2-4d23-a86b-e94ef94d82fa",
+        "namespace": null,
+        "tool": "cbp4_echo",
+        "arguments": {
+          "word": "ping"
+        }
+      }
+    }
+  },
+  {
+    "t": 1792737421886,
+    "ev": "turn.complete",
+    "agentId": "ad8805996d8f4c489",
+    "mode": "detached",
+    "reason": "answer",
+    "answer": "cbp4 detached: {\"nonce\":\"bean4e\",\"threadId\":\"01a1677a-156f-7690-aa97-e9a3760249ca\",\"toolCalls\":1,\"answer\":\"pong-bean4e\",\"matched\":true,\"turnStatus\":\"completed\"}",
+    "usage": null
+  },
+  {
+    "t": 1792737421890,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 59,
+    "waitedMs": 0,
+    "got": 4,
+    "budgetBefore": 9996,
+    "budgetAfter": 9995
+  },
+  {
+    "t": 1792737422638,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 63,
+    "waitedMs": 748,
+    "got": 1,
+    "budgetBefore": 9995,
+    "budgetAfter": 9995
+  },
+  {
+    "t": 1792737422641,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 64,
+    "waitedMs": 2,
+    "got": 1,
+    "budgetBefore": 9995,
+    "budgetAfter": 9994
+  },
+  {
+    "t": 1792737422643,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 65,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9994,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737422659,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 66,
+    "waitedMs": 15,
+    "got": 1,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737422661,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 67,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737422701,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 69,
+    "waitedMs": 39,
+    "got": 1,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737422703,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 70,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737422711,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 71,
+    "waitedMs": 7,
+    "got": 1,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737422713,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 72,
+    "waitedMs": 0,
+    "got": 1,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737422714,
+    "ev": "poll",
+    "mode": "detached",
+    "cursor": 73,
+    "waitedMs": 0,
+    "got": 2,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737437717,
+    "ev": "idle.poll",
+    "mode": "detached",
+    "waitedMs": 15001,
+    "got": 0,
+    "budgetBefore": 9993,
+    "budgetAfter": 9993
+  },
+  {
+    "t": 1792737437718,
+    "ev": "step.result",
+    "mode": "detached",
+    "result": {
+      "nonce": "d20c02",
+      "threadId": "01a1677a-19c9-7981-b218-bed826d5c326",
+      "toolCalls": 1,
+      "answer": "pong-d20c02",
+      "matched": true,
+      "turnStatus": "completed"
+    },
+    "budgetMs": 9993
+  },
+  {
+    "t": 1792737437747,
+    "ev": "turn.complete",
+    "agentId": "a28a099049922d69b",
+    "mode": "detached",
+    "reason": "answer",
+    "answer": "cbp4 detached: {\"nonce\":\"d20c02\",\"threadId\":\"01a1677a-19c9-7981-b218-bed826d5c326\",\"toolCalls\":1,\"answer\":\"pong-d20c02\",\"matched\":true,\"turnStatus\":\"completed\"}",
+    "usage": null
+  },
+  {
+    "t": 1792737487993,
+    "ev": "relay.loop.ended",
+    "mode": "spawn"
+  }
+]
