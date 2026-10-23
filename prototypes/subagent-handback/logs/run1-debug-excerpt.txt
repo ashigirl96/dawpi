@@ -1,0 +1,40 @@
+2026-10-23T08:15:19.380Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01GwRrEFuYws6b4UVdX9cNme permissionDecisionMs=1866
+2026-10-23T08:15:19.444Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:15:19.445Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10shafwlw2p0 permissionDecisionMs=3
+2026-10-23T08:15:19.472Z [INFO] [Stall] agent_completion agentId=ac5a577de1ed154db agentType=cbp10:worker exitPath=completed durationMs=87 turns=1 finalStopReason=tool_use lastChunkAgeMs=2 lastToolUseId=toolu_cbp10shafwlw2p0 lastToolResultSeen=toolu_cbp10shafwlw2p0
+2026-10-23T08:17:13.153Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01AUkvSk94FYvMTNqgKqLAKe permissionDecisionMs=980
+2026-10-23T08:17:13.154Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01HK7uN8h8uvXihqCKrpvoas permissionDecisionMs=971
+2026-10-23T08:17:13.156Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01LY9acJG1YXT8zwsQP8HXot permissionDecisionMs=961
+2026-10-23T08:17:13.158Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_019fTc6uuYgArZY4hucYz7LH permissionDecisionMs=955
+2026-10-23T08:17:13.166Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01NijVWbdCuHDkLuRGtjE5DT permissionDecisionMs=652
+2026-10-23T08:17:13.171Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01YUKYDis4jJyxyZ5WPyLj6X permissionDecisionMs=344
+2026-10-23T08:17:13.302Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp10i7l0fvvweo permissionDecisionMs=4
+2026-10-23T08:17:13.327Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.327Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10rjlul6wx8d permissionDecisionMs=27
+2026-10-23T08:17:13.329Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.329Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp103j6f14l24j permissionDecisionMs=29
+2026-10-23T08:17:13.337Z [INFO] [Stall] agent_completion agentId=addac327041d3b285 agentType=cbp10:worker exitPath=completed durationMs=175 turns=1 finalStopReason=tool_use lastChunkAgeMs=1 lastToolUseId=toolu_cbp10rjlul6wx8d lastToolResultSeen=toolu_cbp10rjlul6wx8d
+2026-10-23T08:17:13.341Z [INFO] [Stall] agent_completion agentId=ae6afce5aa65f45cb agentType=cbp10:worker exitPath=completed durationMs=173 turns=1 finalStopReason=tool_use lastChunkAgeMs=1 lastToolUseId=toolu_cbp103j6f14l24j lastToolResultSeen=toolu_cbp103j6f14l24j
+2026-10-23T08:17:13.379Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.380Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10j4i3wb38d3 permissionDecisionMs=8
+2026-10-23T08:17:13.382Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.382Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10k7sc34vdti permissionDecisionMs=10
+2026-10-23T08:17:13.386Z [INFO] [Stall] agent_completion agentId=a964de47a6a532b15 agentType=cbp10:worker exitPath=completed durationMs=214 turns=2 finalStopReason=tool_use lastChunkAgeMs=1 lastToolUseId=toolu_cbp10j4i3wb38d3 lastToolResultSeen=toolu_cbp10j4i3wb38d3
+2026-10-23T08:17:13.389Z [INFO] [Stall] agent_completion agentId=a21a0c94e34ff075c agentType=cbp10:worker exitPath=completed durationMs=85 turns=1 finalStopReason=tool_use lastChunkAgeMs=1 lastToolUseId=toolu_cbp10k7sc34vdti lastToolResultSeen=toolu_cbp10k7sc34vdti
+2026-10-23T08:17:13.407Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.408Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10khsp6f9j51 permissionDecisionMs=3
+2026-10-23T08:17:13.428Z [INFO] [Stall] agent_completion agentId=a717dcc7d952ba18b agentType=cbp10:worker exitPath=completed durationMs=251 turns=4 finalStopReason=end_turn lastChunkAgeMs=1 lastToolUseId=none lastToolResultSeen=none
+2026-10-23T08:17:13.452Z [INFO] [Stall] agent_completion agentId=a28af4f0340cd036b agentType=cbp10:worker exitPath=completed durationMs=272 turns=5 finalStopReason=end_turn lastChunkAgeMs=1 lastToolUseId=toolu_cbp10db8pm5ponk lastToolResultSeen=toolu_cbp10db8pm5ponk
+2026-10-23T08:17:13.463Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.464Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10tz4okixr1m permissionDecisionMs=2
+2026-10-23T08:17:13.487Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.487Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10los9fb01dq permissionDecisionMs=2
+2026-10-23T08:17:13.513Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.514Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10nhlfs7a1xi permissionDecisionMs=2
+2026-10-23T08:17:13.528Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.529Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10ewgrfn5m42 permissionDecisionMs=3
+2026-10-23T08:17:13.542Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.542Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10zwsms7up0y permissionDecisionMs=2
+2026-10-23T08:17:13.559Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:17:13.559Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp1093wc242sve permissionDecisionMs=2
+2026-10-23T08:17:13.573Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged

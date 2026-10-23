@@ -1,0 +1,19 @@
+2026-10-23T08:21:55.939Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=dd684de1-fe47-475a-a9e7-75f7d46a004c source=quota_check
+2026-10-23T08:22:04.585Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2136a5ec-03ab-49be-8a70-3f904dd99722 source=generate_session_title
+2026-10-23T08:22:04.605Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=39d72af5-80c0-4cf8-94eb-f2a7b75ee26c source=generate_session_title
+2026-10-23T08:22:04.641Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=d9bc3139-69ec-4eac-b657-c0c8c6f0af01 source=repl_main_thread
+2026-10-23T08:22:10.098Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01QpHACe3ywg6vft3pvTD6v9 permissionDecisionMs=336
+2026-10-23T08:22:10.160Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=93f51df0-2f5e-4077-b3b1-8ca2568eec89 source=repl_main_thread
+2026-10-23T08:22:10.169Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp10kx1mf2rw2o permissionDecisionMs=3
+2026-10-23T08:22:10.233Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:22:10.233Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10hhfpfiitpt permissionDecisionMs=25
+2026-10-23T08:22:10.265Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:22:10.266Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10m6zlzixqqw permissionDecisionMs=3
+2026-10-23T08:22:11.876Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=63670d03-7e27-4265-89c7-3bbf20c25543 source=prompt_suggestion
+2026-10-23T08:22:11.876Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=fdc598b6-f170-48f1-9be1-c6ac99704daa source=side_query
+2026-10-23T08:22:11.909Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=1db11234-4adf-4e71-afa7-48adac792c05 source=repl_main_thread
+2026-10-23T08:22:16.951Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=46478955-a8f3-493e-94f7-73c8c29a38b1 source=prompt_suggestion
+2026-10-23T08:22:16.951Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=9736006d-ded8-412f-a180-88fc270724d2 source=side_query
+2026-10-23T08:22:16.973Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=844a1956-0b18-4993-8e1a-dacb92e88b33 source=repl_main_thread
+2026-10-23T08:22:19.186Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=567bb08a-ff90-4c3b-890f-b273f39eb72e source=prompt_suggestion
+2026-10-23T08:22:19.861Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=28231be7-f64c-419d-9df7-bd02d9271280 source=side_query

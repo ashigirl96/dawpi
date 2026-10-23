@@ -1,0 +1,6 @@
+[
+  {
+    "ev": "note",
+    "text": "The run 2 log was overwritten: register.ts was edited while the session ran, the plugin-dir watch reloaded the module, and the in-memory log restarted. The README copies the run 2 observations."
+  }
+]

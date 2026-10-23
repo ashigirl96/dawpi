@@ -1,0 +1,10 @@
+2026-10-23T08:20:25.441Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01NsiJvdTYSFXsVLwhbLD7b6 permissionDecisionMs=1555
+2026-10-23T08:20:25.447Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_019aVevDscSCEsoWJv8wo9C2 permissionDecisionMs=1550
+2026-10-23T08:20:25.529Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp10ggt6qr646r permissionDecisionMs=3
+2026-10-23T08:20:25.562Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:20:25.563Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp10h0gr73j65w permissionDecisionMs=36
+2026-10-23T08:20:25.584Z [INFO] [Stall] agent_completion agentId=a8c1ba10c0ff7b8ff agentType=cbp10:worker exitPath=completed durationMs=113 turns=1 finalStopReason=tool_use lastChunkAgeMs=2 lastToolUseId=toolu_cbp10h0gr73j65w lastToolResultSeen=toolu_cbp10h0gr73j65w
+2026-10-23T08:20:25.624Z [WARN] Auto mode classifier gave no verdict for SubagentHandback (unavailable); delivering flagged
+2026-10-23T08:20:25.624Z [INFO] [Stall] tool_dispatch_start tool=SubagentHandback toolUseId=toolu_cbp101ru4hs9lfp permissionDecisionMs=4
+2026-10-23T08:20:25.628Z [INFO] [Stall] agent_completion agentId=a5ead941c63ad11d2 agentType=cbp10:worker exitPath=completed durationMs=96 turns=1 finalStopReason=tool_use lastChunkAgeMs=1 lastToolUseId=toolu_cbp101ru4hs9lfp lastToolResultSeen=toolu_cbp101ru4hs9lfp
+2026-10-23T08:20:25.697Z [INFO] [Stall] agent_completion agentId=a1976afc51e7a0d3f agentType=cbp10:worker exitPath=completed durationMs=39 turns=4 finalStopReason=end_turn lastChunkAgeMs=1 lastToolUseId=none lastToolResultSeen=none
