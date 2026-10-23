@@ -1,0 +1,21 @@
+2026-10-23T14:50:17.867Z [DEBUG] Plugin hooks: skipping reload, plugin-affecting settings unchanged
+2026-10-23T14:50:29.281Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T14:50:29.297Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01TAXXZtZwHUUer385esQrdU permissionDecisionMs=14
+2026-10-23T14:50:29.311Z [DEBUG] Cleared all session hooks for session a623d74d901c736c5
+2026-10-23T14:50:29.311Z [DEBUG] Added session hook for event PreToolUse in session a623d74d901c736c5
+2026-10-23T14:50:29.385Z [DEBUG] Hooks: PreToolUse:Agent [sh /tmp/cbp16-mod/guard.sh] finished with status 0 (49ms)
+2026-10-23T14:50:29.386Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:50:29.386Z [DEBUG] Hook PreToolUse (sh /tmp/cbp16-mod/guard.sh) returned permissionDecision: allow
+2026-10-23T14:50:29.388Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp16ks5a7bxx permissionDecisionMs=1
+2026-10-23T14:50:29.394Z [DEBUG] Cleared all session hooks for session abb634f2886b1f8a4
+2026-10-23T14:50:29.476Z [DEBUG] Hooks: PreToolUse:Bash [sh /tmp/cbp16-mod/guard.sh] finished with status 0 (39ms)
+2026-10-23T14:50:29.477Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:50:29.477Z [DEBUG] Hook PreToolUse (sh /tmp/cbp16-mod/guard.sh) returned permissionDecision: allow
+2026-10-23T14:50:29.483Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp16tuqdqjrt permissionDecisionMs=5
+2026-10-23T14:50:29.794Z [DEBUG] Cleared all session hooks for session a623d74d901c736c5
+2026-10-23T14:50:39.283Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user) 2 more times in the last 10s
+2026-10-23T14:50:56.701Z [DEBUG] [cbp16] $.ui.log: reload failed, the previous version stays loaded: Hook load failed: [ { ”code”: ”custom”, ”path”: [], ”message”: ”hooks.json must have ’hooks’ (the hook matchers) or ’modules’ (hooks modules), or both” } ]
+2026-10-23T14:51:17.992Z [DEBUG] hooks module cbp16@inline reloaded in 9.1ms; events: none
+2026-10-23T14:51:18.041Z [DEBUG] [cbp16] $.ui.log: hooks.json changed — reloaded (modules: hooks/register.ts → hooks/empty.ts; 0 hooks)
+2026-10-23T14:51:36.745Z [DEBUG] Cleared all session hooks for session a623d74d901c736c5
+2026-10-23T14:51:36.781Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=71171db3-d065-47af-968f-a083431498ab source=agent:builtin:general-purpose

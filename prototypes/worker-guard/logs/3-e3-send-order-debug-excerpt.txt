@@ -1,0 +1,47 @@
+2026-10-23T14:49:11.698Z [DEBUG] Plugin hooks: skipping reload, plugin-affecting settings unchanged
+2026-10-23T14:49:22.887Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T14:49:22.893Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01H9YC62JnRs1HATmZufNo8W permissionDecisionMs=5
+2026-10-23T14:49:22.903Z [DEBUG] Cleared all session hooks for session a7ebea552a78c586f
+2026-10-23T14:49:22.903Z [DEBUG] Added session hook for event PreToolUse in session a7ebea552a78c586f
+2026-10-23T14:49:22.993Z [DEBUG] Hooks: PreToolUse:Agent [sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh] finished with status 0 (42ms)
+2026-10-23T14:49:22.993Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:49:22.993Z [DEBUG] Hook PreToolUse (sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh) returned permissionDecision: allow
+2026-10-23T14:49:22.995Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp160abwcldy permissionDecisionMs=1
+2026-10-23T14:49:23.001Z [DEBUG] Cleared all session hooks for session a9dd436af6b2a220c
+2026-10-23T14:49:23.085Z [DEBUG] Hooks: PreToolUse:Bash [sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh] finished with status 0 (42ms)
+2026-10-23T14:49:23.085Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:49:23.085Z [DEBUG] Hook PreToolUse (sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh) returned permissionDecision: allow
+2026-10-23T14:49:23.092Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp16lglpzn1c permissionDecisionMs=5
+2026-10-23T14:49:23.423Z [DEBUG] Cleared all session hooks for session a7ebea552a78c586f
+2026-10-23T14:49:26.430Z [DEBUG] hooks module cbp16@inline tool.call skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:26.431Z [DEBUG] hooks module cbp16@inline tool.call skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:26.432Z [DEBUG] hooks module cbp16@inline classic.PreToolUse skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:26.432Z [DEBUG] hooks module cbp16@inline tool.check skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:26.433Z [DEBUG] hooks module cbp16@inline tool.check skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:26.433Z [INFO] [Stall] tool_dispatch_start tool=SendMessage toolUseId=toolu_plugin_7c29c393116a47cab8b7c9fff83a16ed permissionDecisionMs=1
+2026-10-23T14:49:26.439Z [DEBUG] hooks module cbp16@inline agent.spawn skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:26.445Z [DEBUG] Cleared all session hooks for session a7ebea552a78c586f
+2026-10-23T14:49:26.445Z [DEBUG] Added session hook for event PreToolUse in session a7ebea552a78c586f
+2026-10-23T14:49:26.448Z [DEBUG] hooks module cbp16@inline turn.step skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:26.454Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=6bf8221a-edc7-4144-8d0b-69604416d747 source=agent:custom:cbp16:worker
+2026-10-23T14:49:30.434Z [DEBUG] hooks module cbp16@inline tool.call skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.435Z [DEBUG] hooks module cbp16@inline classic.PreToolUse skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.469Z [DEBUG] Hooks: PreToolUse:Bash [sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh] finished with status 0 (34ms)
+2026-10-23T14:49:30.470Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call Bash on its own.\"\n  }\n}"
+2026-10-23T14:49:30.470Z [DEBUG] Hook PreToolUse (sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh) returned permissionDecision: deny (reason: cbp16 guard: this worker may not call Bash on its own.)
+2026-10-23T14:49:30.472Z [DEBUG] hooks module cbp16@inline tool.check skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.472Z [DEBUG] hooks module cbp16@inline tool.check skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.473Z [DEBUG] hooks module cbp16@inline tool.call skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.473Z [DEBUG] hooks module cbp16@inline tool.call skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.473Z [DEBUG] hooks module cbp16@inline classic.PreToolUse skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.568Z [DEBUG] Hooks: PreToolUse:Agent [sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh] finished with status 0 (95ms)
+2026-10-23T14:49:30.568Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call Agent on its own.\"\n  }\n}"
+2026-10-23T14:49:30.568Z [DEBUG] Hook PreToolUse (sh ~/.ghq/src/github.com/ashigirl96/dawpi/prototypes/worker-guard/mod/guard.sh) returned permissionDecision: deny (reason: cbp16 guard: this worker may not call Agent on its own.)
+2026-10-23T14:49:30.569Z [DEBUG] hooks module cbp16@inline tool.check skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.570Z [DEBUG] hooks module cbp16@inline tool.check skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.574Z [DEBUG] hooks module cbp16@inline turn.step skipped: re-entry (the plugin's own code raised it; origin cbp16)
+2026-10-23T14:49:30.577Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=10ebce4f-c9f0-4b84-8865-2d86d3c43103 source=agent:custom:cbp16:worker
+2026-10-23T14:49:32.522Z [DEBUG] Cleared all session hooks for session a7ebea552a78c586f
+2026-10-23T14:49:32.888Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user) 2 more times in the last 10s
+2026-10-23T14:50:11.318Z [DEBUG] Cleared all session hooks for session a7ebea552a78c586f
+2026-10-23T14:50:11.318Z [DEBUG] Added session hook for event PreToolUse in session a7ebea552a78c586f

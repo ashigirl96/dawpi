@@ -1,0 +1,1 @@
+{ "name": "cbp16", "version": "0.1.0", "description": "PROTOTYPE: guard a worker with Agent and Bash by its own definition when the Mod cannot hold its turn (dawpi #16)" }

@@ -1,0 +1,34 @@
+2026-10-23T14:59:15.693Z [DEBUG] Plugin hooks: skipping reload, plugin-affecting settings unchanged
+2026-10-23T14:59:26.637Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T14:59:27.032Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_0147dssJvwnvTeWLbQg5pduR permissionDecisionMs=373
+2026-10-23T14:59:27.055Z [DEBUG] Cleared all session hooks for session a757e864111e76ff1
+2026-10-23T14:59:27.171Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:59:27.172Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T14:59:27.175Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp16tlpj6rke permissionDecisionMs=2
+2026-10-23T14:59:27.182Z [DEBUG] Cleared all session hooks for session a4f3d9f9fbcd5ed64
+2026-10-23T14:59:27.256Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:59:27.256Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T14:59:27.261Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp16j8wof3zo permissionDecisionMs=4
+2026-10-23T14:59:27.597Z [INFO] [Stall] classifier_request_started reqId=290e221c-d46e-407b-94e2-8a61da7e77db tool=unknown_tool model=claude-sonnet-5[1m] stage=xml_s1 promptTokensEst=[REDACTED]
+2026-10-23T14:59:28.534Z [INFO] [Stall] classifier_request_finished reqId=290e221c-d46e-407b-94e2-8a61da7e77db tool=unknown_tool stage=xml_s1 outcome=ok durationMs=937
+2026-10-23T14:59:33.121Z [DEBUG] hooks module cbp16@inline reloaded in 4.7ms; events: none
+2026-10-23T14:59:33.152Z [DEBUG] [cbp16] $.ui.log: hooks.json changed — reloaded (modules: hooks/register.ts → hooks/empty.ts; 0 hooks)
+2026-10-23T14:59:36.639Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user) 2 more times in the last 10s
+2026-10-23T14:59:44.430Z [DEBUG] Cleared all session hooks for session a757e864111e76ff1
+2026-10-23T14:59:44.448Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=10fbfe11-bf79-47ba-979b-9898a6fae9a5 source=agent:builtin:general-purpose
+2026-10-23T14:59:47.881Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call Bash on its own.\"\n  }\n}"
+2026-10-23T14:59:47.881Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: deny (reason: cbp16 guard: this worker may not call Bash on its own.)
+2026-10-23T14:59:48.329Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call Agent on its own.\"\n  }\n}"
+2026-10-23T14:59:48.329Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: deny (reason: cbp16 guard: this worker may not call Agent on its own.)
+2026-10-23T14:59:48.575Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=8eafefef-d652-4f77-a2bd-739ad9773e5f source=agent:builtin:general-purpose
+2026-10-23T14:59:51.650Z [DEBUG] "Hook PreToolUse:SubagentHandback (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call SubagentHandback on its own.\"\n  }\n}"
+2026-10-23T14:59:51.650Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: deny (reason: cbp16 guard: this worker may not call SubagentHandback on its own.)
+2026-10-23T14:59:51.930Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=5e605d43-aab8-419e-8e8f-01138455d6ce source=agent:builtin:general-purpose
+2026-10-23T14:59:54.079Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=1f4371af-1667-4654-af7a-1bd4a5c3e816 source=agent:builtin:general-purpose
+2026-10-23T14:59:56.555Z [DEBUG] "Hook PreToolUse:SubagentHandback (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call SubagentHandback on its own.\"\n  }\n}"
+2026-10-23T14:59:56.555Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: deny (reason: cbp16 guard: this worker may not call SubagentHandback on its own.)
+2026-10-23T14:59:56.829Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=a076d256-f5df-4d17-a174-6809d82ec3b9 source=agent:builtin:general-purpose
+2026-10-23T14:59:58.786Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=b0eefcca-b935-44aa-9f4d-04097f134f10 source=agent:builtin:general-purpose
+2026-10-23T15:00:01.146Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=8174a312-2384-4627-9ce6-3a8ae1400281 source=agent:builtin:general-purpose
+2026-10-23T15:00:03.372Z [INFO] [Stall] classifier_request_started reqId=d3a85967-4ee1-4895-972a-d71dd091ffef tool=unknown_tool model=claude-sonnet-5[1m] stage=xml_s1 promptTokensEst=[REDACTED]
+2026-10-23T15:00:04.380Z [INFO] [Stall] classifier_request_finished reqId=d3a85967-4ee1-4895-972a-d71dd091ffef tool=unknown_tool stage=xml_s1 outcome=ok durationMs=1008

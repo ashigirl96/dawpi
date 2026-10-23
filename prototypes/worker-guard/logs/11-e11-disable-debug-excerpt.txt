@@ -1,0 +1,50 @@
+2026-10-23T15:07:06.759Z [DEBUG] Found 20 plugins (20 enabled, 0 disabled)
+2026-10-23T15:07:06.859Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-10-23T15:07:07.079Z [DEBUG] [auto-mode] verifyAutoModeGateAccess: enabledState=enabled disabledBySettings=false model=claude-haiku-5-5 modelSupported=true disableFastModeBreakerFires=false carouselAvailable=true canEnterAuto=true
+2026-10-23T15:07:07.081Z [DEBUG] Plugin hooks: skipping reload, plugin-affecting settings unchanged
+2026-10-23T15:07:07.220Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (891 bytes)
+2026-10-23T15:07:07.345Z [DEBUG] Org fast mode: disabled (extra_usage_disabled)
+2026-10-23T15:07:07.558Z [ERROR] "MCP server \"chrome-devtools\" Server stderr: chrome-devtools-mcp exposes content of the browser instance to the MCP clients allowing them to inspect,\ndebug, and modify any data in the browser or DevTools.\nAvoid sharing sensitive or personal information that you do not want to share with MCP clients.\nPerformance tools may send trace URLs to the Google CrUX API to fetch real-user experience data. To disable, run with --no-performance-crux.\n\nGoogle collects usage statistics to improve Chrome DevTools MCP. To opt-out, run with --no-usage-statistics.\nFor more details, visit: https://github.com/ChromeDevTools/chrome-devtools-mcp#usage-statistics"
+2026-10-23T15:07:07.650Z [DEBUG] MCP server "claude.ai Claude Docs": GET notification stream disabled for claude.ai connectors; a GET the SDK sends to the proxy URL is answered locally with 405
+2026-10-23T15:07:07.651Z [DEBUG] MCP server "claude.ai Figma": GET notification stream disabled for claude.ai connectors; a GET the SDK sends to the proxy URL is answered locally with 405
+2026-10-23T15:07:07.651Z [DEBUG] MCP server "claude.ai Slack": GET notification stream disabled for claude.ai connectors; a GET the SDK sends to the proxy URL is answered locally with 405
+2026-10-23T15:07:15.539Z [DEBUG] Plugin autoupdate: skipped (auto-updater disabled)
+2026-10-23T15:07:24.170Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T15:07:24.200Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_015tjyFn5gfZ33p2ZjQLoooX permissionDecisionMs=6
+2026-10-23T15:07:24.210Z [DEBUG] Cleared all session hooks for session a6e4e42b6f4dec6a7
+2026-10-23T15:07:24.235Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (1146 bytes)
+2026-10-23T15:07:24.236Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (1322 bytes)
+2026-10-23T15:07:24.241Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (1608 bytes)
+2026-10-23T15:07:24.294Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T15:07:24.294Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T15:07:24.297Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp16qvr687t4 permissionDecisionMs=1
+2026-10-23T15:07:24.298Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (1798 bytes)
+2026-10-23T15:07:24.303Z [DEBUG] Cleared all session hooks for session a91db0227b9d8597f
+2026-10-23T15:07:24.315Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (2065 bytes)
+2026-10-23T15:07:24.339Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (3712 bytes)
+2026-10-23T15:07:24.340Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (3888 bytes)
+2026-10-23T15:07:24.347Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (3996 bytes)
+2026-10-23T15:07:24.349Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (4289 bytes)
+2026-10-23T15:07:24.388Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T15:07:24.388Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T15:07:24.394Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp16y9ar25ta permissionDecisionMs=5
+2026-10-23T15:07:24.396Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (4478 bytes)
+2026-10-23T15:07:24.709Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (4649 bytes)
+2026-10-23T15:07:24.717Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (4881 bytes)
+2026-10-23T15:07:27.720Z [DEBUG] $.fs.write (cbp16): /tmp/cbp16-e11-disable-2026-10-23T15-07-07-184Z.json (5017 bytes)
+2026-10-23T15:07:34.171Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user) 2 more times in the last 10s
+2026-10-23T15:07:41.633Z [DEBUG] Found 20 plugins (20 enabled, 0 disabled)
+2026-10-23T15:07:41.720Z [DEBUG] Found 20 plugins (19 enabled, 1 disabled)
+2026-10-23T15:07:41.721Z [DEBUG] hooks modules unloaded: cbp16@inline (plugin disabled or uninstalled)
+2026-10-23T15:07:41.724Z [DEBUG] Found 20 plugins (19 enabled, 1 disabled)
+2026-10-23T15:07:41.752Z [DEBUG] Found 20 plugins (19 enabled, 1 disabled)
+2026-10-23T15:07:56.386Z [DEBUG] Found 20 plugins (19 enabled, 1 disabled)
+2026-10-23T15:07:56.404Z [DEBUG] Found 20 plugins (19 enabled, 1 disabled)
+2026-10-23T15:07:56.407Z [DEBUG] Found 20 plugins (19 enabled, 1 disabled)
+2026-10-23T15:08:11.220Z [DEBUG] Cleared all session hooks for session a6e4e42b6f4dec6a7
+2026-10-23T15:08:11.241Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2edd22ef-7456-43c1-b3db-8d5cd453fa56 source=agent:builtin:general-purpose
+2026-10-23T15:08:41.269Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=8f3be98c-8d2c-4d64-94fc-d6b307291291 source=agent_summary
+2026-10-23T15:08:47.072Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01CSfVJitDseKjbfgxVEejUo permissionDecisionMs=1
+2026-10-23T15:08:47.077Z [DEBUG] Cleared all session hooks for session a730d23d6dea76710
+2026-10-23T15:08:47.101Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=6290d044-8a3c-40e5-a72e-d18c26357046 source=agent:builtin:general-purpose
+2026-10-23T15:08:47.101Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=fa332297-fe77-48e4-8128-e2e79821ced7 source=agent:builtin:general-purpose

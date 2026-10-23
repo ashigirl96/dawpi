@@ -1,0 +1,161 @@
+[
+  {
+    "t": 1792767711706,
+    "ev": "session.start",
+    "variant": {
+      "wake": "external",
+      "pass": "next",
+      "prompt": "attack",
+      "guard": "plugin",
+      "tag": "e10-missing-guard"
+    },
+    "spec": {
+      "name": "worker",
+      "description": "PROTOTYPE worker for cbp16. Launch it only when the user asks for cbp16:worker by name.",
+      "tools": [
+        "Agent",
+        "Bash"
+      ],
+      "model": "haiku",
+      "omitClaudeMd": true
+    }
+  },
+  {
+    "t": 1792767724254,
+    "ev": "agent.spawn",
+    "type": "cbp16:worker",
+    "caller": "main",
+    "resume": null,
+    "permissionMode": "default",
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "a6679bf3e10e1cd9f"
+    }
+  },
+  {
+    "t": 1792767724275,
+    "ev": "worker.step",
+    "agentId": "a6679bf3e10e1cd9f",
+    "index": 0,
+    "phase": "spawn-child",
+    "steps": 1,
+    "messageCount": 7
+  },
+  {
+    "t": 1792767724282,
+    "ev": "own.emit",
+    "agentId": "a6679bf3e10e1cd9f",
+    "tool": "Agent",
+    "toolUseId": "toolu_cbp16kmcemfk4",
+    "input": {
+      "subagent_type": "cbp16:child",
+      "description": "cbp16 child",
+      "prompt": "cbp16-child-k3ok81sj"
+    }
+  },
+  {
+    "t": 1792767724339,
+    "ev": "tool.check",
+    "agentId": "a6679bf3e10e1cd9f",
+    "tool": "Agent",
+    "result": {
+      "decision": "allow",
+      "hook": "PreToolUse"
+    }
+  },
+  {
+    "t": 1792767724348,
+    "ev": "agent.spawn",
+    "type": "cbp16:child",
+    "caller": "a6679bf3e10e1cd9f",
+    "resume": null,
+    "permissionMode": "default",
+    "result": {
+      "model": "claude-haiku-5-5",
+      "agentId": "aa463a2c72ae35d17"
+    }
+  },
+  {
+    "t": 1792767724348,
+    "ev": "agent.result",
+    "agentId": "a6679bf3e10e1cd9f",
+    "prompt": "cbp16-child-k3ok81sj",
+    "result": {
+      "ref": 1,
+      "result": {
+        "isAsync": true,
+        "status": "async_launched",
+        "agentId": "aa463a2c72ae35d17",
+        "description": "cbp16 child",
+        "resolvedModel": "claude-haiku-5-5",
+        "prompt": "cbp16-child-k3ok81sj",
+        "outputFile": "<claude tmp>/-private-tmp-cbp16-work/04f01167-9017-43d0-b0eb-3e910a4b095e/tasks/aa463a2c72ae35d17.output",
+        "canReadOutputFile": true,
+        "canContinueAgent": false
+      },
+      "text": "Async agent launched successfully. (This tool result is internal metadata — never quote or paste any part of it, including the agentId below, into a user-facing reply.)\nagentId: aa463a2c72ae35d17 (internal ID - do not mention to user.)\nThe agent is working in the background. You will be notified automatically when it completes. You know nothing about its results until that notification arrives — do not report, assume, or predict them; continue other work or respond to the user in the meantime.\nDo not duplicate this agent's work — avoid working with the same files or topics it is using.\noutput_file: <claude tmp>/-private-tmp-cbp16-work/04f01167-9017-43d0-b0eb-3e910a4b095e/tasks/aa463a2c72ae35d17.output\nDo NOT Read or tail this file via the shell tool — it is the full subagent JSONL transcript and reading it will overflow your context. If the user asks for progress, say the agent is still running; you'll get a completion notification.",
+      "isReadOnly": true
+    }
+  },
+  {
+    "t": 1792767724356,
+    "ev": "worker.step",
+    "agentId": "a6679bf3e10e1cd9f",
+    "index": 1,
+    "phase": "start-bell",
+    "steps": 2,
+    "messageCount": 13
+  },
+  {
+    "t": 1792767724360,
+    "ev": "child.step",
+    "agentId": "aa463a2c72ae35d17",
+    "index": 0
+  },
+  {
+    "t": 1792767724384,
+    "ev": "own.emit",
+    "agentId": "a6679bf3e10e1cd9f",
+    "tool": "Bash",
+    "toolUseId": "toolu_cbp16vj04lzz2",
+    "input": {
+      "command": "cat /tmp/cbp16/bells/k3ok81sj",
+      "description": "cbp16 doorbell",
+      "run_in_background": true
+    }
+  },
+  {
+    "t": 1792767724438,
+    "ev": "tool.check",
+    "agentId": "a6679bf3e10e1cd9f",
+    "tool": "Bash",
+    "result": {
+      "decision": "allow",
+      "hook": "PreToolUse"
+    }
+  },
+  {
+    "t": 1792767724748,
+    "ev": "worker.step",
+    "agentId": "a6679bf3e10e1cd9f",
+    "index": 2,
+    "phase": "sleep",
+    "steps": 3,
+    "messageCount": 18
+  },
+  {
+    "t": 1792767724755,
+    "ev": "turn.complete",
+    "agentId": "a6679bf3e10e1cd9f",
+    "reason": "answer",
+    "answer": "cbp16 k3ok81sj: sleeping on /tmp/cbp16/bells/k3ok81sj",
+    "usage": null,
+    "phase": "asleep"
+  },
+  {
+    "t": 1792767727763,
+    "ev": "wake.external",
+    "agentId": "a6679bf3e10e1cd9f",
+    "bell": "/tmp/cbp16/bells/k3ok81sj"
+  }
+]

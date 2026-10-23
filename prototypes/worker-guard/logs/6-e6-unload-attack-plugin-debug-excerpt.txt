@@ -1,0 +1,26 @@
+2026-10-23T14:56:27.324Z [DEBUG] Plugin hooks: skipping reload, plugin-affecting settings unchanged
+2026-10-23T14:56:38.766Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T14:56:38.792Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01LtKGQretqmCSEkjhehSFcn permissionDecisionMs=5
+2026-10-23T14:56:38.803Z [DEBUG] Cleared all session hooks for session a3b2a476ffb4de5b5
+2026-10-23T14:56:38.827Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=561ff357-a856-43ef-bc72-837d71bb1b48 source=agent:custom:cbp16:worker
+2026-10-23T14:56:43.491Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call Bash on its own.\"\n  }\n}"
+2026-10-23T14:56:43.491Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: deny (reason: cbp16 guard: this worker may not call Bash on its own.)
+2026-10-23T14:56:43.547Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:56:43.547Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T14:56:43.550Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp16yg24zr8z permissionDecisionMs=1
+2026-10-23T14:56:43.555Z [DEBUG] Cleared all session hooks for session afe66be44cca11dd5
+2026-10-23T14:56:43.568Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=f66298d4-1940-4be2-a779-d9d9bf35c8f3 source=agent:custom:cbp16:child
+2026-10-23T14:56:43.617Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T14:56:43.617Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T14:56:43.623Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp16ah5102za permissionDecisionMs=5
+2026-10-23T14:56:44.377Z [DEBUG] Cleared all session hooks for session a3b2a476ffb4de5b5
+2026-10-23T14:56:48.651Z [DEBUG] hooks module cbp16@inline reloaded in 4.4ms; events: none
+2026-10-23T14:56:48.694Z [DEBUG] [cbp16] $.ui.log: hooks.json changed — reloaded (modules: hooks/register.ts → hooks/empty.ts; 0 hooks)
+2026-10-23T14:56:48.768Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user) 3 more times in the last 10s
+2026-10-23T14:57:00.845Z [DEBUG] Cleared all session hooks for session a3b2a476ffb4de5b5
+2026-10-23T14:57:00.882Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=2599fbfd-10bf-4ee8-a3fc-58593177c155 source=agent:builtin:general-purpose
+2026-10-23T14:57:05.554Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call Bash on its own.\"\n  }\n}"
+2026-10-23T14:57:05.554Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: deny (reason: cbp16 guard: this worker may not call Bash on its own.)
+2026-10-23T14:57:05.596Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"deny\",\n    \"permissionDecisionReason\": \"cbp16 guard: this worker may not call Agent on its own.\"\n  }\n}"
+2026-10-23T14:57:05.596Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: deny (reason: cbp16 guard: this worker may not call Agent on its own.)
+2026-10-23T14:57:05.608Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=251f13b5-b1c2-43c4-bbe4-f7ea95d9633b source=agent:builtin:general-purpose

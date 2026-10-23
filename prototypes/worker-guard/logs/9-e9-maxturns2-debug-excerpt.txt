@@ -1,0 +1,14 @@
+2026-10-23T15:00:40.517Z [DEBUG] Plugin hooks: skipping reload, plugin-affecting settings unchanged
+2026-10-23T15:00:52.388Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T15:00:52.421Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01UFsVf41uYKD7tL4MyfJTVL permissionDecisionMs=6
+2026-10-23T15:00:52.432Z [DEBUG] Cleared all session hooks for session ad49cd923e7efffac
+2026-10-23T15:00:52.513Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T15:00:52.513Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T15:00:52.516Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp16qo741pco permissionDecisionMs=1
+2026-10-23T15:00:52.523Z [DEBUG] Cleared all session hooks for session a714b62ce0b8901a4
+2026-10-23T15:00:52.611Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T15:00:52.611Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T15:00:52.616Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp16rzpvg4z8 permissionDecisionMs=4
+2026-10-23T15:00:52.950Z [DEBUG] Cleared all session hooks for session ad49cd923e7efffac
+2026-10-23T15:00:56.020Z [DEBUG] Cleared all session hooks for session ad49cd923e7efffac
+2026-10-23T15:01:02.391Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user) 2 more times in the last 10s

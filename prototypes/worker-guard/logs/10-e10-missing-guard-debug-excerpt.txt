@@ -1,0 +1,26 @@
+2026-10-23T15:01:51.605Z [DEBUG] Plugin hooks: skipping reload, plugin-affecting settings unchanged
+2026-10-23T15:02:04.213Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user); beneath runs
+2026-10-23T15:02:04.243Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01Q2PWWVje2rAvQrKuJjzaR4 permissionDecisionMs=6
+2026-10-23T15:02:04.254Z [DEBUG] Cleared all session hooks for session a6679bf3e10e1cd9f
+2026-10-23T15:02:04.337Z [DEBUG] "Hook PreToolUse:Agent (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T15:02:04.337Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T15:02:04.340Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_cbp16kmcemfk4 permissionDecisionMs=2
+2026-10-23T15:02:04.348Z [DEBUG] Cleared all session hooks for session aa463a2c72ae35d17
+2026-10-23T15:02:04.433Z [DEBUG] "Hook PreToolUse:Bash (PreToolUse) success:\n{\n  \"hookSpecificOutput\": {\n    \"hookEventName\": \"PreToolUse\",\n    \"permissionDecision\": \"allow\"\n  }\n}"
+2026-10-23T15:02:04.433Z [DEBUG] Hook PreToolUse (sh "${CLAUDE_PLUGIN_ROOT}/plugin-guard.sh") returned permissionDecision: allow
+2026-10-23T15:02:04.439Z [INFO] [Stall] tool_dispatch_start tool=Bash toolUseId=toolu_cbp16vj04lzz2 permissionDecisionMs=3
+2026-10-23T15:02:09.815Z [DEBUG] hooks module cbp16@inline reloaded in 4.2ms; events: none
+2026-10-23T15:02:09.847Z [DEBUG] [cbp16] $.ui.log: hooks.json changed — reloaded (modules: hooks/register.ts → hooks/empty.ts; 0 hooks)
+2026-10-23T15:02:14.215Z [DEBUG] cbp16: classic.PreToolUse bypassed by cc-plugin-sec-default (tier user) 2 more times in the last 10s
+2026-10-23T15:02:21.353Z [DEBUG] Cleared all session hooks for session a6679bf3e10e1cd9f
+2026-10-23T15:02:21.394Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=d3948b70-2b92-4060-a9ce-7c45d97aff97 source=agent:builtin:general-purpose
+2026-10-23T15:02:28.344Z [DEBUG] Hooks: PreToolUse:Bash [sh "/tmp/cbp16-mod/plugin-guard.sh"] (plugin cbp16@inline) finished with status 127 (25ms)
+2026-10-23T15:02:51.377Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=0122d6c5-c3af-420e-b217-59d008a06ada source=agent_summary
+2026-10-23T15:02:58.679Z [DEBUG] Hooks: PreToolUse:Bash [sh "/tmp/cbp16-mod/plugin-guard.sh"] (plugin cbp16@inline) finished with status 127 (28ms)
+2026-10-23T15:02:58.698Z [DEBUG] Hooks: PreToolUse:Agent [sh "/tmp/cbp16-mod/plugin-guard.sh"] (plugin cbp16@inline) finished with status 127 (13ms)
+2026-10-23T15:03:09.970Z [DEBUG] Hooks: PreToolUse:Agent [sh "/tmp/cbp16-mod/plugin-guard.sh"] (plugin cbp16@inline) finished with status 127 (24ms)
+2026-10-23T15:03:09.972Z [INFO] [Stall] tool_dispatch_start tool=Agent toolUseId=toolu_01WPsvx19mwS3hNNvZy4Lgey permissionDecisionMs=1
+2026-10-23T15:03:09.978Z [DEBUG] Cleared all session hooks for session addbdad4318874a58
+2026-10-23T15:03:10.023Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=6f079ab8-771d-43aa-92f9-7306412cacce source=agent:builtin:general-purpose
+2026-10-23T15:03:10.023Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=f647abef-33fe-404f-b9be-f5b53cfbeb32 source=agent:builtin:general-purpose
+2026-10-23T15:03:13.291Z [DEBUG] Hooks: PreToolUse:Bash [sh "/tmp/cbp16-mod/plugin-guard.sh"] (plugin cbp16@inline) finished with status 127 (25ms)
